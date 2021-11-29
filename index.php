@@ -28,11 +28,26 @@
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/86702201" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
+
+		<!-- Yandex.RTB -->
+		<script>window.yaContextCb=window.yaContextCb||[]</script>
+		<script src="https://yandex.ru/ads/system/context.js" async></script>
 	</head>
 	<body>
 		<div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div>
 		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 90%; overflow: hidden">
-			<div class="ad-left"></div>
+			<div class="ad-left">
+				<!-- Yandex.RTB R-A-1397159-1 -->
+				<div id="yandex_rtb_R-A-1397159-1"></div>
+				<script>
+					window.yaContextCb.push(()=>{
+						Ya.Context.AdvManager.render({
+							renderTo: 'yandex_rtb_R-A-1397159-1',
+							blockId: 'R-A-1397159-1'
+						})
+					})
+				</script>
+			</div>
 			<div class="container">
 				<?include('start.php');?>
 				<?include('options.php');?>
@@ -40,9 +55,31 @@
 				<?include('losing.php');?>
 				<?include('winning.php');?>
 			</div>
-			<div class="ad-right"></div>
+			<div class="ad-right">
+				<!-- Yandex.RTB R-A-1397159-2 -->
+				<div id="yandex_rtb_R-A-1397159-2"></div>
+				<script>
+				window.yaContextCb.push(()=>{
+					Ya.Context.AdvManager.render({
+						renderTo: 'yandex_rtb_R-A-1397159-2',
+						blockId: 'R-A-1397159-2'
+					})
+				})
+				</script>
+			</div>
 		</div>
-		<div class="ad-bottom"></div>
+		<div class="ad-bottom">
+			<!-- Yandex.RTB R-A-1397159-3 -->
+			<div id="yandex_rtb_R-A-1397159-3"></div>
+			<script>
+				window.yaContextCb.push(()=>{
+					Ya.Context.AdvManager.render({
+						renderTo: 'yandex_rtb_R-A-1397159-3',
+						blockId: 'R-A-1397159-3'
+					})
+				})
+			</script>
+		</div>
 		<script src="/dest/js/vendors.js?<?=date('Hdmy')?>"></script>
 		<script src="/dest/js/script.js?<?=date('Hdmy')?>"></script>
 	</body>
