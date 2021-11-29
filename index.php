@@ -12,6 +12,7 @@
 		<meta property="og:url" content="https://iknowfilm.ru" />
 		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
 		<meta name="keywords" content="Угадай фильм, бесплатная браузерная игра, играть без регистрации, онлайн, на время" />
+		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
 		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
