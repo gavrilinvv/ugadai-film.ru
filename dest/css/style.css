@@ -30,6 +30,10 @@
   display: none !important;
 }
 
+._noopacity {
+  opacity: 0 !important;
+}
+
 ._dflex {
   display: flex;
   flex-direction: column;

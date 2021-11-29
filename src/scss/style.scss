@@ -105,6 +105,10 @@ $gap-size-mobile: 12px;
 	display: none!important;
 }
 
+._noopacity {
+	opacity: 0!important;
+}
+
 ._dflex {
 	display: flex;
 	flex-direction: column;
@@ -483,6 +487,10 @@ body {
 			cursor: default;
 			pointer-events: none;
 			animation: zoom .5s cubic-bezier(.36,.07,.19,.97) both;
+
+			// @include mobile {
+			// 	animation: none;
+			// }
 		}
 		&-error {
 			background: brown;
