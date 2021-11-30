@@ -7,11 +7,11 @@
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
 		<title>I know film</title>
-		<meta property="og:title" content="I know film | Бесплатная браузерная игра"/>
+		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра, тест"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://iknowfilm.ru" />
-		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
-		<meta name="keywords" content="Угадай фильм, бесплатная браузерная игра, играть без регистрации, онлайн, на время" />
+		<meta name="description" property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
+		<meta name="keywords" content="Угадай фильм, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
@@ -34,7 +34,7 @@
 		<script src="https://yandex.ru/ads/system/context.js" async></script>
 	</head>
 	<body>
-		<div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div>
+		<!-- <div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div> -->
 		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 90%; overflow: hidden">
 			<div class="ad-left">
 				<!-- Yandex.RTB R-A-1397159-1 -->
