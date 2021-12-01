@@ -1056,7 +1056,7 @@ body {
 
 .ad-right, .ad-left {
   height: 400px;
-  min-width: 240px;
+  width: 240px;
 }
 @media screen and (max-width: 1228px) {
   .ad-right, .ad-left {

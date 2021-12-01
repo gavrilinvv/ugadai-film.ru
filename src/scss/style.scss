@@ -619,7 +619,7 @@ body {
 .ad-right, .ad-left {
 	// background-color: red;
 	height: 400px;
-	min-width: 240px;
+	width: 240px;
 
 	@media screen and (max-width: 1228px) {
 		display: none;
