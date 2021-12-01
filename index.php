@@ -39,14 +39,6 @@
 			<div class="ad-left">
 				<!-- Yandex.RTB R-A-1397159-1 -->
 				<div id="yandex_rtb_R-A-1397159-1"></div>
-				<script>
-					window.yaContextCb.push(()=>{
-						Ya.Context.AdvManager.render({
-							renderTo: 'yandex_rtb_R-A-1397159-1',
-							blockId: 'R-A-1397159-1'
-						})
-					})
-				</script>
 			</div>
 			<div class="container">
 				<?include('start.php');?>
@@ -58,29 +50,45 @@
 			<div class="ad-right">
 				<!-- Yandex.RTB R-A-1397159-2 -->
 				<div id="yandex_rtb_R-A-1397159-2"></div>
-				<script>
+			</div>
+		</div>
+		<div class="ad-bottom">
+			<!-- Yandex.RTB R-A-1397159-3 -->
+			<div id="yandex_rtb_R-A-1397159-3"></div>
+		</div>
+		<script src="/dest/js/vendors.js?<?=date('Hdmy')?>"></script>
+		<script src="/dest/js/script.js?<?=date('Hdmy')?>"></script>
+
+		<script src="https://yastatic.net/share2/share.js"></script>
+		<script>
+			function renderAds() {
+				// left
+				window.yaContextCb.push(()=>{
+					Ya.Context.AdvManager.render({
+						renderTo: 'yandex_rtb_R-A-1397159-1',
+						blockId: 'R-A-1397159-1'
+					})
+				})
+				// right
 				window.yaContextCb.push(()=>{
 					Ya.Context.AdvManager.render({
 						renderTo: 'yandex_rtb_R-A-1397159-2',
 						blockId: 'R-A-1397159-2'
 					})
 				})
-				</script>
-			</div>
-		</div>
-		<div class="ad-bottom">
-			<!-- Yandex.RTB R-A-1397159-3 -->
-			<div id="yandex_rtb_R-A-1397159-3"></div>
-			<script>
+				// bottom
 				window.yaContextCb.push(()=>{
 					Ya.Context.AdvManager.render({
 						renderTo: 'yandex_rtb_R-A-1397159-3',
 						blockId: 'R-A-1397159-3'
 					})
 				})
-			</script>
-		</div>
-		<script src="/dest/js/vendors.js?<?=date('Hdmy')?>"></script>
-		<script src="/dest/js/script.js?<?=date('Hdmy')?>"></script>
+
+				setTimeout(function(){
+					renderAds();
+				}, 120000);
+			}
+			renderAds();
+		</script>
 	</body>
 </html>
