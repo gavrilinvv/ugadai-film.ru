@@ -9,7 +9,8 @@
 		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра, тест"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://iknowfilm.ru" />
-		<meta name="description" property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
+		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
+		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
 		<meta name="keywords" content="Угадай фильм, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<!-- Yandex.Metrika counter -->
