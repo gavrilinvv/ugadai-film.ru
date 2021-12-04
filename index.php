@@ -35,14 +35,15 @@
 	</head>
 	<body>
 		<!-- <div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div> -->
-		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 90%; overflow: hidden">
+		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 90%; overflow: hidden; padding: 0 20px;">
 			<div class="ad-left">
 				<!-- Yandex.RTB R-A-1397159-1 -->
 				<div id="yandex_rtb_R-A-1397159-1"></div>
 			</div>
 			<div class="container">
 				<?include('start.php');?>
-				<?include('options.php');?>
+				<?include('options-category.php');?>
+				<?include('options-params.php');?>
 				<?include('playground.php');?>
 				<?include('losing.php');?>
 				<?include('winning.php');?>

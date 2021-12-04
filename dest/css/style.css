@@ -99,6 +99,7 @@
 body {
   background: url("/src/img/bg.jpg") no-repeat;
   background-size: cover;
+  margin: 0;
   overflow: hidden;
 }
 
@@ -164,22 +165,61 @@ body {
 }
 
 .container {
-  max-width: 1208px;
+  max-width: 83.8888888889vw;
+  min-width: 41.6666666667vw;
   margin: 0 auto;
-  position: relative;
-  height: 90%;
+}
+@media screen and (min-width: 1441px) {
+  .container {
+    max-width: 1208px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .container {
+    max-width: 335.5555555556vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .container {
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    min-width: 166.6666666667vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: auto;
+    min-width: auto;
     width: 100%;
   }
 }
 
-.menu, .options, .losing {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.options, .losing {
+  padding-left: 3.4722222222vw;
+  padding-right: 3.4722222222vw;
+}
+@media screen and (min-width: 1441px) {
+  .options, .losing {
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .options, .losing {
+    padding-left: 13.8888888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .options, .losing {
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .options, .losing {
+    padding-right: 13.8888888889vw;
+  }
 }
 
 .menu {
@@ -327,9 +367,57 @@ body {
     font-size: 11.6666666667vw;
   }
 }
+.menu .button {
+  box-sizing: border-box;
+}
 
 .loader {
   display: none;
+}
+
+.header {
+  position: absolute;
+  width: inherit;
+  box-sizing: border-box;
+  left: 0;
+  top: 0.8333333333vw;
+  padding-left: 1.3888888889vw;
+  padding-right: 1.3888888889vw;
+}
+@media screen and (min-width: 1441px) {
+  .header {
+    top: 12px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    top: 3.3333333333vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .header {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-left: 5.5555555556vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .header {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-right: 5.5555555556vw;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .playground {
@@ -349,22 +437,6 @@ body {
 @media screen and (max-width: 1000px) {
   .playground {
     width: 100%;
-  }
-}
-.playground-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.8333333333vw;
-}
-@media screen and (min-width: 1441px) {
-  .playground-header {
-    margin-bottom: 12px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .playground-header {
-    margin-bottom: 3.3333333333vw;
   }
 }
 .playground-answers {
@@ -523,13 +595,8 @@ body {
 .playground-fact {
   color: #ffffff;
   text-align: center;
-  width: 90%;
   font-size: 1.5277777778vw;
   display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 1441px) {
   .playground-fact {
@@ -649,12 +716,8 @@ body {
   }
 }
 
-.options, .losing, .winning {
+.options-category, .options-params, .losing, .winning {
   display: none;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .options__title {
@@ -688,7 +751,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: steelblue;
+  background: #248a79;
   outline: none;
   transition: 0.1s;
   width: auto;
@@ -765,6 +828,9 @@ body {
   .button {
     line-height: 5.5555555556vw;
   }
+}
+.button-w100 {
+  width: 100%;
 }
 .button__small {
   font-size: 1.25vw;
@@ -859,10 +925,6 @@ body {
     transform: rotate(4deg);
   }
 }
-.genres {
-  display: flex;
-  justify-content: space-between;
-}
 .genres > div {
   margin-right: 1.3888888889vw;
 }
@@ -937,7 +999,7 @@ body {
   border-radius: 0.2777777778vw;
   margin-right: 1.0416666667vw;
   background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid steelblue;
+  border: 2px solid #248a79;
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body::before {
@@ -989,7 +1051,7 @@ body {
   content: "";
   transform: scale(1);
   opacity: 1;
-  background-color: steelblue;
+  background-color: #248a79;
   background-size: cover;
   background-position: 50%;
   background-image: url("/src/img/icon-check-white.svg");

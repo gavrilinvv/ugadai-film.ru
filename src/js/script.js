@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 	var menuBlock = document.querySelector('.menu');
 	var menuShot = document.querySelector('.menu__shot');
-	var optionsBlock = document.querySelector('.options');
+	var optionsCategoryBlock = document.querySelector('.options-category');
+	var optionsParamsBlock = document.querySelector('.options-params');
 	var playgroundBlock = document.querySelector('.playground');
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
@@ -14,8 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	var factBlock = document.querySelector('.playground-fact');
 	var factText = document.querySelector('.playground-fact__text');
 	var questBlock = document.querySelector('.playground-quest');
-	var toOptBtns = document.querySelectorAll('.js-to-options');
+
+	var toOptCategoryBtns = document.querySelectorAll('.js-to-opt-category');
+	var toOptParamsBtns = document.querySelectorAll('.js-to-opt-params');
 	var toGameBtns = document.querySelectorAll('.js-to-game');
+
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
 	// var countFilms = document.querySelector('.count-films span');
 
@@ -48,15 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
-		[...toOptBtns].map(btn => {
+		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
-				showBlock(optionsBlock);
+				resetTimer();
+				showBlock(optionsCategoryBlock);
+			})
+		});
+
+		[...toOptParamsBtns].map(btn => {
+			btn.addEventListener('click', () => {
+				if (!selectedGenres.length) {alert('Выберите категорию'); return;}
+				showBlock(optionsParamsBlock);
 			})
 		});
 
 		[...toGameBtns].map(btn => {
 			btn.addEventListener('click', () => {
-				if (!selectedGenres.length) {alert('Выберите категорию'); return;}
 				showBlock(playgroundBlock);
 				scoreBlock.innerHTML = 0;
 				answersBlock.innerHTML = '';
@@ -105,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (value == 'facts') {
 					options.facts = input.checked;
 				}
+				console.log(options);
 			})
 		});
 	})
@@ -155,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function showBlock(targetBlock) {
-		var blocks = [menuBlock, optionsBlock, playgroundBlock, losingBlock, winningBlock];
+		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock];
 		blocks.forEach(block => {
 			block.style.display = 'none';
 		})

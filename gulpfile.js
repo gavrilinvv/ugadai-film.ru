@@ -83,7 +83,7 @@ gulp.task('json', () => {
 gulp.task('watch', gulp.series('css', 'js', 'films', 'json', 'js-vendors', () => {
 	watch('./src/scss/style.scss', gulp.series('css'));
 	watch('./src/js/script.js', gulp.series('js'));
-	watch('./src/img/screens/*.jpg', gulp.series('films'));
+	// watch('./src/img/screens/*.jpg', gulp.series('films'));
 	watch('./src/json/films.json', gulp.series('json'));
 }));
 

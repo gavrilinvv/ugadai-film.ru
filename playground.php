@@ -1,8 +1,9 @@
 <div class="playground">
-	<div class="playground-header">
-		<div class="button js-to-options">Назад</div>
-		<div class="playground-score">Счет: <span>0</span></div>
-		<!-- <div class="playground-timer"></div> -->
+	<div class="header">
+		<div class="header__container">
+			<div class="button js-to-opt-category">Назад</div>
+			<div class="playground-score">Счет: <span>0</span></div>
+		</div>
 	</div>
 	<div class="playground-timer"></div>
 
