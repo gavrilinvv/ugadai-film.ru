@@ -109,6 +109,8 @@ body {
   position: absolute;
   bottom: 0.3472222222vw;
   left: 50%;
+  width: 100%;
+  text-align: center;
   transform: translate(-50%, 0);
 }
 @media screen and (min-width: 1441px) {
@@ -1118,6 +1120,22 @@ body {
   height: 50px;
   width: 320px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .ad-bottom {
+    position: absolute;
+    bottom: 1.3888888889vw;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 1441px) {
+  .ad-bottom {
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (max-width: 1000px) {
+  .ad-bottom {
+    bottom: 5.5555555556vw;
+  }
 }
 
 .ad-right, .ad-left {

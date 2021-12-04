@@ -144,6 +144,8 @@ body {
 	position: absolute;
 	@include fluid('bottom', 5px, 5px);
 	left: 50%;
+	width: 100%;
+	text-align: center;
 	transform: translate(-50%, 0);
 }
 
@@ -648,6 +650,11 @@ body {
 	height: 50px;
 	width: 320px;
 	margin: 0 auto;
+
+	@include mobile {
+		position: absolute;
+		@include fluid('bottom', 20px);
+	}
 }
 
 .ad-right, .ad-left {
