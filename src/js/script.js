@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var toGameBtns = document.querySelectorAll('.js-to-game');
 
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
-	// var countFilms = document.querySelector('.count-films span');
+	var countFilms = document.querySelector('.count-films span');
 
 	var answersBlock = document.querySelector('.playground-answers');
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	getFilms().then(res => {
 		films = res;
 
-		// countFilms.innerHTML = films.length;
+		countFilms.innerHTML = films.length;
 
 		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 

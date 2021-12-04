@@ -379,7 +379,6 @@ body {
   position: absolute;
   width: inherit;
   box-sizing: border-box;
-  left: 0;
   top: 0.8333333333vw;
   padding-left: 1.3888888889vw;
   padding-right: 1.3888888889vw;
@@ -412,6 +411,11 @@ body {
 @media screen and (max-width: 1000px) {
   .header {
     padding-right: 5.5555555556vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    left: 0;
   }
 }
 .header__container {

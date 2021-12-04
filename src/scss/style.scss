@@ -275,11 +275,13 @@ body {
 	position: absolute;
 	width: inherit;
 	box-sizing: border-box;
-	left: 0;
 	@include fluid('top', 12px);
 	@include fluid('padding-left', 20px);
 	@include fluid('padding-right', 20px);
-	// @include fluid('margin-bottom', 12px);
+
+	@include mobile {
+		left: 0;
+	}
 
 	&__container {
 		display: flex;
