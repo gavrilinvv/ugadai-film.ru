@@ -1117,6 +1117,7 @@ body {
 }
 
 .ad-bottom {
+  background-color: red;
   height: 50px;
   width: 320px;
   margin: 0 auto;
@@ -1124,7 +1125,9 @@ body {
 @media screen and (max-width: 1000px) {
   .ad-bottom {
     position: absolute;
+    left: 50%;
     bottom: 1.3888888889vw;
+    transform: translate(-50%, 0);
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 1441px) {

@@ -646,14 +646,16 @@ body {
 }
 
 .ad-bottom {
-	// background-color: red;
+	background-color: red;
 	height: 50px;
 	width: 320px;
 	margin: 0 auto;
 
 	@include mobile {
 		position: absolute;
+		left: 50%;
 		@include fluid('bottom', 20px);
+		transform: translate(-50%, 0);
 	}
 }
 
