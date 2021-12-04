@@ -278,10 +278,10 @@ body {
 	width: inherit;
 	box-sizing: border-box;
 	@include fluid('top', 12px);
-	@include fluid('padding-left', 20px);
-	@include fluid('padding-right', 20px);
 
 	@include mobile {
+		@include fluid('padding-left', 20px);
+		@include fluid('padding-right', 20px);
 		left: 0;
 	}
 
@@ -330,7 +330,6 @@ body {
 
 	&-score {
 		color: $white;
-		@include fluid('margin-bottom', 12px);
 		@include fluid('font-size', 18px);
 		font-weight: 500;
 
@@ -646,7 +645,7 @@ body {
 }
 
 .ad-bottom {
-	background-color: red;
+	// background-color: red;
 	height: 50px;
 	width: 320px;
 	margin: 0 auto;

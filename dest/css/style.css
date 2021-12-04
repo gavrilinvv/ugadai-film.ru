@@ -382,8 +382,6 @@ body {
   width: inherit;
   box-sizing: border-box;
   top: 0.8333333333vw;
-  padding-left: 1.3888888889vw;
-  padding-right: 1.3888888889vw;
 }
 @media screen and (min-width: 1441px) {
   .header {
@@ -395,29 +393,31 @@ body {
     top: 3.3333333333vw;
   }
 }
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1000px) {
+  .header {
+    padding-left: 1.3888888889vw;
+    padding-right: 1.3888888889vw;
+    left: 0;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 1441px) {
   .header {
     padding-left: 20px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (max-width: 1000px) {
   .header {
     padding-left: 5.5555555556vw;
   }
 }
-@media screen and (min-width: 1441px) {
+@media screen and (max-width: 1000px) and (min-width: 1441px) {
   .header {
     padding-right: 20px;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (max-width: 1000px) {
   .header {
     padding-right: 5.5555555556vw;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .header {
-    left: 0;
   }
 }
 .header__container {
@@ -492,19 +492,8 @@ body {
 }
 .playground-score {
   color: #ffffff;
-  margin-bottom: 0.8333333333vw;
   font-size: 1.25vw;
   font-weight: 500;
-}
-@media screen and (min-width: 1441px) {
-  .playground-score {
-    margin-bottom: 12px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .playground-score {
-    margin-bottom: 3.3333333333vw;
-  }
 }
 @media screen and (min-width: 1441px) {
   .playground-score {
@@ -1117,7 +1106,6 @@ body {
 }
 
 .ad-bottom {
-  background-color: red;
   height: 50px;
   width: 320px;
   margin: 0 auto;
