@@ -11,7 +11,7 @@
 		<meta property="og:url" content="https://iknowfilm.ru" />
 		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
 		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
-		<meta name="keywords" content="Угадай фильм, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время" />
+		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
