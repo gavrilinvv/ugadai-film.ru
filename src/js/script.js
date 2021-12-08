@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	var answersBlock = document.querySelector('.playground-answers');
 
-	var cl = new cloudinary.Cloudinary({cloud_name: "ddu8qv5kp", secure: true});
+	var cl = new cloudinary.Cloudinary({
+		cloud_name: "ddu8qv5kp",
+		secure: true,
+	});
 
 	var selectedGenres = [];
 	var passedFilms = [];
@@ -116,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (value == 'facts') {
 					options.facts = input.checked;
 				}
-				console.log(options);
 			})
 		});
 	})
@@ -197,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			setTimeout(() => {
 				// если играем с интересными фактами
 				if (film.facts && options.facts) {
-					factText.innerHTML = film.facts[0];
+					factText.innerHTML = film.facts[randomIntFromInterval(0, film.facts.length-1)];
 					factBlock.style.display = 'block';
 					questBlock.style.display = 'none';
 				} else {

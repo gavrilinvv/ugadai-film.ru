@@ -603,6 +603,30 @@ body {
     font-size: 4.4444444444vw;
   }
 }
+.playground-fact__title {
+  font-size: 2.2222222222vw;
+  margin-bottom: 0.6944444444vw;
+}
+@media screen and (min-width: 1441px) {
+  .playground-fact__title {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-fact__title {
+    font-size: 6.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-fact__title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-fact__title {
+    margin-bottom: 2.7777777778vw;
+  }
+}
 .playground-img {
   display: block;
   margin: 0 auto;

@@ -8,7 +8,20 @@ const gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	responsive = require('gulp-responsive'),
 	cloudinaryUpload = require('gulp-cloudinary-upload'),
+	cloudinary = require('cloudinary'),
 	watch = require('gulp-watch');
+
+// cloudinary.config({
+// 	cloud_name: "ddu8qv5kp",
+// 	api_key: '221715221119194',
+// 	api_secret: 'v_gqRwHZClp_6GOPfKiU-pgdj5g',
+// 	secure: true,
+// })
+
+// cloudinary.v2.search.expression('folder:samples')
+// 	.max_results(30)
+// 	.execute()
+// 	.then(result=>console.log(result.total_count));
 
 gulp.task('js', () => {
 	return gulp.src('./src/js/script.js')
@@ -24,6 +37,7 @@ gulp.task('js-vendors', () => {
 		'./src/js/polyfill.min.js',
 		'./src/js/jquery-3.4.1.min.js',
 		'./src/js/cloudinary-core-shrinkwrap.min.js',
+		// './src/js/cloudinary-core.min.js',
 		'./src/js/axios.min.js'
 	])
 	.pipe(concat('vendors.js'))

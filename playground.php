@@ -15,6 +15,7 @@
 			<div class="playground-answers"></div>
 	</div>
 	<div class="playground-fact">
+		<div class="playground-fact__title">Факт</div>
 		<div class="playground-fact__text">Интересный факт</div>
 		<div class="button js-next-question _mt20">Следующий вопрос</div>
 	</div>
