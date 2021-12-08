@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
 		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
