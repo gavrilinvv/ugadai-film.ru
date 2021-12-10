@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	responsive = require('gulp-responsive'),
 	cloudinaryUpload = require('gulp-cloudinary-upload'),
-	cloudinary = require('cloudinary'),
+	// cloudinary = require('cloudinary'),
 	watch = require('gulp-watch');
 
 // cloudinary.config({
@@ -88,7 +88,7 @@ gulp.task('films', () => {
 })
 
 gulp.task('json', () => {
-	return gulp.src('./src/json/films.json')
+	return gulp.src('./src/json/*.json')
 		.pipe(jsonminify())
 		.pipe(gulp.dest('./dest/json'));
 })

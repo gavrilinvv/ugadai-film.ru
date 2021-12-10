@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var passedFilms = [];
 	var correctAnswer = null;
 	var films = [];
+	var facts = [];
 	var options = {
 		needTimer: false,
 		onelife: false,
@@ -47,6 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			return res;
 		});
 	}
+
+	// загружаем факты о фильмах один раз
+	$.getJSON("/dest/json/facts.json?" + new Date().getMilliseconds(), res => {
+		facts = res;
+	});
 
 	getFilms().then(res => {
 		films = res;
@@ -193,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
 			btn.classList.add('button__answer-success');
 
-			let film = getFilmById(id);
+			let film = getFilmByIdIntoFacts(id);
 			if (options.needTimer) resetTimer();
 
 			setTimeout(() => {
@@ -274,9 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
-	// получение фильма по id
-	function getFilmById(id) {
-		return films.find(film => {
+	// получение фильма по id в списке фактов
+	function getFilmByIdIntoFacts(id) {
+		return facts.find(film => {
 			if (+id === film.id) {
 				return film
 			}
