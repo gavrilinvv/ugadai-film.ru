@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
+				stopFireworks();
 				resetTimer();
 				showBlock(optionsCategoryBlock);
 			})
@@ -175,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function showBlock(targetBlock) {
-		stopFireworks();
 		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock];
 		blocks.forEach(block => {
 			block.style.display = 'none';
