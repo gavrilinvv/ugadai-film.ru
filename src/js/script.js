@@ -196,6 +196,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			setTimeout(() => {
 				scoreBlock.classList.remove('active');
 			},300)
+
+			startFireworks();
+
 			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
 			btn.classList.add('button__answer-success');
 
@@ -229,6 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function nextQuestion() {
+		if (window.fireworks) {window.fireworks.stop(); }
 		answersBlock.innerHTML = '';
 		factText.innerHTML = '';
 		questBlock.style.display = 'block';
@@ -351,6 +355,42 @@ document.addEventListener('DOMContentLoaded', () => {
 				answers: answers
 			}
 		});
+	}
+
+
+	function startFireworks() {
+		document.querySelector('.fireworks-container').innerHTML = '';
+		window.fireworks = new Fireworks(document.querySelector('.fireworks-container'), {
+			hue: {
+				min: 0,
+				max: 345
+			},
+			delay: {
+				min: 30,
+				max: 45
+			},
+			rocketsPoint: 50,
+			speed: 1,
+			acceleration: 1.2,
+			friction: 0.96,
+			gravity: 1,
+			particles: 300,
+			trace: 2,
+			explosion: 6,
+			autoresize: true,
+			brightness: {
+				min: 50,
+				max: 80,
+				decay: {
+					min: 0.015,
+					max: 0.03
+				}
+			},
+			boundaries: {
+				visible: false
+			},
+		})
+		window.fireworks.start();
 	}
 
 

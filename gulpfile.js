@@ -37,6 +37,7 @@ gulp.task('js-vendors', () => {
 		'./src/js/polyfill.min.js',
 		'./src/js/jquery-3.4.1.min.js',
 		'./src/js/cloudinary-core-shrinkwrap.min.js',
+		'./src/js/fireworks.js',
 		// './src/js/cloudinary-core.min.js',
 		'./src/js/axios.min.js'
 	])

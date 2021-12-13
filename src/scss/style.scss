@@ -649,6 +649,20 @@ body {
 	}
 }
 
+.fireworks-container {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	transform: translate(50%, 0);
+	overflow: visible;
+
+	@include mobile {
+		width: 100%;
+		transform: none;
+	}
+}
+
 .ad-bottom {
 	// background-color: red;
 	height: 50px;
