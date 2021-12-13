@@ -175,6 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function showBlock(targetBlock) {
+		stopFireworks();
 		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock];
 		blocks.forEach(block => {
 			block.style.display = 'none';
@@ -232,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	function nextQuestion() {
-		if (window.fireworks) {window.fireworks.stop(); }
+		stopFireworks();
 		answersBlock.innerHTML = '';
 		factText.innerHTML = '';
 		questBlock.style.display = 'block';
@@ -391,6 +392,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			},
 		})
 		window.fireworks.start();
+	}
+
+	function stopFireworks() {
+		if (window.fireworks) {window.fireworks.stop(); }
 	}
 
 
