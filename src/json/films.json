@@ -6,7 +6,7 @@
 	{"id": 5, "name": "Терминатор 2", "genres": ["movie-foreign"], "year": "1991"},
 	{"id": 6, "name": "Брат 2", "genres": ["movie-russian"], "year": "2000"},
 	{"id": 7, "name": "Книга джунглей", "genres": ["cartoon-foreign"], "year": "1967"},
-	{"id": 8, "name": "Жмурки", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 8, "name": "Жмурки", "genres": ["movie-russian"], "year": "2005"},
 	{"id": 9, "name": "В поисках Немо", "genres": ["cartoon-foreign"], "year": "2003"},
 	{"id": 10, "name": "ВАЛЛ-И", "genres": ["cartoon-foreign"], "year": "2008"},
 	{"id": 11, "name": "История игрушек 2", "genres": ["cartoon-foreign"], "year": "1999"},
@@ -133,5 +133,7 @@
 	{"id": 132, "name": "50 первых поцелуев", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 133, "name": "Управление гневом", "genres": ["movie-foreign"], "year": "2003"},
 	{"id": 134, "name": "Стажёр", "genres": ["movie-foreign"], "year": "2015"},
-	{"id": 135, "name": "Дедпул", "genres": ["movie-foreign"], "year": "2016"}
+	{"id": 135, "name": "Дедпул", "genres": ["movie-foreign"], "year": "2016"},
+	{"id": 136, "name": "Загадочная история Бенджамина Баттона", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 137, "name": "Знакомьтесь, Джо Блэк", "genres": ["movie-foreign"], "year": "1998"}
 ]

@@ -198,8 +198,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				scoreBlock.classList.remove('active');
 			},300)
 
-			startFireworks();
-
 			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
 			btn.classList.add('button__answer-success');
 
@@ -303,6 +301,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			answersBlock.innerHTML = '';
 			passedFilms = [];
 			showBlock(winningBlock);
+			startFireworks();
 			return
 		}
 
