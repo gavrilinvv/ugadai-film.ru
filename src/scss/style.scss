@@ -520,6 +520,10 @@ body {
 		@include fluid('font-size', 18px, 14px);
 	}
 
+	&__xsmall {
+		@include fluid('font-size', 16px, 12px);
+	}
+
 	&__answer {
 		&-success {
 			background: seagreen;

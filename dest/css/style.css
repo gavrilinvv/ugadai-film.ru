@@ -864,6 +864,19 @@ body {
     font-size: 3.8888888889vw;
   }
 }
+.button__xsmall {
+  font-size: 1.1111111111vw;
+}
+@media screen and (min-width: 1441px) {
+  .button__xsmall {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button__xsmall {
+    font-size: 3.3333333333vw;
+  }
+}
 .button__answer-success {
   background: seagreen;
   box-shadow: 0 0 5px 3px #5cf9a1;
