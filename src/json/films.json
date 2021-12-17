@@ -135,5 +135,15 @@
 	{"id": 134, "name": "Стажёр", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 135, "name": "Дедпул", "genres": ["movie-foreign"], "year": "2016"},
 	{"id": 136, "name": "Загадочная история Бенджамина Баттона", "genres": ["movie-foreign"], "year": "2008"},
-	{"id": 137, "name": "Знакомьтесь, Джо Блэк", "genres": ["movie-foreign"], "year": "1998"}
+	{"id": 137, "name": "Знакомьтесь, Джо Блэк", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 138, "name": "Нефть", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 139, "name": "Факультет", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 140, "name": "Бойцовский клуб", "genres": ["movie-foreign"], "year": "1999"},
+	{"id": 141, "name": "Области тьмы", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 142, "name": "После прочтения сжечь", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 143, "name": "Телефонная будка", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 144, "name": "Двадцать одно", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 145, "name": "Духless", "genres": ["movie-russian"], "year": "2011"},
+	{"id": 146, "name": "Пять невест", "genres": ["movie-russian"], "year": "2011"},
+	{"id": 147, "name": "О чём говорят мужчины", "genres": ["movie-russian"], "year": "2010"}
 ]
