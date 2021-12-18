@@ -85,6 +85,12 @@ $gap-size-mobile: 12px;
 	src: url('/src/fonts/Lobster-Regular.ttf');
 }
 
+@font-face {
+	font-family: 'Roboto';
+	font-display: swap;
+	src: url('/src/fonts/RobotoCondensed-Regular.ttf');
+}
+
 ._desktop-hidden {
 	display: none!important;
 
@@ -129,7 +135,8 @@ $gap-size-mobile: 12px;
 
 * {
 	// font-family: 'OpenSans';
-	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	// font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-family: 'Roboto';
 }
 body {
 	background: url('/src/img/bg.jpg') no-repeat;
@@ -492,6 +499,35 @@ body {
 	}
 }
 
+.winning {
+
+	&__answers {
+		@include fluid('font-size', 22px, 18px);
+		display: inline-block;
+
+		&-container {
+			display: flex;
+			justify-content: space-between;
+			margin-left: auto;
+			margin-right: auto;
+			@include fluid('margin-top', 20px);
+			@include fluid('margin-bottom', 20px);
+			@include fluid('width', 120px);
+		}
+
+		&-correct {
+			color: chartreuse;
+		}
+		&-incorrect {
+			color: red;
+		}
+
+		& span {
+			@include fluid('font-size', 28px, 24px);
+		}
+	}
+}
+
 .button {
 	display: inline-block;
 	color: $white;
@@ -650,6 +686,23 @@ body {
 
 	& .checkbox {
 		@include fluid('padding-left', 25px);
+	}
+}
+
+.page404 {
+	color: #fff;
+	text-align: center;
+
+	&__title {
+		@include fluid('font-size', 56px, 32px);
+		@include fluid('margin-bottom', 10px);
+	}
+	&__subtitle {
+		@include fluid('font-size', 32px, 28px);
+		@include fluid('margin-bottom', 10px);
+	}
+	&__link {
+		color: #fff;
 	}
 }
 

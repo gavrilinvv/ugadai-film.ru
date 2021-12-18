@@ -145,5 +145,10 @@
 	{"id": 144, "name": "Двадцать одно", "genres": ["movie-foreign"], "year": "2008"},
 	{"id": 145, "name": "Духless", "genres": ["movie-russian"], "year": "2011"},
 	{"id": 146, "name": "Пять невест", "genres": ["movie-russian"], "year": "2011"},
-	{"id": 147, "name": "О чём говорят мужчины", "genres": ["movie-russian"], "year": "2010"}
+	{"id": 147, "name": "О чём говорят мужчины", "genres": ["movie-russian"], "year": "2010"},
+	{"id": 148, "name": "Властелин колец: Возвращение короля", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 149, "name": "История игрушек", "genres": ["cartoon-foreign"], "year": "1995"},
+	{"id": 150, "name": "Адреналин", "genres": ["movie-foreign"], "year": "2006"},
+	{"id": 151, "name": "В погоне за счастьем", "genres": ["movie-foreign"], "year": "2006"},
+	{"id": 152, "name": "Ярость", "genres": ["movie-foreign"], "year": "2014"}
 ]

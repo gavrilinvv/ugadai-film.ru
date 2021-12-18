@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	var playgroundBlock = document.querySelector('.playground');
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
+	var correctAnswersCountBlock = document.querySelector('.winning__answers-correct span');
+	var incorrectAnswersCountBlock = document.querySelector('.winning__answers-incorrect span');
 	var genreCheckboxes = document.querySelectorAll('.options .genre .checkbox__body');
 	var optionsCheckboxes = document.querySelectorAll('.options .option .checkbox__body');
 	var playgroundTimer = document.querySelector('.playground-timer');
@@ -32,7 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	var selectedGenres = [];
 	var passedFilms = [];
-	var correctAnswer = null;
+	var correctAnswer = null; // правильный ответ на вопрос (загаданный фильм)
+	var correctAnswersCount = 0; // количество угаданных фильмов
+	var incorrectAnswersCount = 0; // количество неугаданных фильмов
 	var films = [];
 	var facts = [];
 	var options = {
@@ -198,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				scoreBlock.classList.remove('active');
 			},300)
 
+			correctAnswersCount += 1; // +1 угаданный фильм
 			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
 			btn.classList.add('button__answer-success');
 
@@ -216,6 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			}, 800)
 		} else {
 			btn.classList.add('button__answer-error');
+			incorrectAnswersCount += 1; // +1 неугаданный фильм
 
 			setTimeout(() => {
 				answersBlock.innerHTML = '';
@@ -243,7 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (options.needTimer) setTimer();
 				img.src = question.photo;
 				img.classList.remove('_noopacity');
-				correctAnswer = question.answer;
+				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
 					var btn = document.createElement('div');
@@ -261,7 +267,6 @@ document.addEventListener('DOMContentLoaded', () => {
 					btn.addEventListener('mouseout', () => {
 						btn.style.transform = 'scale(1)';
 					})
-
 					btn.addEventListener('mouseup', () => {
 						checkAnswer(btn.getAttribute('data-value'), btn);
 					})
@@ -298,9 +303,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		let conceivedFilm = {};
 		let answers = []; // массив для ответов
 
+		// если прошел все фильмы
 		if (passedFilms.length === availableFilms.length) {
 			answersBlock.innerHTML = '';
 			passedFilms = [];
+			correctAnswersCountBlock.innerHTML = correctAnswersCount;
+			incorrectAnswersCountBlock.innerHTML = incorrectAnswersCount;
 			showBlock(winningBlock);
 			startFireworks();
 			return
@@ -358,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	}
 
-
+	// запуск победного фейерверка
 	function startFireworks() {
 		document.querySelector('.fireworks-container').innerHTML = '';
 		window.fireworks = new Fireworks(document.querySelector('.fireworks-container'), {
