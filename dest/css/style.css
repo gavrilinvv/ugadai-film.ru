@@ -762,7 +762,10 @@ body {
 
 .winning__answers {
   font-size: 1.5277777778vw;
-  display: inline-block;
+  margin-right: 0.6944444444vw;
+  margin-left: 0.6944444444vw;
+  display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 1441px) {
   .winning__answers {
@@ -774,6 +777,26 @@ body {
     font-size: 5vw;
   }
 }
+@media screen and (min-width: 1441px) {
+  .winning__answers {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .winning__answers {
+    margin-right: 2.7777777778vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .winning__answers {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .winning__answers {
+    margin-left: 2.7777777778vw;
+  }
+}
 .winning__answers-container {
   display: flex;
   justify-content: space-between;
@@ -781,7 +804,9 @@ body {
   margin-right: auto;
   margin-top: 1.3888888889vw;
   margin-bottom: 1.3888888889vw;
-  width: 8.3333333333vw;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 @media screen and (min-width: 1441px) {
   .winning__answers-container {
@@ -801,16 +826,6 @@ body {
 @media screen and (max-width: 1000px) {
   .winning__answers-container {
     margin-bottom: 5.5555555556vw;
-  }
-}
-@media screen and (min-width: 1441px) {
-  .winning__answers-container {
-    width: 120px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .winning__answers-container {
-    width: 33.3333333333vw;
   }
 }
 .winning__answers-correct {

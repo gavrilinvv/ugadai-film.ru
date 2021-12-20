@@ -503,7 +503,10 @@ body {
 
 	&__answers {
 		@include fluid('font-size', 22px, 18px);
-		display: inline-block;
+		@include fluid('margin-right', 10px);
+		@include fluid('margin-left', 10px);
+		display: flex;
+		align-items: center;
 
 		&-container {
 			display: flex;
@@ -512,7 +515,7 @@ body {
 			margin-right: auto;
 			@include fluid('margin-top', 20px);
 			@include fluid('margin-bottom', 20px);
-			@include fluid('width', 120px);
+			width: max-content;
 		}
 
 		&-correct {
