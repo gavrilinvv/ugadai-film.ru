@@ -1203,6 +1203,42 @@ body {
     height: 6.6666666667vw;
   }
 }
+.checkbox sup {
+  font-size: 0.8333333333vw;
+  margin-left: 0.4166666667vw;
+  margin-bottom: 0.4166666667vw;
+  color: #7c7c7c;
+}
+@media screen and (min-width: 1441px) {
+  .checkbox sup {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .checkbox sup {
+    font-size: 2.7777777778vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .checkbox sup {
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .checkbox sup {
+    margin-left: 1.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .checkbox sup {
+    margin-bottom: 6px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .checkbox sup {
+    margin-bottom: 1.6666666667vw;
+  }
+}
 .checkbox input {
   display: none;
 }

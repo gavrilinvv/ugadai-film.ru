@@ -680,6 +680,13 @@ body {
 		}
 	}
 
+	& sup {
+		@include fluid('font-size', 12px, 10px);
+		@include fluid('margin-left', 6px);
+		@include fluid('margin-bottom', 6px);
+		color: rgb(124, 124, 124);
+	}
+
 	& input {
 		display: none;
 	}

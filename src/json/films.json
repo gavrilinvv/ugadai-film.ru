@@ -150,5 +150,14 @@
 	{"id": 149, "name": "История игрушек", "genres": ["cartoon-foreign"], "year": "1995"},
 	{"id": 150, "name": "Адреналин", "genres": ["movie-foreign"], "year": "2006"},
 	{"id": 151, "name": "В погоне за счастьем", "genres": ["movie-foreign"], "year": "2006"},
-	{"id": 152, "name": "Ярость", "genres": ["movie-foreign"], "year": "2014"}
+	{"id": 152, "name": "Ярость", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 153, "name": "Таксист", "genres": ["movie-foreign"], "year": "1976"},
+	{"id": 154, "name": "Сияние", "genres": ["movie-foreign"], "year": "1980"},
+	{"id": 155, "name": "Знакомство с родителями", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 156, "name": "Шрек", "genres": ["cartoon-foreign"], "year": "2001"},
+	{"id": 157, "name": "Законопослушный гражданин", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 158, "name": "Заводной апельсин", "genres": ["movie-foreign"], "year": "1971"},
+	{"id": 159, "name": "…А в душе я танцую", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 160, "name": "Плезантвиль", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 161, "name": "Король Лев", "genres": ["cartoon-foreign"], "year": "1994"}
 ]

@@ -4,27 +4,27 @@
 	<div class="genres">
 		<div class="checkbox genre">
 			<div class="checkbox__body">
-				Фильмы
+				Фильмы<sup></sup>
 				<input type="checkbox" value="movie" data-is-parent="true">
 			</div>
 
 			<div class="checkbox genre">
 				<div class="checkbox__body" data-is-child="true">
-					Зарубежные
+					Зарубежные<sup id="movie-foreign-count"></sup>
 					<input type="checkbox" value="movie-foreign">
 				</div>
 			</div>
 
 			<div class="checkbox genre">
 				<div class="checkbox__body" data-is-child="true">
-					Российские
+					Российские<sup id="movie-russian-count"></sup>
 					<input type="checkbox" value="movie-russian">
 				</div>
 			</div>
 
 			<div class="checkbox genre">
 				<div class="checkbox__body" data-is-child="true">
-					Советские
+					Советские<sup id="movie-soviet-count"></sup>
 					<input type="checkbox" value="movie-soviet">
 				</div>
 			</div>
@@ -32,24 +32,24 @@
 		</div>
 		<div class="checkbox genre">
 			<div class="checkbox__body">
-				Сериалы
+				Сериалы<sup id="series-count"></sup>
 				<input type="checkbox" value="series" data-is-parent="true">
 			</div>
 		</div>
 		<div class="checkbox genre">
 			<div class="checkbox__body">
-				Мультфильмы
+				Мультфильмы<sup></sup>
 				<input type="checkbox" value="cartoon" data-is-parent="true">
 			</div>
 			<div class="checkbox genre">
 				<div class="checkbox__body">
-					Зарубежные
+					Зарубежные<sup id="cartoon-foreign-count"></sup>
 					<input type="checkbox" value="cartoon-foreign">
 				</div>
 			</div>
 			<div class="checkbox genre">
 				<div class="checkbox__body">
-					Советские
+					Советские<sup id="cartoon-soviet-count"></sup>
 					<input type="checkbox" value="cartoon-soviet">
 				</div>
 			</div>

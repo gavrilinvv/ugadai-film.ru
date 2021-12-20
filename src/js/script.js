@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	var answersBlock = document.querySelector('.playground-answers');
 
+	var movieForeignCount = document.querySelector('#movie-foreign-count');
+	var movieRussianCount = document.querySelector('#movie-russian-count');
+	var movieSovietCount = document.querySelector('#movie-soviet-count');
+	var seriesCount = document.querySelector('#series-count');
+	var cartoonForeignCount = document.querySelector('#cartoon-foreign-count');
+	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
+
 	var cl = new cloudinary.Cloudinary({
 		cloud_name: "ddu8qv5kp",
 		secure: true,
@@ -62,6 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		films = res;
 
 		countFilms.innerHTML = films.length;
+
+		setCountOfGenres();
 
 		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
@@ -406,7 +415,21 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (window.fireworks) {window.fireworks.stop(); }
 	}
 
+	function getCountFilmsByGenre(genre) {
+		return films.filter(film => {
+			return film.genres[0] === genre;
+		}).length
+	}
 
+	function setCountOfGenres() {
+		movieForeignCount.innerHTML = getCountFilmsByGenre('movie-foreign');
+		movieRussianCount.innerHTML = getCountFilmsByGenre('movie-russian');
+		movieSovietCount.innerHTML = getCountFilmsByGenre('movie-soviet');
+		seriesCount.innerHTML = getCountFilmsByGenre('series');
+		cartoonForeignCount.innerHTML = getCountFilmsByGenre('cartoon-foreign');
+		cartoonSovietCount.innerHTML = getCountFilmsByGenre('cartoon-soviet');
+		console.log(getCountFilmsByGenre('cartoon-soviet'));
+	}
 
 
 
