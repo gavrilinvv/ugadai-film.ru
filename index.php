@@ -5,8 +5,9 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
+		<link rel="canonical" href="https://iknowfilm.ru"/>
 		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
-		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра, тест"/>
+		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://iknowfilm.ru" />
 		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />

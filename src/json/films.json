@@ -159,5 +159,12 @@
 	{"id": 158, "name": "Заводной апельсин", "genres": ["movie-foreign"], "year": "1971"},
 	{"id": 159, "name": "…А в душе я танцую", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 160, "name": "Плезантвиль", "genres": ["movie-foreign"], "year": "1998"},
-	{"id": 161, "name": "Король Лев", "genres": ["cartoon-foreign"], "year": "1994"}
+	{"id": 161, "name": "Король Лев", "genres": ["cartoon-foreign"], "year": "1994"},
+	{"id": 162, "name": "Всегда говори «ДА»", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 163, "name": "Особо опасен", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 164, "name": "Назад в будущее", "genres": ["movie-foreign"], "year": "1985"},
+	{"id": 165, "name": "Пятый элемент", "genres": ["movie-foreign"], "year": "1997"},
+	{"id": 166, "name": "Остров проклятых", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 167, "name": "Форсаж", "genres": ["movie-foreign"], "year": "2001"},
+	{"id": 168, "name": "Маска", "genres": ["movie-foreign"], "year": "1994"}
 ]
