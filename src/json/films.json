@@ -170,5 +170,7 @@
 	{"id": 169, "name": "Социальная сеть", "genres": ["movie-foreign"], "year": "2010"},
 	{"id": 170, "name": "Невидимая сторона", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 171, "name": "Шерлок", "genres": ["series"], "year": "2010 - 2017"},
-	{"id": 172, "name": "Вечное сияние чистого разума", "genres": ["movie-foreign"], "year": "2004"}
+	{"id": 172, "name": "Вечное сияние чистого разума", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 173, "name": "Американский психопат", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 174, "name": "Волк с Уолл-стрит", "genres": ["movie-foreign"], "year": "2013"}
 ]
