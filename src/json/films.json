@@ -166,5 +166,9 @@
 	{"id": 165, "name": "Пятый элемент", "genres": ["movie-foreign"], "year": "1997"},
 	{"id": 166, "name": "Остров проклятых", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 167, "name": "Форсаж", "genres": ["movie-foreign"], "year": "2001"},
-	{"id": 168, "name": "Маска", "genres": ["movie-foreign"], "year": "1994"}
+	{"id": 168, "name": "Маска", "genres": ["movie-foreign"], "year": "1994"},
+	{"id": 169, "name": "Социальная сеть", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 170, "name": "Невидимая сторона", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 171, "name": "Шерлок", "genres": ["series"], "year": "2010 - 2017"},
+	{"id": 172, "name": "Вечное сияние чистого разума", "genres": ["movie-foreign"], "year": "2004"}
 ]

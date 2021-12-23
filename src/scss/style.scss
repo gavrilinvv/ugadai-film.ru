@@ -124,6 +124,10 @@ $gap-size-mobile: 12px;
 	@include fluid('margin-top', 20px, 14px);
 }
 
+._mt30 {
+	@include fluid('margin-top', 30px, 18px);
+}
+
 ._mb20 {
 	@include fluid('margin-bottom', 20px, 14px);
 }
@@ -416,7 +420,7 @@ body {
 
 		&__title {
 			@include fluid('font-size', 32px, 24px);
-			@include fluid('margin-bottom', 10px, 10px);
+			@include fluid('margin-bottom', 20px, 16px);
 		}
 	}
 
@@ -527,6 +531,7 @@ body {
 
 		& span {
 			@include fluid('font-size', 28px, 24px);
+			@include fluid('margin-left', 6px, 4px);
 		}
 	}
 }

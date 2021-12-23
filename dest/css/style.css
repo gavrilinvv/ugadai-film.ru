@@ -58,6 +58,20 @@
   }
 }
 
+._mt30 {
+  margin-top: 2.0833333333vw;
+}
+@media screen and (min-width: 1441px) {
+  ._mt30 {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  ._mt30 {
+    margin-top: 5vw;
+  }
+}
+
 ._mb20 {
   margin-bottom: 1.3888888889vw;
 }
@@ -610,7 +624,7 @@ body {
 }
 .playground-fact__title {
   font-size: 2.2222222222vw;
-  margin-bottom: 0.6944444444vw;
+  margin-bottom: 1.3888888889vw;
 }
 @media screen and (min-width: 1441px) {
   .playground-fact__title {
@@ -624,12 +638,12 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .playground-fact__title {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
   .playground-fact__title {
-    margin-bottom: 2.7777777778vw;
+    margin-bottom: 4.4444444444vw;
   }
 }
 .playground-img {
@@ -836,6 +850,7 @@ body {
 }
 .winning__answers span {
   font-size: 1.9444444444vw;
+  margin-left: 0.4166666667vw;
 }
 @media screen and (min-width: 1441px) {
   .winning__answers span {
@@ -845,6 +860,16 @@ body {
 @media screen and (max-width: 1000px) {
   .winning__answers span {
     font-size: 6.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .winning__answers span {
+    margin-left: 6px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .winning__answers span {
+    margin-left: 1.1111111111vw;
   }
 }
 
