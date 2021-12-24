@@ -1,4 +1,4 @@
-<html>
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,8 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://iknowfilm.ru" />
 		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
-		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
-		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время, сериалы, советские, зарубежные, мультфильмы" />
+		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты" />
+		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время, сериалы, российские, советские, зарубежные, мультфильмы" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

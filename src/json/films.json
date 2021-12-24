@@ -172,5 +172,14 @@
 	{"id": 171, "name": "Шерлок", "genres": ["series"], "year": "2010 - 2017"},
 	{"id": 172, "name": "Вечное сияние чистого разума", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 173, "name": "Американский психопат", "genres": ["movie-foreign"], "year": "2000"},
-	{"id": 174, "name": "Волк с Уолл-стрит", "genres": ["movie-foreign"], "year": "2013"}
+	{"id": 174, "name": "Волк с Уолл-стрит", "genres": ["movie-foreign"], "year": "2013"},
+	{"id": 175, "name": "В поисках Дори", "genres": ["cartoon-foreign"], "year": "2016"},
+	{"id": 176, "name": "Неадекватные люди", "genres": ["movie-russian"], "year": "2010"},
+	{"id": 177, "name": "Географ глобус пропил", "genres": ["movie-russian"], "year": "2013"},
+	{"id": 178, "name": "Идиократия", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 179, "name": "Гадкий я", "genres": ["cartoon-foreign"], "year": "2010"},
+	{"id": 180, "name": "Рапунцель: Запутанная история", "genres": ["cartoon-foreign"], "year": "2010"},
+	{"id": 181, "name": "Джентльмены удачи", "genres": ["movie-soviet"], "year": "1971"},
+	{"id": 182, "name": "Душа", "genres": ["cartoon-foreign"], "year": "2020"},
+	{"id": 183, "name": "Иван Васильевич меняет профессию", "genres": ["movie-soviet"], "year": "1973"}
 ]
