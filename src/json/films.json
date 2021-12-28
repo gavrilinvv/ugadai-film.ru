@@ -181,5 +181,16 @@
 	{"id": 180, "name": "Рапунцель: Запутанная история", "genres": ["cartoon-foreign"], "year": "2010"},
 	{"id": 181, "name": "Джентльмены удачи", "genres": ["movie-soviet"], "year": "1971"},
 	{"id": 182, "name": "Душа", "genres": ["cartoon-foreign"], "year": "2020"},
-	{"id": 183, "name": "Иван Васильевич меняет профессию", "genres": ["movie-soviet"], "year": "1973"}
+	{"id": 183, "name": "Иван Васильевич меняет профессию", "genres": ["movie-soviet"], "year": "1973"},
+	{"id": 184, "name": "Я, робот", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 185, "name": "Трансформеры", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 186, "name": "Однажды в… Голливуде", "genres": ["movie-foreign"], "year": "2019"},
+	{"id": 187, "name": "Разрушение", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 188, "name": "Инопланетянин", "genres": ["movie-foreign"], "year": "1982"},
+	{"id": 189, "name": "Унесённые призраками", "genres": ["cartoon-foreign"], "year": "2001"},
+	{"id": 190, "name": "Угнать за 60 секунд", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 191, "name": "Капитан Фантастик", "genres": ["movie-foreign"], "year": "2016"},
+	{"id": 192, "name": "Пароль «Рыба-меч»", "genres": ["movie-foreign"], "year": "2001"},
+	{"id": 193, "name": "Милые кости", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 194, "name": "Один дома 2: Затерянный в Нью-Йорке", "genres": ["movie-foreign"], "year": "1992"}
 ]
