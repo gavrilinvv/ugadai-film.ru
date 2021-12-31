@@ -4,8 +4,8 @@
 	use Cloudinary\Api\Search\SearchApi;
 	use Cloudinary\Api\Admin\AdminApi;
 
-	// $filmId = $_GET['id'];
-	$filmId = 1;
+	$filmId = $_GET['id'];
+	// $filmId = 1;
 
 	Configuration::instance([
 		'cloud' => [
