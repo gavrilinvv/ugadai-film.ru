@@ -6,6 +6,7 @@
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
 		<link rel="canonical" href="https://iknowfilm.ru"/>
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
 		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
 		<meta property="og:type" content="website" />

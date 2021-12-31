@@ -192,5 +192,6 @@
 	{"id": 191, "name": "Капитан Фантастик", "genres": ["movie-foreign"], "year": "2016"},
 	{"id": 192, "name": "Пароль «Рыба-меч»", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 193, "name": "Милые кости", "genres": ["movie-foreign"], "year": "2009"},
-	{"id": 194, "name": "Один дома 2: Затерянный в Нью-Йорке", "genres": ["movie-foreign"], "year": "1992"}
+	{"id": 194, "name": "Один дома 2: Затерянный в Нью-Йорке", "genres": ["movie-foreign"], "year": "1992"},
+	{"id": 195, "name": "Аритмия", "genres": ["movie-russian"], "year": "2017"}
 ]

@@ -364,15 +364,30 @@ document.addEventListener('DOMContentLoaded', () => {
 		img.src = '';
 		imgContainer.classList.add('playground-img__container-load');
 
-		return fetch(
-			'https://res.cloudinary.com/ddu8qv5kp/image/upload/v1634839395/' + conceivedFilm.id + '.jpg').then(res => res.blob()).then((blob) => {
-			return {
-				// photo: 'https://res.cloudinary.com/ddu8qv5kp/image/upload/v1634839395/screens/' + conceivedFilm.id + '.jpg',
-				photo: URL.createObjectURL(blob),
-				answer: conceivedFilm.id,
-				answers: answers
-			}
-		});
+		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
+			.then(res => {
+				let url = res.data;
+				return fetch(
+					url).then(res => res.blob()).then((blob) => {
+					return {
+						photo: URL.createObjectURL(blob),
+						answer: conceivedFilm.id,
+						answers: answers
+					}
+				});
+			})
+			.catch(err => {
+				console.log(err);
+			})
+
+		// return fetch(
+		// 	'https://res.cloudinary.com/ddu8qv5kp/image/upload/v1634839395/' + conceivedFilm.id + '.jpg').then(res => res.blob()).then((blob) => {
+		// 	return {
+		// 		photo: URL.createObjectURL(blob),
+		// 		answer: conceivedFilm.id,
+		// 		answers: answers
+		// 	}
+		// });
 	}
 
 	// запуск победного фейерверка
@@ -428,7 +443,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		seriesCount.innerHTML = getCountFilmsByGenre('series');
 		cartoonForeignCount.innerHTML = getCountFilmsByGenre('cartoon-foreign');
 		cartoonSovietCount.innerHTML = getCountFilmsByGenre('cartoon-soviet');
-		console.log(getCountFilmsByGenre('cartoon-soviet'));
 	}
 
 
