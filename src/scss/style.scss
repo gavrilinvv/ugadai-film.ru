@@ -282,6 +282,29 @@ body {
 
 .loader {
 	display: none;
+	background: url('/src/img/loader.png') no-repeat;
+	background-size: contain;
+	color: #fff;
+	@include fluid('font-size', 32px, 24px);
+	@include fluid('height', 60px, 30px);
+	@include fluid('width', 60px, 30px);
+	position: absolute;
+	top: 46%;
+	left: 46%;
+
+	animation: spin .7s linear infinite;
+	z-index: 99999999999;
+
+	// @include mobile {
+	// 	left: 20%;
+	// }
+}
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
 }
 
 .header {
@@ -464,29 +487,6 @@ body {
 
 				& .loader {
 					display: block;
-					// background: url('/src/img/loader.png') no-repeat;
-					// background-size: contain;
-					color: #fff;
-					@include fluid('font-size', 32px, 24px);
-					// @include fluid('height', 60px, 30px);
-					// @include fluid('width', 60px, 30px);
-					position: absolute;
-					top: 46%;
-					left: 35%;
-
-					// animation: spin .7s linear infinite;
-					z-index: 99999999999;
-
-					@include mobile {
-						left: 20%;
-					}
-				}
-
-				@keyframes spin {
-					100% {
-						-webkit-transform: rotate(360deg);
-						transform: rotate(360deg);
-					}
 				}
 			}
 		}

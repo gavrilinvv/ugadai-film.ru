@@ -394,8 +394,61 @@ body {
 
 .loader {
   display: none;
+  background: url("/src/img/loader.png") no-repeat;
+  background-size: contain;
+  color: #fff;
+  font-size: 2.2222222222vw;
+  height: 4.1666666667vw;
+  width: 4.1666666667vw;
+  position: absolute;
+  top: 46%;
+  left: 46%;
+  -webkit-animation: spin 0.7s linear infinite;
+  animation: spin 0.7s linear infinite;
+  z-index: 99999999999;
+}
+@media screen and (min-width: 1441px) {
+  .loader {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .loader {
+    font-size: 6.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .loader {
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .loader {
+    height: 8.3333333333vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .loader {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .loader {
+    width: 8.3333333333vw;
+  }
 }
 
+@-webkit-keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .header {
   position: absolute;
   width: inherit;
@@ -711,37 +764,6 @@ body {
 }
 .playground-img__container-load .loader {
   display: block;
-  color: #fff;
-  font-size: 2.2222222222vw;
-  position: absolute;
-  top: 46%;
-  left: 35%;
-  z-index: 99999999999;
-}
-@media screen and (min-width: 1441px) {
-  .playground-img__container-load .loader {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .playground-img__container-load .loader {
-    font-size: 6.6666666667vw;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .playground-img__container-load .loader {
-    left: 20%;
-  }
-}
-@-webkit-keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .options-category, .options-params, .losing, .winning {

@@ -196,5 +196,9 @@
 	{"id": 195, "name": "Аритмия", "genres": ["movie-russian"], "year": "2017"},
 	{"id": 196, "name": "Без границ", "genres": ["movie-russian"], "year": "2015"},
 	{"id": 197, "name": "Подарок на рождество", "genres": ["movie-foreign"], "year": "1996"},
-	{"id": 198, "name": "Лёд", "genres": ["movie-russian"], "year": "2018"}
+	{"id": 198, "name": "Лёд", "genres": ["movie-russian"], "year": "2018"},
+	{"id": 199, "name": "Гуляй, Вася!", "genres": ["movie-russian"], "year": "2016"},
+	{"id": 200, "name": "Скотт Пилигрим против всех", "genres": ["movie-foreign"], "year": "2010"}
+
+
 ]

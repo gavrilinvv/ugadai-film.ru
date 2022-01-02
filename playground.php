@@ -9,7 +9,7 @@
 
 	<div class="playground-quest">
 		<div class="playground-img__container">
-			<div class="loader">Подбираем кадр...</div>
+			<div class="loader"></div>
 			<img src="" class="playground-img">
 		</div>
 			<div class="playground-answers"></div>
