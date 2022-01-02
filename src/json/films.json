@@ -193,5 +193,8 @@
 	{"id": 192, "name": "Пароль «Рыба-меч»", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 193, "name": "Милые кости", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 194, "name": "Один дома 2: Затерянный в Нью-Йорке", "genres": ["movie-foreign"], "year": "1992"},
-	{"id": 195, "name": "Аритмия", "genres": ["movie-russian"], "year": "2017"}
+	{"id": 195, "name": "Аритмия", "genres": ["movie-russian"], "year": "2017"},
+	{"id": 196, "name": "Без границ", "genres": ["movie-russian"], "year": "2015"},
+	{"id": 197, "name": "Подарок на рождество", "genres": ["movie-foreign"], "year": "1996"},
+	{"id": 198, "name": "Лёд", "genres": ["movie-russian"], "year": "2018"}
 ]
