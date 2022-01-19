@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
-		<link rel="canonical" href="https://iknowfilm.ru"/>
+		<link rel="canonical" href="https://ugadai-film.ru"/>
 		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
 		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://iknowfilm.ru" />
+		<meta property="og:url" content="https://ugadai-film.ru" />
 		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
 		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты" />
 		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время, сериалы, российские, советские, зарубежные, мультфильмы" />
