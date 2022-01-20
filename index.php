@@ -48,8 +48,8 @@
 		<div class="fireworks-container"></div>
 		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 90%; overflow: hidden; padding: 0 20px;">
 			<div class="ad-left">
-				<!-- Yandex.RTB R-A-1397159-1 -->
-				<div id="yandex_rtb_R-A-1397159-1"></div>
+				<!-- Yandex.RTB R-A-1480043-1 -->
+				<div id="yandex_rtb_R-A-1480043-1"></div>
 			</div>
 			<div class="container">
 				<?include('start.php');?>
@@ -60,13 +60,13 @@
 				<?include('winning.php');?>
 			</div>
 			<div class="ad-right">
-				<!-- Yandex.RTB R-A-1397159-2 -->
-				<div id="yandex_rtb_R-A-1397159-2"></div>
+				<!-- Yandex.RTB R-A-1480043-2 -->
+				<div id="yandex_rtb_R-A-1480043-2"></div>
 			</div>
 		</div>
 		<div class="ad-bottom">
-			<!-- Yandex.RTB R-A-1397159-3 -->
-			<div id="yandex_rtb_R-A-1397159-3"></div>
+			<!-- Yandex.RTB R-A-1480043-3 -->
+			<div id="yandex_rtb_R-A-1480043-3"></div>
 		</div>
 		<script src="/dest/js/vendors.js?<?=date('Hdmy')?>"></script>
 		<script src="/dest/js/script.js?<?=date('Hdmy')?>"></script>
@@ -77,22 +77,22 @@
 				// left
 				window.yaContextCb.push(()=>{
 					Ya.Context.AdvManager.render({
-						renderTo: 'yandex_rtb_R-A-1397159-1',
-						blockId: 'R-A-1397159-1'
+						renderTo: 'yandex_rtb_R-A-1480043-1',
+						blockId: 'R-A-1480043-1'
 					})
 				})
 				// right
 				window.yaContextCb.push(()=>{
 					Ya.Context.AdvManager.render({
-						renderTo: 'yandex_rtb_R-A-1397159-2',
-						blockId: 'R-A-1397159-2'
+						renderTo: 'yandex_rtb_R-A-1480043-2',
+						blockId: 'R-A-1480043-2'
 					})
 				})
 				// bottom
 				window.yaContextCb.push(()=>{
 					Ya.Context.AdvManager.render({
-						renderTo: 'yandex_rtb_R-A-1397159-3',
-						blockId: 'R-A-1397159-3'
+						renderTo: 'yandex_rtb_R-A-1480043-3',
+						blockId: 'R-A-1480043-3'
 					})
 				})
 
