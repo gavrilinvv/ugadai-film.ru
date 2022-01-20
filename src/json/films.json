@@ -198,7 +198,9 @@
 	{"id": 197, "name": "Подарок на рождество", "genres": ["movie-foreign"], "year": "1996"},
 	{"id": 198, "name": "Лёд", "genres": ["movie-russian"], "year": "2018"},
 	{"id": 199, "name": "Гуляй, Вася!", "genres": ["movie-russian"], "year": "2016"},
-	{"id": 200, "name": "Скотт Пилигрим против всех", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 200, "name": "Скотт Пилигрим против всех", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 201, "name": "Холоп", "genres": ["movie-russian"], "year": "2019"},
+	{"id": 202, "name": "300 спартанцев", "genres": ["movie-foreign"], "year": "2007"}
 
 
 ]
