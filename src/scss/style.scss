@@ -453,10 +453,17 @@ body {
 		// @include fluid('max-height', 600px);
 		// @include fluid('border-radius', 12px, 8px);
 		margin: 0 auto;
+		transition: .2s;
+		@include fluid('border-radius', 6px, 6px);
 
 		@include mobile {
 			width: 100%;
 			height: auto;
+		}
+
+		&__loading {
+			transform: scale(0.001);
+			transition: .2s;
 		}
 
 		&__container {

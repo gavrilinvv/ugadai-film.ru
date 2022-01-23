@@ -10,7 +10,7 @@
 	<div class="playground-quest">
 		<div class="playground-img__container">
 			<div class="loader"></div>
-			<img src="" class="playground-img">
+			<img src="" class="playground-img playground-img__loading">
 		</div>
 			<div class="playground-answers"></div>
 	</div>

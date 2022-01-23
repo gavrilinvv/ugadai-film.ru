@@ -257,7 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				imgContainer.classList.remove('playground-img__container-load');
 				if (options.needTimer) setTimer();
 				img.src = question.photo;
-				img.classList.remove('_noopacity');
+				// img.classList.remove('_noopacity');
+				img.classList.remove('playground-img__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
@@ -360,9 +361,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 		answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
 
-		img.classList.add('_noopacity');
-		img.src = '';
-		imgContainer.classList.add('playground-img__container-load');
+		// img.classList.add('_noopacity');
+		img.classList.add('playground-img__loading');
+		setTimeout(() => {
+			img.src = '';
+			imgContainer.classList.add('playground-img__container-load');
+		}, 200);
 
 		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
 			.then(res => {
