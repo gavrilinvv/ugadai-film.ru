@@ -258,7 +258,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (options.needTimer) setTimer();
 				img.src = question.photo;
 				// img.classList.remove('_noopacity');
-				img.classList.remove('playground-img__loading');
+				questBlock.classList.remove('playground-quest__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
 
 		// img.classList.add('_noopacity');
-		img.classList.add('playground-img__loading');
+		questBlock.classList.add('playground-quest__loading');
 		setTimeout(() => {
 			img.src = '';
 			imgContainer.classList.add('playground-img__container-load');

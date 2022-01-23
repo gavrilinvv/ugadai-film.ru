@@ -517,6 +517,13 @@ body {
     width: 100%;
   }
 }
+.playground-quest {
+  transition: 0.2s;
+}
+.playground-quest__loading {
+  transform: scale(0.001);
+  transition: 0.2s;
+}
 .playground-answers {
   display: flex;
   flex-wrap: wrap;
@@ -702,7 +709,6 @@ body {
 .playground-img {
   display: block;
   margin: 0 auto;
-  transition: 0.2s;
   border-radius: 0.4166666667vw;
 }
 @media screen and (min-width: 1441px) {
@@ -720,10 +726,6 @@ body {
     width: 100%;
     height: auto;
   }
-}
-.playground-img__loading {
-  transform: scale(0.001);
-  transition: 0.2s;
 }
 .playground-img__container {
   position: relative;
