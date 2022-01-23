@@ -259,6 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				img.src = question.photo;
 				// img.classList.remove('_noopacity');
 				questBlock.classList.remove('playground-quest__loading');
+				playgroundBlock.classList.remove('playground__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
@@ -365,6 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		questBlock.classList.add('playground-quest__loading');
 		setTimeout(() => {
 			img.src = '';
+			playgroundBlock.classList.add('playground__loading');
 			imgContainer.classList.add('playground-img__container-load');
 		}, 200);
 
