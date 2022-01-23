@@ -338,9 +338,11 @@ body {
 
 	&-quest {
 		transition: .2s;
+		opacity: 1;
 
 		&__loading {
 			transform: scale(0.001);
+			opacity: 0;
 			transition: .2s;
 		}
 	}

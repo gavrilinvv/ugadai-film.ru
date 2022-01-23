@@ -493,9 +493,11 @@ body {
 }
 .playground-quest {
   transition: 0.2s;
+  opacity: 1;
 }
 .playground-quest__loading {
   transform: scale(0.001);
+  opacity: 0;
   transition: 0.2s;
 }
 .playground-answers {
