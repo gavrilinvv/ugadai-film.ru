@@ -11,8 +11,8 @@
 		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://ugadai-film.ru" />
-		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы" />
-		<meta name="description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты" />
+		<meta property="og:description" content="Угадывайте по одному кадру фильмы, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты" />
+		<meta name="description" content="Угадай фильм кадру фильмы, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты" />
 		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время, сериалы, российские, советские, зарубежные, мультфильмы" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
