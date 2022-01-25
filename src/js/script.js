@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var correctAnswer = null; // правильный ответ на вопрос (загаданный фильм)
 	var correctAnswersCount = 0; // количество угаданных фильмов
 	var incorrectAnswersCount = 0; // количество неугаданных фильмов
+	var counterNoError = 0; // счетчик правильных ответов без ошибок
 	var films = [];
 	var facts = [];
 	var options = {
@@ -212,11 +213,16 @@ document.addEventListener('DOMContentLoaded', () => {
 			},300)
 
 			correctAnswersCount += 1; // +1 угаданный фильм
+			counterNoError += 1; // +1 угаданный фильм без ошибок
 			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
 			btn.classList.add('button__answer-success');
 
 			let film = getFilmByIdIntoFacts(id);
 			if (options.needTimer) resetTimer();
+
+			if (counterNoError % 10 === 0) {
+				console.log(counterNoError + ' ответов без ошибок!');
+			}
 
 			setTimeout(() => {
 				// если играем с интересными фактами
@@ -231,6 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		} else {
 			btn.classList.add('button__answer-error');
 			incorrectAnswersCount += 1; // +1 неугаданный фильм
+			counterNoError = 0;
 
 			setTimeout(() => {
 				answersBlock.innerHTML = '';

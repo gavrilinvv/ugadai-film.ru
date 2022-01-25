@@ -30,10 +30,10 @@
 		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
 		ym(86702201, "init", {
-				clickmap:true,
-				trackLinks:true,
-				accurateTrackBounce:true,
-				webvisor:true
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
 		});
 		</script>
 		<noscript><div><img src="https://mc.yandex.ru/watch/86702201" style="position:absolute; left:-9999px;" alt="" /></div></noscript>

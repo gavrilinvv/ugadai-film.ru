@@ -211,5 +211,8 @@
 	{"id": 210, "name": "Форрест Гамп", "genres": ["movie-foreign"], "year": "1994"},
 	{"id": 211, "name": "Автостопом по галактике", "genres": ["movie-foreign"], "year": "2005"},
 	{"id": 212, "name": "Люди Икс", "genres": ["movie-foreign"], "year": "2000"},
-	{"id": 213, "name": "Люди Икс 2", "genres": ["movie-foreign"], "year": "2003"}
+	{"id": 213, "name": "Люди Икс 2", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 214, "name": "Три билборда на границе Эббинга, Миссури", "genres": ["movie-foreign"], "year": "2017"},
+	{"id": 215, "name": "Старикам тут не место", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 216, "name": "Сорвиголова", "genres": ["movie-foreign"], "year": "2003"}
 ]
