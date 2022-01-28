@@ -49,7 +49,7 @@
 	{"id": 48, "name": "Ночной дозор", "genres": ["movie-russian"], "year": "2004"},
 	{"id": 49, "name": "Выкрутасы", "genres": ["movie-russian"], "year": "2010"},
 	{"id": 50, "name": "Дурак", "genres": ["movie-russian"], "year": "2014"},
-	{"id": 51, "name": "Кавказская пленница", "genres": ["movie-soviet"], "year": "1966"},
+	{"id": 51, "name": "Кавказская пленница, или Новые приключения Шурика", "genres": ["movie-soviet"], "year": "1966"},
 	{"id": 52, "name": "Девчата", "genres": ["movie-soviet"], "year": "1962"},
 	{"id": 53, "name": "За спичками", "genres": ["movie-soviet"], "year": "1979"},
 	{"id": 54, "name": "Старики-разбойники", "genres": ["movie-soviet"], "year": "1971"},
@@ -214,5 +214,11 @@
 	{"id": 213, "name": "Люди Икс 2", "genres": ["movie-foreign"], "year": "2003"},
 	{"id": 214, "name": "Три билборда на границе Эббинга, Миссури", "genres": ["movie-foreign"], "year": "2017"},
 	{"id": 215, "name": "Старикам тут не место", "genres": ["movie-foreign"], "year": "2007"},
-	{"id": 216, "name": "Сорвиголова", "genres": ["movie-foreign"], "year": "2003"}
+	{"id": 216, "name": "Сорвиголова", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 217, "name": "Назад в будущее 2", "genres": ["movie-foreign"], "year": "1989"},
+	{"id": 218, "name": "Назад в будущее 3", "genres": ["movie-foreign"], "year": "1990"},
+	{"id": 219, "name": "Семь", "genres": ["movie-foreign"], "year": "1995"},
+	{"id": 220, "name": "Марсианин", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 221, "name": "Интервью с вампиром", "genres": ["movie-foreign"], "year": "1994"},
+	{"id": 222, "name": "Гладиатор", "genres": ["movie-foreign"], "year": "2000"}
 ]
