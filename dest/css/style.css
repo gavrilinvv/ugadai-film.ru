@@ -1015,30 +1015,6 @@ body {
     line-height: 6.6666666667vw;
   }
 }
-.button__xxsmall {
-  font-size: 0.9722222222vw;
-  line-height: 2.3611111111vw;
-}
-@media screen and (min-width: 1441px) {
-  .button__xxsmall {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .button__xxsmall {
-    font-size: 2.7777777778vw;
-  }
-}
-@media screen and (min-width: 1441px) {
-  .button__xxsmall {
-    line-height: 34px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .button__xxsmall {
-    line-height: 6.6666666667vw;
-  }
-}
 .button__answer-success {
   background: seagreen;
   box-shadow: 0 0 5px 3px #5cf9a1;

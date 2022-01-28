@@ -49,7 +49,7 @@
 	{"id": 48, "name": "Ночной дозор", "genres": ["movie-russian"], "year": "2004"},
 	{"id": 49, "name": "Выкрутасы", "genres": ["movie-russian"], "year": "2010"},
 	{"id": 50, "name": "Дурак", "genres": ["movie-russian"], "year": "2014"},
-	{"id": 51, "name": "Кавказская пленница, или Новые приключения Шурика", "genres": ["movie-soviet"], "year": "1966"},
+	{"id": 51, "name": "Кавказская пленница", "genres": ["movie-soviet"], "year": "1966"},
 	{"id": 52, "name": "Девчата", "genres": ["movie-soviet"], "year": "1962"},
 	{"id": 53, "name": "За спичками", "genres": ["movie-soviet"], "year": "1979"},
 	{"id": 54, "name": "Старики-разбойники", "genres": ["movie-soviet"], "year": "1971"},
