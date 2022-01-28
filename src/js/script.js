@@ -277,6 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					btn.classList.add('button__answer');
 					if (answer.name.length + answer.year.length > 25) btn.classList.add('button__small');
 					if (answer.name.length + answer.year.length > 35) btn.classList.add('button__xsmall');
+					if (answer.name.length + answer.year.length > 45) btn.classList.add('button__xxsmall');
 					answersBlock.appendChild(btn);
 
 					btn.addEventListener('mousedown', () => {
