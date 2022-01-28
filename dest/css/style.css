@@ -993,6 +993,7 @@ body {
 }
 .button__xsmall {
   font-size: 1.1111111111vw;
+  line-height: 2.1527777778vw;
 }
 @media screen and (min-width: 1441px) {
   .button__xsmall {
@@ -1004,8 +1005,19 @@ body {
     font-size: 3.3333333333vw;
   }
 }
+@media screen and (min-width: 1441px) {
+  .button__xsmall {
+    line-height: 31px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button__xsmall {
+    line-height: 6.6666666667vw;
+  }
+}
 .button__xxsmall {
   font-size: 0.9722222222vw;
+  line-height: 2.3611111111vw;
 }
 @media screen and (min-width: 1441px) {
   .button__xxsmall {
@@ -1015,6 +1027,16 @@ body {
 @media screen and (max-width: 1000px) {
   .button__xxsmall {
     font-size: 2.7777777778vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button__xxsmall {
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button__xxsmall {
+    line-height: 6.6666666667vw;
   }
 }
 .button__answer-success {

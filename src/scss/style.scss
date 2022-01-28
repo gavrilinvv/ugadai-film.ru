@@ -592,10 +592,12 @@ body {
 
 	&__xsmall {
 		@include fluid('font-size', 16px, 12px);
+		@include fluid('line-height', 31px, 24px);
 	}
 
 	&__xxsmall {
 		@include fluid('font-size', 14px, 10px);
+		@include fluid('line-height', 34px, 24px);
 	}
 
 	&__answer {
