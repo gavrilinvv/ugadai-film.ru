@@ -28,5 +28,10 @@
 		</div>
 	</div>
 
+	<!-- <div>
+		Сколько фильмов угадаете?
+		<input type="range">
+	</div> -->
+
 	<div class="button button-w100 js-to-game">Далее</div>
 </div>
