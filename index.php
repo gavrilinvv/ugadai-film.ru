@@ -53,6 +53,7 @@
 			</div>
 			<div class="container">
 				<?include('start.php');?>
+				<?include('about.php');?>
 				<?include('options-category.php');?>
 				<?include('options-params.php');?>
 				<?include('playground.php');?>

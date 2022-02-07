@@ -222,5 +222,7 @@
 	{"id": 221, "name": "Интервью с вампиром", "genres": ["movie-foreign"], "year": "1994"},
 	{"id": 222, "name": "Гладиатор", "genres": ["movie-foreign"], "year": "2000"},
 	{"id": 223, "name": "Грязь", "genres": ["movie-foreign"], "year": "2013"},
-	{"id": 224, "name": "Малыш на драйве", "genres": ["movie-foreign"], "year": "2017"}
+	{"id": 224, "name": "Малыш на драйве", "genres": ["movie-foreign"], "year": "2017"},
+	{"id": 225, "name": "Три плюс два", "genres": ["movie-soviet"], "year": "1963"},
+	{"id": 226, "name": "По соображениям совести", "genres": ["movie-foreign"], "year": "2016"}
 ]

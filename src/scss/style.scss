@@ -189,7 +189,7 @@ body {
 	}
 }
 
-.options, .losing {
+.options, .losing, .about {
 	@include fluid('padding-left', 50px);
 	@include fluid('padding-right', 50px);
 }
@@ -325,6 +325,12 @@ body {
 		justify-content: space-between;
 		align-items: center;
 	}
+}
+
+.about {
+	display: none;
+	color: $white;
+	@include fluid('font-size', 22px, 16px);
 }
 
 .playground {

@@ -1,4 +1,9 @@
 <div class="options options-category">
+	<div class="header">
+		<div class="header__container">
+			<div class="button js-to-start">Назад</div>
+		</div>
+	</div>
 
 	<div class="options__title _mb20">Категории:</div>
 	<div class="genres">

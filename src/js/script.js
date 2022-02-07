@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var menuShot = document.querySelector('.menu__shot');
 	var optionsCategoryBlock = document.querySelector('.options-category');
 	var optionsParamsBlock = document.querySelector('.options-params');
+	var aboutBlock = document.querySelector('.about');
 	var playgroundBlock = document.querySelector('.playground');
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
@@ -20,6 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	var toOptCategoryBtns = document.querySelectorAll('.js-to-opt-category');
 	var toOptParamsBtns = document.querySelectorAll('.js-to-opt-params');
+	var toStartBtns = document.querySelectorAll('.js-to-start');
+	var toAboutBtns = document.querySelectorAll('.js-to-about');
 	var toGameBtns = document.querySelectorAll('.js-to-game');
 
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
@@ -86,6 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
 			btn.addEventListener('click', () => {
 				if (!selectedGenres.length) {alert('Выберите категорию'); return;}
 				showBlock(optionsParamsBlock);
+			})
+		});
+
+		[...toAboutBtns].map(btn => {
+			btn.addEventListener('click', () => {
+				showBlock(aboutBlock);
+			})
+		});
+
+		[...toStartBtns].map(btn => {
+			btn.addEventListener('click', () => {
+				showBlock(menuBlock);
 			})
 		});
 
@@ -190,8 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function showBlock(targetBlock) {
 		stopFireworks();
-		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock];
+		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock, aboutBlock];
 		blocks.forEach(block => {
+			console.log(block);
 			block.style.display = 'none';
 		})
 		targetBlock.style.display = 'block';

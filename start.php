@@ -4,4 +4,6 @@
 		<div class="menu__shot"></div>
 	</div>
 	<div class="button js-to-opt-category">Играть!</div>
+	<br><br>
+	<div class="button js-to-about">Об игре</div>
 </div>
