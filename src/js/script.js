@@ -207,7 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		stopFireworks();
 		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock, aboutBlock];
 		blocks.forEach(block => {
-			console.log(block);
 			block.style.display = 'none';
 		})
 		targetBlock.style.display = 'block';
@@ -277,12 +276,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		getQuestion()
 			.then(question => {
-				imgContainer.classList.remove('playground-img__container-load');
+				// imgContainer.classList.remove('playground-img__container-load');
 				if (options.needTimer) setTimer();
 				img.src = question.photo;
+
+				setTimeout(() => {
+					questBlock.classList.remove('playground-quest__loading');
+				}, 200);
 				// img.classList.remove('_noopacity');
-				questBlock.classList.remove('playground-quest__loading');
-				playgroundBlock.classList.remove('playground__loading');
+				// playgroundBlock.classList.remove('playground__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
@@ -389,7 +391,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		// img.classList.add('_noopacity');
 		questBlock.classList.add('playground-quest__loading');
 		setTimeout(() => {
-			img.src = '';
 			playgroundBlock.classList.add('playground__loading');
 			imgContainer.classList.add('playground-img__container-load');
 		}, 200);
@@ -397,14 +398,19 @@ document.addEventListener('DOMContentLoaded', () => {
 		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
 			.then(res => {
 				let url = res.data;
-				return fetch(
-					url).then(res => res.blob()).then((blob) => {
-					return {
-						photo: URL.createObjectURL(blob),
-						answer: conceivedFilm.id,
-						answers: answers
-					}
-				});
+
+				return {
+					photo: url,
+					answer: conceivedFilm.id,
+					answers: answers
+				}
+				// return fetch(url).then(res => res.blob()).then((blob) => {
+				// 	return {
+				// 		photo: URL.createObjectURL(blob),
+				// 		answer: conceivedFilm.id,
+				// 		answers: answers
+				// 	}
+				// });
 			})
 			.catch(err => {
 				console.log(err);
