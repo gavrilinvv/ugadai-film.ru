@@ -224,5 +224,6 @@
 	{"id": 223, "name": "Грязь", "genres": ["movie-foreign"], "year": "2013"},
 	{"id": 224, "name": "Малыш на драйве", "genres": ["movie-foreign"], "year": "2017"},
 	{"id": 225, "name": "Три плюс два", "genres": ["movie-soviet"], "year": "1963"},
-	{"id": 226, "name": "По соображениям совести", "genres": ["movie-foreign"], "year": "2016"}
+	{"id": 226, "name": "По соображениям совести", "genres": ["movie-foreign"], "year": "2016"},
+	{"id": 227, "name": "Холодное сердце", "genres": ["cartoon-foreign"], "year": "2013"}
 ]
