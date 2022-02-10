@@ -225,5 +225,14 @@
 	{"id": 224, "name": "Малыш на драйве", "genres": ["movie-foreign"], "year": "2017"},
 	{"id": 225, "name": "Три плюс два", "genres": ["movie-soviet"], "year": "1963"},
 	{"id": 226, "name": "По соображениям совести", "genres": ["movie-foreign"], "year": "2016"},
-	{"id": 227, "name": "Холодное сердце", "genres": ["cartoon-foreign"], "year": "2013"}
+	{"id": 227, "name": "Холодное сердце", "genres": ["cartoon-foreign"], "year": "2013"},
+	{"id": 228, "name": "Кролик Джоджо", "genres": ["movie-foreign"], "year": "2019"},
+	{"id": 229, "name": "Хищник", "genres": ["movie-foreign"], "year": "1987"},
+	{"id": 230, "name": "Помни", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 231, "name": "Господин Никто", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 232, "name": "Правдивая ложь", "genres": ["movie-foreign"], "year": "1994"},
+	{"id": 233, "name": "Район №9", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 234, "name": "Робот по имени Чаппи", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 235, "name": "Живая сталь", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 236, "name": "Крупная рыба", "genres": ["movie-foreign"], "year": "2003"}
 ]

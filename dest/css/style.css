@@ -392,37 +392,6 @@ body {
   box-sizing: border-box;
 }
 
-.loader {
-  display: none;
-  color: #fff;
-  font-size: 2.2222222222vw;
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-}
-@media screen and (min-width: 1441px) {
-  .loader {
-    font-size: 32px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .loader {
-    font-size: 6.6666666667vw;
-  }
-}
-
-@-webkit-keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .header {
   position: absolute;
   width: inherit;
