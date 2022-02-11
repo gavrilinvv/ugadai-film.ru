@@ -764,9 +764,6 @@ body {
     width: 222.2222222222vw;
   }
 }
-.playground-img__container-load .loader {
-  display: block;
-}
 
 .options-category, .options-params, .losing, .winning {
   display: none;

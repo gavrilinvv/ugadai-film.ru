@@ -282,8 +282,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 				img.onload = () => {
 					questBlock.classList.remove('playground-quest__loading');
-					playgroundBlock.classList.remove('playground__loading');
 					imgContainer.classList.remove('playground-img__container-load');
+					playgroundBlock.classList.remove('playground__loading');
 
 				}
 
