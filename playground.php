@@ -8,7 +8,7 @@
 	<div class="playground-timer"></div>
 
 	<div style="position: relative">
-		<!-- <div class="loader">Ищем кадр...</div> -->
+		<div class="loader">Ищем кадр...</div>
 
 		<div class="playground-quest">
 			<div class="playground-img__container">

@@ -280,9 +280,13 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (options.needTimer) setTimer();
 				img.src = question.photo;
 
-				setTimeout(() => {
+				img.onload = () => {
 					questBlock.classList.remove('playground-quest__loading');
-				}, 200);
+					playgroundBlock.classList.remove('playground__loading');
+					imgContainer.classList.remove('playground-img__container-load');
+
+				}
+
 				// img.classList.remove('_noopacity');
 				// playgroundBlock.classList.remove('playground__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
@@ -498,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function randomIntFromInterval(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min)
-	  }
+	}
 
 	function randomArrayShuffle(array) {
 		var currentIndex = array.length, temporaryValue, randomIndex;
