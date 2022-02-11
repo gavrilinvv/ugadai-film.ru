@@ -234,5 +234,6 @@
 	{"id": 233, "name": "Район №9", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 234, "name": "Робот по имени Чаппи", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 235, "name": "Живая сталь", "genres": ["movie-foreign"], "year": "2011"},
-	{"id": 236, "name": "Крупная рыба", "genres": ["movie-foreign"], "year": "2003"}
+	{"id": 236, "name": "Крупная рыба", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 237, "name": "Главный герой", "genres": ["movie-foreign"], "year": "2021"}
 ]
