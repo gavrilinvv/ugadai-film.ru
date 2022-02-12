@@ -277,6 +277,9 @@ body {
 
 	.button {
 		box-sizing: border-box;
+		@include fluid('padding-left', 20px);
+		@include fluid('padding-right', 20px);
+
 	}
 }
 
@@ -346,11 +349,11 @@ body {
 		transition: .2s;
 		opacity: 1;
 
-		&__loading {
-			transform: scale(0.001);
-			opacity: 0;
-			transition: .2s;
-		}
+		// &__loading {
+		// 	transform: scale(0.001);
+		// 	opacity: 0;
+		// 	transition: .2s;
+		// }
 	}
 
 	&-answers {
@@ -469,6 +472,12 @@ body {
 		.loader {
 			// z-index: 1;
 			display: block;
+		}
+
+		& .playground-quest {
+			transform: scale(0.001);
+			opacity: 0;
+			transition: .2s;
 		}
 	}
 
@@ -608,7 +617,8 @@ body {
 
 	// &:hover {
 	// 	background: #1c685b;
-	// 	transition: .1s;
+	// 	transition: .3s;
+	// 	transform: scale(1.1);
 	// }
 
 	&__answer {

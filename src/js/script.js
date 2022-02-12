@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var optionsCategoryBlock = document.querySelector('.options-category');
 	var optionsParamsBlock = document.querySelector('.options-params');
 	var aboutBlock = document.querySelector('.about');
-	var playgroundBlock = document.querySelector('.playground');
+	var playgroundBlock = document.querySelector('.playground'); //1
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
 	var correctAnswersCountBlock = document.querySelector('.winning__answers-correct span');
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	var playgroundTimer = document.querySelector('.playground-timer');
 	var scoreBlock = document.querySelector('.playground-score span');
 	var img = document.querySelector('.playground-img');
-	var imgContainer = document.querySelector('.playground-img__container');
+	var imgContainer = document.querySelector('.playground-img__container'); //3
 	var factBlock = document.querySelector('.playground-fact');
 	var factText = document.querySelector('.playground-fact__text');
-	var questBlock = document.querySelector('.playground-quest');
+	var questBlock = document.querySelector('.playground-quest'); //2
 
 	var toOptCategoryBtns = document.querySelectorAll('.js-to-opt-category');
 	var toOptParamsBtns = document.querySelectorAll('.js-to-opt-params');
@@ -276,19 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		getQuestion()
 			.then(question => {
-				// imgContainer.classList.remove('playground-img__container-load');
-				if (options.needTimer) setTimer();
 				img.src = question.photo;
 
 				img.onload = () => {
-					questBlock.classList.remove('playground-quest__loading');
-					imgContainer.classList.remove('playground-img__container-load');
+					if (options.needTimer) setTimer();
 					playgroundBlock.classList.remove('playground__loading');
-
 				}
 
-				// img.classList.remove('_noopacity');
-				// playgroundBlock.classList.remove('playground__loading');
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
 				question.answers.forEach(answer => {
@@ -393,11 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
 
 		// img.classList.add('_noopacity');
-		questBlock.classList.add('playground-quest__loading');
-		setTimeout(() => {
-			playgroundBlock.classList.add('playground__loading');
-			imgContainer.classList.add('playground-img__container-load');
-		}, 200);
+		playgroundBlock.classList.add('playground__loading');
 
 		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
 			.then(res => {

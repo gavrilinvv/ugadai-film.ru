@@ -1,4 +1,4 @@
-<div class="playground">
+<div class="playground"> <!-- 1 -->
 	<div class="header">
 		<div class="header__container">
 			<div class="button js-to-opt-category">Назад</div>
@@ -10,9 +10,9 @@
 	<div style="position: relative">
 		<div class="loader">Ищем кадр...</div>
 
-		<div class="playground-quest">
+		<div class="playground-quest"> <!-- 2 -->
 			<div class="playground-img__container">
-				<img src="" class="playground-img playground-img__loading">
+				<img src="" class="playground-img playground-img__loading"> <!-- 3 -->
 			</div>
 				<div class="playground-answers"></div>
 		</div>
