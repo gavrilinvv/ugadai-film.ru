@@ -238,5 +238,9 @@
 	{"id": 237, "name": "Главный герой", "genres": ["movie-foreign"], "year": "2021"},
 	{"id": 238, "name": "Город грехов", "genres": ["movie-foreign"], "year": "2005"},
 	{"id": 239, "name": "Бешеные псы", "genres": ["movie-foreign"], "year": "1991"},
-	{"id": 240, "name": "Римские приключения", "genres": ["movie-foreign"], "year": "2012"}
+	{"id": 240, "name": "Римские приключения", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 241, "name": "Безумный Макс: Дорога ярости", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 242, "name": "Исходный код", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 243, "name": "Воины", "genres": ["movie-foreign"], "year": "1979"},
+	{"id": 244, "name": "Тачки", "genres": ["cartoon-foreign"], "year": "2006"}
 ]

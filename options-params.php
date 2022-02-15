@@ -28,10 +28,13 @@
 		</div>
 	</div>
 
-	<!-- <div>
-		Сколько фильмов угадаете?
-		<input type="range">
-	</div> -->
+	<div class="range option">
+		Сколько фильмов угадаете?<br>
+		<div class="_dflex _justify-content-beetwen _mb20">
+			<input type="range" name="targetCount" id="inputTargetCount" value="50" min="1" max="100" oninput="outputTargetCount.value = inputTargetCount.value">
+			<input type="number" inputmode="number" id="outputTargetCount" oninput="inputTargetCount.value = outputTargetCount.value">
+		</div>
+	</div>
 
 	<div class="button button-w100 js-to-game">Далее</div>
 </div>

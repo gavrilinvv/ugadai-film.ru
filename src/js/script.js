@@ -4,20 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	var optionsCategoryBlock = document.querySelector('.options-category');
 	var optionsParamsBlock = document.querySelector('.options-params');
 	var aboutBlock = document.querySelector('.about');
-	var playgroundBlock = document.querySelector('.playground'); //1
+	var playgroundBlock = document.querySelector('.playground');
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
 	var correctAnswersCountBlock = document.querySelector('.winning__answers-correct span');
 	var incorrectAnswersCountBlock = document.querySelector('.winning__answers-incorrect span');
 	var genreCheckboxes = document.querySelectorAll('.options .genre .checkbox__body');
 	var optionsCheckboxes = document.querySelectorAll('.options .option .checkbox__body');
+	var optionRangeInputFilmsCount = document.querySelector('.options .option #inputTargetCount');
+	var optionRangeOutputFilmsCount = document.querySelector('.options .option #outputTargetCount');
+
 	var playgroundTimer = document.querySelector('.playground-timer');
 	var scoreBlock = document.querySelector('.playground-score span');
 	var img = document.querySelector('.playground-img');
-	var imgContainer = document.querySelector('.playground-img__container'); //3
 	var factBlock = document.querySelector('.playground-fact');
 	var factText = document.querySelector('.playground-fact__text');
-	var questBlock = document.querySelector('.playground-quest'); //2
+	var questBlock = document.querySelector('.playground-quest');
 
 	var toOptCategoryBtns = document.querySelectorAll('.js-to-opt-category');
 	var toOptParamsBtns = document.querySelectorAll('.js-to-opt-params');
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var toGameBtns = document.querySelectorAll('.js-to-game');
 
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
-	var countFilms = document.querySelector('.count-films span');
+	var countCorrectFilms = document.querySelector('.count-films span');
 
 	var answersBlock = document.querySelector('.playground-answers');
 
@@ -37,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cartoonForeignCount = document.querySelector('#cartoon-foreign-count');
 	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
 
-	var cl = new cloudinary.Cloudinary({
-		cloud_name: "ddu8qv5kp",
-		secure: true,
-	});
+	// var cl = new cloudinary.Cloudinary({
+	// 	cloud_name: "ddu8qv5kp",
+	// 	secure: true,
+	// });
 
 	var selectedGenres = [];
 	var passedFilms = [];
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var correctAnswersCount = 0; // количество угаданных фильмов
 	var incorrectAnswersCount = 0; // количество неугаданных фильмов
 	var counterNoError = 0; // счетчик правильных ответов без ошибок
+	var countTargetFilms = 0; // количество фильмов, которое хочет угадать игрок
 	var films = [];
 	var facts = [];
 	var options = {
@@ -72,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	getFilms().then(res => {
 		films = res;
 
-		countFilms.innerHTML = films.length;
+		countCorrectFilms.innerHTML = films.length;
 
 		setCountOfGenres();
 
@@ -201,6 +204,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			})
 		}
+
+		// устанавливаем значения в ползунок целевое количество фильмов
+		countTargetFilms = getAvailableFilms().length;
+		optionRangeInputFilmsCount.setAttribute('max', countTargetFilms);
+		optionRangeInputFilmsCount.value = countTargetFilms;
+		optionRangeOutputFilmsCount.value = countTargetFilms;
 	}
 
 	function showBlock(targetBlock) {
@@ -339,13 +348,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		let answers = []; // массив для ответов
 
 		// если прошел все фильмы
-		if (passedFilms.length === availableFilms.length) {
+		if ( passedFilms.length == optionRangeInputFilmsCount.value || passedFilms.length === availableFilms.length) {
 			answersBlock.innerHTML = '';
 			passedFilms = [];
 			correctAnswersCountBlock.innerHTML = correctAnswersCount;
 			incorrectAnswersCountBlock.innerHTML = incorrectAnswersCount;
 			showBlock(winningBlock);
 			startFireworks();
+			correctAnswersCount = 0;
+			incorrectAnswersCount = 0;
 			return
 		}
 
