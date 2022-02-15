@@ -400,6 +400,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		// img.classList.add('_noopacity');
 		playgroundBlock.classList.add('playground__loading');
 
+		console.log(conceivedFilm.id);
 		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
 			.then(res => {
 				let url = res.data;
