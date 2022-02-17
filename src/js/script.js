@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		setCountOfGenres();
 
-		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.webp")';
+		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
