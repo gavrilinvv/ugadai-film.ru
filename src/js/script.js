@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		setCountOfGenres();
 
-		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
+		menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.webp")';
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
@@ -91,6 +91,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		[...toOptParamsBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				if (!selectedGenres.length) {alert('Выберите категорию'); return;}
+
+				// устанавливаем значения в ползунок целевое количество фильмов
+				countTargetFilms = getAvailableFilms().length;
+				optionRangeInputFilmsCount.setAttribute('max', countTargetFilms);
+				optionRangeInputFilmsCount.value = countTargetFilms;
+				optionRangeOutputFilmsCount.value = countTargetFilms;
+
 				showBlock(optionsParamsBlock);
 			})
 		});
@@ -204,12 +211,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			})
 		}
-
-		// устанавливаем значения в ползунок целевое количество фильмов
-		countTargetFilms = getAvailableFilms().length;
-		optionRangeInputFilmsCount.setAttribute('max', countTargetFilms);
-		optionRangeInputFilmsCount.value = countTargetFilms;
-		optionRangeOutputFilmsCount.value = countTargetFilms;
 	}
 
 	function showBlock(targetBlock) {

@@ -242,5 +242,7 @@
 	{"id": 241, "name": "Безумный Макс: Дорога ярости", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 242, "name": "Исходный код", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 243, "name": "Воины", "genres": ["movie-foreign"], "year": "1979"},
-	{"id": 244, "name": "Тачки", "genres": ["cartoon-foreign"], "year": "2006"}
+	{"id": 244, "name": "Тачки", "genres": ["cartoon-foreign"], "year": "2006"},
+	{"id": 245, "name": "500 дней лета", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 246, "name": "Миллионер из трущоб", "genres": ["movie-foreign"], "year": "2008"}
 ]

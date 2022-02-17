@@ -72,6 +72,8 @@ gulp.task('films', () => {
 				'**/*.jpg': {
 					width: 800,
 					height: 433,
+					quality: 85,
+					format: 'webp',
 					withoutEnlargement: false,
 					skipOnEnlargement: false,
 				},
