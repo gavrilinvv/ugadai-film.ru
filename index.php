@@ -22,6 +22,7 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#000000">
+		<meta name="google-site-verification" content="eqxuB-7-CX_pyxgAaAI-gu1vK94yKWGrk_Ye_fcSwn0" />
 
 		<!-- Yandex.Metrika counter -->
 		<script type="text/javascript" >
