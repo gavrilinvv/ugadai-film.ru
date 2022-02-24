@@ -29,7 +29,7 @@
 	</div>
 
 	<div class="range option">
-		Сколько фильмов угадаете?<br>
+		Сколько фильмов загадать?<br>
 		<div class="_dflex _justify-content-beetwen _mb20">
 			<input type="range" name="targetCount" id="inputTargetCount" value="50" min="1" max="100" oninput="outputTargetCount.value = inputTargetCount.value">
 			<input type="number" inputmode="number" id="outputTargetCount" oninput="inputTargetCount.value = outputTargetCount.value">
