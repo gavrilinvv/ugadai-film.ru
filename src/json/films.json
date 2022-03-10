@@ -248,5 +248,13 @@
 	{"id": 247, "name": "Еще по одной", "genres": ["movie-foreign"], "year": "2020"},
 	{"id": 248, "name": "Кунг-фу Панда", "genres": ["cartoon-foreign"], "year": "2008"},
 	{"id": 249, "name": "Майор", "genres": ["movie-russian"], "year": "2013"},
-	{"id": 250, "name": "Каратэ-пацан", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 250, "name": "Каратэ-пацан", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 251, "name": "Черная дыра", "genres": ["movie-foreign"], "year": "1999"},
+	{"id": 252, "name": "Вечерний экспресс «Сансет Лимитед»", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 253, "name": "Американская история X", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 254, "name": "Криминальное чтиво", "genres": ["movie-foreign"], "year": "1994"},
+	{"id": 255, "name": "Трансформеры 3: Тёмная сторона Луны", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 256, "name": "Вокруг света за 80 дней", "genres": ["movie-foreign"], "year": "2004"}
+
+
 ]
