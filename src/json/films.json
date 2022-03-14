@@ -254,7 +254,11 @@
 	{"id": 253, "name": "Американская история X", "genres": ["movie-foreign"], "year": "1998"},
 	{"id": 254, "name": "Криминальное чтиво", "genres": ["movie-foreign"], "year": "1994"},
 	{"id": 255, "name": "Трансформеры 3: Тёмная сторона Луны", "genres": ["movie-foreign"], "year": "2011"},
-	{"id": 256, "name": "Вокруг света за 80 дней", "genres": ["movie-foreign"], "year": "2004"}
+	{"id": 256, "name": "Вокруг света за 80 дней", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 257, "name": "Стиляги", "genres": ["movie-russian"], "year": "2008"},
+	{"id": 258, "name": "Страна садов", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 259, "name": "Евротур", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 260, "name": "Семьянин", "genres": ["movie-foreign"], "year": "2000"}
 
 
 ]
