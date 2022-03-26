@@ -258,7 +258,21 @@
 	{"id": 257, "name": "Стиляги", "genres": ["movie-russian"], "year": "2008"},
 	{"id": 258, "name": "Страна садов", "genres": ["movie-foreign"], "year": "2003"},
 	{"id": 259, "name": "Евротур", "genres": ["movie-foreign"], "year": "2004"},
-	{"id": 260, "name": "Семьянин", "genres": ["movie-foreign"], "year": "2000"}
+	{"id": 260, "name": "Семьянин", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 261, "name": "Дьявол в деталях", "genres": ["movie-foreign"], "year": "2020"},
+	{"id": 262, "name": "Мегамозг", "genres": ["cartoon-foreign"], "year": "2010"},
+	{"id": 263, "name": "Мой парень — псих", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 264, "name": "Мальчишник в Вегасе", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 265, "name": "Омерзительная восьмерка", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 266, "name": "Каникулы строгого режима", "genres": ["movie-russian"], "year": "2009"},
+	{"id": 267, "name": "Невероятная жизнь Уолтера Митти", "genres": ["movie-foreign"], "year": "2013"},
+	{"id": 268, "name": "Настоящая любовь", "genres": ["movie-foreign"], "year": "1993"},
+	{"id": 269, "name": "Место под соснами", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 270, "name": "Эластико", "genres": ["movie-russian"], "year": "2016"}
+
+
+
+
 
 
 ]
