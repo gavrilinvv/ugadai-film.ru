@@ -268,7 +268,13 @@
 	{"id": 267, "name": "Невероятная жизнь Уолтера Митти", "genres": ["movie-foreign"], "year": "2013"},
 	{"id": 268, "name": "Настоящая любовь", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 269, "name": "Место под соснами", "genres": ["movie-foreign"], "year": "2012"},
-	{"id": 270, "name": "Эластико", "genres": ["movie-russian"], "year": "2016"}
+	{"id": 270, "name": "Эластико", "genres": ["movie-russian"], "year": "2016"},
+	{"id": 271, "name": "Брюс Всемогущий", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 272, "name": "Хэнкок", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 273, "name": "Что гложет Гилберта Грейпа?", "genres": ["movie-foreign"], "year": "1993"},
+	{"id": 274, "name": "Операция «Арго»", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 275, "name": "Исчезнувшая", "genres": ["movie-foreign"], "year": "2014"}
+
 
 
 
