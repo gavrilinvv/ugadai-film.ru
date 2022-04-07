@@ -273,7 +273,14 @@
 	{"id": 272, "name": "Хэнкок", "genres": ["movie-foreign"], "year": "2008"},
 	{"id": 273, "name": "Что гложет Гилберта Грейпа?", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 274, "name": "Операция «Арго»", "genres": ["movie-foreign"], "year": "2012"},
-	{"id": 275, "name": "Исчезнувшая", "genres": ["movie-foreign"], "year": "2014"}
+	{"id": 275, "name": "Исчезнувшая", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 276, "name": "Зависнуть в Палм-Спрингс", "genres": ["movie-foreign"], "year": "2020"},
+	{"id": 277, "name": "Третий лишний", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 278, "name": "Король говорит!", "genres": ["movie-foreign"], "year": "2010"}
+
+
+
+
 
 
 
