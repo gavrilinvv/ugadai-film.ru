@@ -393,7 +393,7 @@ body {
 
 	&-score {
 		color: $white;
-		@include fluid('font-size', 18px);
+		@include fluid('font-size', 22px);
 		font-weight: 500;
 
 		span {
