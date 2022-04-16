@@ -276,7 +276,19 @@
 	{"id": 275, "name": "Исчезнувшая", "genres": ["movie-foreign"], "year": "2014"},
 	{"id": 276, "name": "Зависнуть в Палм-Спрингс", "genres": ["movie-foreign"], "year": "2020"},
 	{"id": 277, "name": "Третий лишний", "genres": ["movie-foreign"], "year": "2012"},
-	{"id": 278, "name": "Король говорит!", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 278, "name": "Король говорит!", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 279, "name": "Ирония судьбы, или С легким паром!", "genres": ["movie-soviet"], "year": "1975"},
+	{"id": 280, "name": "Громкая связь", "genres": ["movie-russian"], "year": "2018"},
+	{"id": 281, "name": "Вольт", "genres": ["cartoon-foreign"], "year": "2008"},
+	{"id": 282, "name": "Семейка Крудс", "genres": ["cartoon-foreign"], "year": "2013"},
+	{"id": 283, "name": "Тайная жизнь домашних животных", "genres": ["cartoon-foreign"], "year": "2016"},
+	{"id": 284, "name": "Люпен", "genres": ["series"], "year": "2021"},
+	{"id": 285, "name": "Утреннее шоу", "genres": ["series"], "year": "2019"},
+	{"id": 286, "name": "Сыны анархии", "genres": ["series"], "year": "2008 - 2014"},
+	{"id": 287, "name": "Ведьмак", "genres": ["series"], "year": "2019"},
+	{"id": 288, "name": "Чернобыль", "genres": ["series"], "year": "2019"}
+
+
 
 
 
