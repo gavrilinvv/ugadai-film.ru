@@ -286,7 +286,12 @@
 	{"id": 285, "name": "Утреннее шоу", "genres": ["series"], "year": "2019"},
 	{"id": 286, "name": "Сыны анархии", "genres": ["series"], "year": "2008 - 2014"},
 	{"id": 287, "name": "Ведьмак", "genres": ["series"], "year": "2019"},
-	{"id": 288, "name": "Чернобыль", "genres": ["series"], "year": "2019"}
+	{"id": 288, "name": "Чернобыль", "genres": ["series"], "year": "2019"},
+	{"id": 289, "name": "Остаться в живых", "genres": ["series"], "year": "2004 – 2010"},
+	{"id": 290, "name": "Побег", "genres": ["series"], "year": "2005 – 2017"}
+
+
+
 
 
 
