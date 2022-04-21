@@ -429,7 +429,7 @@ body {
 		width: fit-content;
 		z-index: 5;
 		position: absolute;
-		@include fluid('top', 130px, 100px);
+		@include fluid('top', 130px, 80px);
 		left: 0;
 		right: 0;
 		margin: auto;

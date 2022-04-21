@@ -689,7 +689,7 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .playground-notice {
-    top: 27.7777777778vw;
+    top: 22.2222222222vw;
   }
 }
 .playground-notice-active {
