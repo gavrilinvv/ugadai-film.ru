@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var optionRangeOutputFilmsCount = document.querySelector('.options .option #outputTargetCount');
 
 	var playgroundTimer = document.querySelector('.playground-timer');
+	var notice = document.querySelector('.playground-notice');
 	var scoreBlock = document.querySelector('.playground-score span');
 	var img = document.querySelector('.playground-img');
 	var factBlock = document.querySelector('.playground-fact');
@@ -246,7 +247,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (options.needTimer) resetTimer();
 
 			if (counterNoError % 10 === 0) {
-				console.log(counterNoError + ' ответов без ошибок!');
+				notice.innerHTML = counterNoError + ' ответов без ошибок!'
+				notice.classList.add('playground-notice-active');
+				setTimeout(() => {
+					notice.classList.remove('playground-notice-active');
+				}, 800)
 			}
 
 			setTimeout(() => {

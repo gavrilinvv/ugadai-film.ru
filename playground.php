@@ -13,8 +13,9 @@
 		<div class="playground-quest"> <!-- 2 -->
 			<div class="playground-img__container">
 				<img src="" class="playground-img playground-img__loading"> <!-- 3 -->
+				<div class="playground-notice"></div>
 			</div>
-				<div class="playground-answers"></div>
+			<div class="playground-answers"></div>
 		</div>
 		<div class="playground-fact">
 			<div class="playground-fact__title">Факт</div>

@@ -599,6 +599,103 @@ body {
   -webkit-animation: wow 0.3s linear;
   animation: wow 0.3s linear;
 }
+.playground-notice {
+  opacity: 1;
+  padding-top: 0.5555555556vw;
+  padding-bottom: 0.5555555556vw;
+  padding-left: 1.6666666667vw;
+  padding-right: 1.6666666667vw;
+  background: #248a79b8;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 3.4722222222vw;
+  font-size: 2.5vw;
+  transform: scale(0);
+  transition: 0.1s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 5;
+  position: absolute;
+  top: 9.0277777778vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    padding-top: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    padding-bottom: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    padding-left: 4.4444444444vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    padding-right: 4.4444444444vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    border-radius: 13.8888888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    font-size: 6.6666666667vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-notice {
+    top: 130px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-notice {
+    top: 27.7777777778vw;
+  }
+}
+.playground-notice-active {
+  transition: 0.1s;
+  transform: scale(1);
+}
 .playground-timer {
   display: none;
   margin-bottom: 0.8333333333vw;

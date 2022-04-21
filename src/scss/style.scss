@@ -412,6 +412,34 @@ body {
 		}
 	}
 
+	&-notice {
+		opacity: 1;
+		@include fluid('padding-top', 8px);
+		@include fluid('padding-bottom', 8px);
+		@include fluid('padding-left', 24px, 16px);
+		@include fluid('padding-right', 24px, 16px);
+		background: #248a79b8;;
+		// border: 2px solid $green;
+		color: #fff;
+		margin: 0 auto;
+		@include fluid('border-radius', 50px);
+		@include fluid('font-size', 36px, 24px);
+		transform: scale(0);
+		transition: .1s;
+		width: fit-content;
+		z-index: 5;
+		position: absolute;
+		@include fluid('top', 130px, 100px);
+		left: 0;
+		right: 0;
+		margin: auto;
+
+		&-active {
+			transition: .1s;
+			transform: scale(1);
+		}
+	}
+
 	&-timer {
 		display: none;
 		@include fluid('margin-bottom', 12px);
