@@ -291,7 +291,10 @@
 	{"id": 290, "name": "Побег", "genres": ["series"], "year": "2005 – 2017"},
 	{"id": 291, "name": "РЭД", "genres": ["movie-foreign"], "year": "2010"},
 	{"id": 292, "name": "Шрек 2", "genres": ["cartoon-foreign"], "year": "2004"},
-	{"id": 293, "name": "Шрек Третий", "genres": ["cartoon-foreign"], "year": "2007"}
+	{"id": 293, "name": "Шрек Третий", "genres": ["cartoon-foreign"], "year": "2007"},
+	{"id": 294, "name": "Шерлок Холмс", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 295, "name": "Бронсон", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 296, "name": "Моя левая нога", "genres": ["movie-foreign"], "year": "1989"}
 
 
 
