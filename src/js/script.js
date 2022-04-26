@@ -119,6 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			btn.addEventListener('click', () => {
 				showBlock(playgroundBlock);
 				scoreBlock.innerHTML = 0;
+				counterNoError = 0;
 				answersBlock.innerHTML = '';
 				factText.innerHTML = '';
 				questBlock.style.display = 'block';
