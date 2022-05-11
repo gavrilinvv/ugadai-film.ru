@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	var movieRussianCount = document.querySelector('#movie-russian-count');
 	var movieSovietCount = document.querySelector('#movie-soviet-count');
 	var seriesCount = document.querySelector('#series-count');
+	var seriesForeignCount = document.querySelector('#series-foreign-count');
+	var seriesRussianCount = document.querySelector('#series-russian-count');
 	var cartoonForeignCount = document.querySelector('#cartoon-foreign-count');
 	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
 
@@ -488,7 +490,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		movieForeignCount.innerHTML = getCountFilmsByGenre('movie-foreign');
 		movieRussianCount.innerHTML = getCountFilmsByGenre('movie-russian');
 		movieSovietCount.innerHTML = getCountFilmsByGenre('movie-soviet');
-		seriesCount.innerHTML = getCountFilmsByGenre('series');
+		seriesRussianCount.innerHTML = getCountFilmsByGenre('series-russian');
+		seriesForeignCount.innerHTML = getCountFilmsByGenre('series-foreign');
 		cartoonForeignCount.innerHTML = getCountFilmsByGenre('cartoon-foreign');
 		cartoonSovietCount.innerHTML = getCountFilmsByGenre('cartoon-soviet');
 	}

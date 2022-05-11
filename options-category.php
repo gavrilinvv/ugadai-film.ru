@@ -40,6 +40,20 @@
 				Сериалы<sup id="series-count"></sup>
 				<input type="checkbox" value="series" data-is-parent="true">
 			</div>
+
+			<div class="checkbox genre">
+				<div class="checkbox__body" data-is-child="true">
+					Зарубежные<sup id="series-foreign-count"></sup>
+					<input type="checkbox" value="series-foreign">
+				</div>
+			</div>
+
+			<div class="checkbox genre">
+				<div class="checkbox__body" data-is-child="true">
+					Российские<sup id="series-russian-count"></sup>
+					<input type="checkbox" value="series-russian">
+				</div>
+			</div>
 		</div>
 		<div class="checkbox genre">
 			<div class="checkbox__body">
