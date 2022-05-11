@@ -1474,16 +1474,16 @@ body {
   align-items: center;
   position: relative;
   line-height: 1;
-  margin-bottom: 1.0416666667vw;
+  margin-bottom: 0.8333333333vw;
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 }
 @media screen and (max-width: 1000px) {
   .checkbox__body {
-    margin-bottom: 4.1666666667vw;
+    margin-bottom: 3.3333333333vw;
   }
 }
 .checkbox__body::before {

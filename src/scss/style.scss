@@ -855,7 +855,7 @@ body {
 		align-items: center;
 		position: relative;
 		line-height: 1;
-		@include fluid('margin-bottom', 15px);
+		@include fluid('margin-bottom', 12px);
 
 		&::before {
 			content: '';
