@@ -309,7 +309,9 @@
 	{"id": 308, "name": "Миссия: невыполнима 2", "genres": ["movie-foreign"], "year": "2000"},
 	{"id": 309, "name": "Терминал", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 310, "name": "Эдди «Орёл»", "genres": ["movie-foreign"], "year": "2015"},
-	{"id": 311, "name": "Резня", "genres": ["movie-foreign"], "year": "2011"}
+	{"id": 311, "name": "Резня", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 312, "name": "Армагеддон", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 313, "name": "Зловещие мертвецы", "genres": ["movie-foreign"], "year": "1981"}
 
 
 

@@ -62,6 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		facts: false
 	};
 	var startTime = 10;
+	var currentTime = 10;
+	var countdown = null;
 	var timer = null;
 
 	async function getFilms() {
@@ -119,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		[...toGameBtns].map(btn => {
 			btn.addEventListener('click', () => {
+				correctAnswersCount = 0;
 				showBlock(playgroundBlock);
 				scoreBlock.innerHTML = 0;
 				counterNoError = 0;
@@ -174,22 +177,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function setTimer() {
 		clearInterval(timer);
+		clearInterval(countdown);
+		currentTime = 10;
 		playgroundTimer.style.opacity = '1';
 		playgroundTimer.style.display = 'block';
 		playgroundTimer.style.animationName = 'none';
 		setTimeout(() => {playgroundTimer.style.animationName = ''}, 10);
 		playgroundTimer.style.animationDuration = startTime + 's';
+		countdown = setInterval(() => {
+			currentTime -= 1;
+		}, 1000)
 		timer = setTimeout(() => {
 			clearInterval(timer);
+			clearInterval(countdown);
 			answersBlock.innerHTML = '';
 			passedFilms = [];
 			showBlock(losingBlock);
 		}, startTime * 1000);
 	}
+
 	function resetTimer() {
 		playgroundTimer.style.opacity = '0';
 		playgroundTimer.style.animationName = 'none';
 		clearInterval(timer);
+		clearInterval(countdown);
+		currentTime = 10;
 	}
 
 	function setGenre(checkbox, parentCheckbox) {
@@ -239,22 +251,24 @@ document.addEventListener('DOMContentLoaded', () => {
 			scoreBlock.classList.add('active');
 			setTimeout(() => {
 				scoreBlock.classList.remove('active');
-			},300)
+			}, 300)
 
 			correctAnswersCount += 1; // +1 угаданный фильм
 			counterNoError += 1; // +1 угаданный фильм без ошибок
-			scoreBlock.innerHTML = ++scoreBlock.innerHTML;
+			if (options.needTimer) {
+				if (currentTime > 5) {
+					showNotice('Бонус за скорость +<b>' + currentTime + '</b>!');
+					correctAnswersCount += currentTime; // + бонус за скорость
+				}
+				resetTimer();
+			}
+			scoreBlock.innerHTML = correctAnswersCount;
 			btn.classList.add('button__answer-success');
 
 			let film = getFilmByIdIntoFacts(id);
-			if (options.needTimer) resetTimer();
 
 			if (counterNoError % 10 === 0) {
-				notice.innerHTML = counterNoError + ' ответов без ошибок!'
-				notice.classList.add('playground-notice-active');
-				setTimeout(() => {
-					notice.classList.remove('playground-notice-active');
-				}, 800)
+				showNotice(counterNoError + ' ответов без ошибок!');
 			}
 
 			setTimeout(() => {
@@ -283,6 +297,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			}, 800)
 		}
+	}
+
+	function showNotice(msg) {
+		notice.innerHTML = msg;
+		notice.classList.add('playground-notice-active');
+		setTimeout(() => {
+			notice.classList.remove('playground-notice-active');
+		}, 800)
 	}
 
 	function nextQuestion() {
@@ -495,17 +517,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		cartoonForeignCount.innerHTML = getCountFilmsByGenre('cartoon-foreign');
 		cartoonSovietCount.innerHTML = getCountFilmsByGenre('cartoon-soviet');
 	}
-
-
-
-
-
-
-
-
-
-
-
 
 	function getRandomInt(max) {
 		return Math.floor(Math.random() * max);
