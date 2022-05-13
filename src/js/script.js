@@ -285,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			btn.classList.add('button__answer-error');
 			incorrectAnswersCount += 1; // +1 неугаданный фильм
 			counterNoError = 0;
+			resetTimer();
 
 			setTimeout(() => {
 				answersBlock.innerHTML = '';
