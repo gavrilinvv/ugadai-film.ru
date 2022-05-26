@@ -311,7 +311,17 @@
 	{"id": 310, "name": "Эдди «Орёл»", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 311, "name": "Резня", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 312, "name": "Армагеддон", "genres": ["movie-foreign"], "year": "1998"},
-	{"id": 313, "name": "Зловещие мертвецы", "genres": ["movie-foreign"], "year": "1981"}
+	{"id": 313, "name": "Зловещие мертвецы", "genres": ["movie-foreign"], "year": "1981"},
+	{"id": 314, "name": "Довод", "genres": ["movie-foreign"], "year": "2020"},
+	{"id": 315, "name": "Пипец", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 316, "name": "Молчание ягнят", "genres": ["movie-foreign"], "year": "1990"},
+	{"id": 317, "name": "Мексиканец", "genres": ["movie-foreign"], "year": "2001"},
+	{"id": 318, "name": "Мистер Робот", "genres": ["series-foreign"], "year": "2015 – 2019"}
+
+
+
+
+
 
 
 
