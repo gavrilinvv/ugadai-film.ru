@@ -594,7 +594,7 @@ body {
 }
 .playground-score span.active {
   display: inline-block;
-  color: yellow;
+  color: #65ba6d;
   animation: wow 0.3s linear;
   -webkit-animation: wow 0.3s linear;
   animation: wow 0.3s linear;
