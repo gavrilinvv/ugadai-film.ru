@@ -317,7 +317,9 @@
 	{"id": 316, "name": "Молчание ягнят", "genres": ["movie-foreign"], "year": "1990"},
 	{"id": 317, "name": "Мексиканец", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 318, "name": "Мистер Робот", "genres": ["series-foreign"], "year": "2015 – 2019"},
-	{"id": 319, "name": "Турист", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 319, "name": "Турист", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 320, "name": "Без чувств", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 321, "name": "Бегущий в лабирините", "genres": ["movie-foreign"], "year": "2014"}
 
 
 
