@@ -320,12 +320,9 @@
 	{"id": 319, "name": "Турист", "genres": ["movie-foreign"], "year": "2010"},
 	{"id": 320, "name": "Без чувств", "genres": ["movie-foreign"], "year": "1998"},
 	{"id": 321, "name": "Бегущий в лабиринте", "genres": ["movie-foreign"], "year": "2014"},
-	{"id": 322, "name": "Тупой и еще тупее", "genres": ["movie-foreign"], "year": "1994"}
-
-
-
-
-
+	{"id": 322, "name": "Тупой и еще тупее", "genres": ["movie-foreign"], "year": "1994"},
+	{"id": 323, "name": "Хотел бы я быть здесь", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 324, "name": "Телохранитель киллера", "genres": ["movie-foreign"], "year": "2017"}
 
 
 
