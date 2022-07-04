@@ -322,7 +322,9 @@
 	{"id": 321, "name": "Бегущий в лабиринте", "genres": ["movie-foreign"], "year": "2014"},
 	{"id": 322, "name": "Тупой и еще тупее", "genres": ["movie-foreign"], "year": "1994"},
 	{"id": 323, "name": "Хотел бы я быть здесь", "genres": ["movie-foreign"], "year": "2014"},
-	{"id": 324, "name": "Телохранитель киллера", "genres": ["movie-foreign"], "year": "2017"}
+	{"id": 324, "name": "Телохранитель киллера", "genres": ["movie-foreign"], "year": "2017"},
+	{"id": 325, "name": "Игры джентельменов", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 326, "name": "Всё или ничего", "genres": ["movie-foreign"], "year": "2005"}
 
 
 

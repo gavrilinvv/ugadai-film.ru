@@ -80,9 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	getFilms().then(res => {
 		films = res;
 
-		countCorrectFilms.innerHTML = films.length;
+		// countCorrectFilms.innerHTML = films.length;
 
-		setCountOfGenres();
+		// setCountOfGenres();
 
 		// menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
