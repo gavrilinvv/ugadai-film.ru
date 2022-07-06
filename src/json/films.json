@@ -324,7 +324,10 @@
 	{"id": 323, "name": "Хотел бы я быть здесь", "genres": ["movie-foreign"], "year": "2014"},
 	{"id": 324, "name": "Телохранитель киллера", "genres": ["movie-foreign"], "year": "2017"},
 	{"id": 325, "name": "Игры джентельменов", "genres": ["movie-foreign"], "year": "2004"},
-	{"id": 326, "name": "Всё или ничего", "genres": ["movie-foreign"], "year": "2005"}
+	{"id": 326, "name": "Всё или ничего", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 327, "name": "Хоббит: Нежданное путешествие", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 328, "name": "Хоббит: Пустошь Смауга", "genres": ["movie-foreign"], "year": "2013"},
+	{"id": 329, "name": "Хоббит: Битва пяти воинств", "genres": ["movie-foreign"], "year": "2014"}
 
 
 
