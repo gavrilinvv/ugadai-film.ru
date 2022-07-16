@@ -100,7 +100,7 @@
 
 				setTimeout(function(){
 					renderAds();
-				}, 120000);
+				}, 60000);
 			}
 			renderAds();
 		</script>
