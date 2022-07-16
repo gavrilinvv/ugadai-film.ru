@@ -329,7 +329,11 @@
 	{"id": 328, "name": "Хоббит: Пустошь Смауга", "genres": ["movie-foreign"], "year": "2013"},
 	{"id": 329, "name": "Хоббит: Битва пяти воинств", "genres": ["movie-foreign"], "year": "2014"},
 	{"id": 330, "name": "Больше, чем любовь", "genres": ["movie-foreign"], "year": "2005"},
-	{"id": 331, "name": "Грань будущего", "genres": ["movie-foreign"], "year": "2014"}
+	{"id": 331, "name": "Грань будущего", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 332, "name": "Эволюция", "genres": ["movie-foreign"], "year": "2001"},
+	{"id": 333, "name": "Паранорман, или Как приручить зомби", "genres": ["cartoon-foreign"], "year": "2012"}
+
+
 
 
 
