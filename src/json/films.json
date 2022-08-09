@@ -334,7 +334,12 @@
 	{"id": 333, "name": "Паранорман, или Как приручить зомби", "genres": ["cartoon-foreign"], "year": "2012"},
 	{"id": 334, "name": "Мне бы в небо", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 335, "name": "С меня хватит!", "genres": ["movie-foreign"], "year": "1992"},
-	{"id": 336, "name": "Неистовый", "genres": ["movie-foreign"], "year": "2020"}
+	{"id": 336, "name": "Неистовый", "genres": ["movie-foreign"], "year": "2020"},
+	{"id": 337, "name": "Эйс Вентура: Розыск домашних животных", "genres": ["movie-foreign"], "year": "1993"},
+	{"id": 338, "name": "Солдаты неудачи", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 338, "name": "Банды Нью-Йорка", "genres": ["movie-foreign"], "year": "2002"}
+
+
 
 
 
