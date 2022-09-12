@@ -339,7 +339,19 @@
 	{"id": 338, "name": "Солдаты неудачи", "genres": ["movie-foreign"], "year": "2008"},
 	{"id": 339, "name": "Банды Нью-Йорка", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 340, "name": "Охотники за привидениями", "genres": ["movie-foreign"], "year": "1984"},
-	{"id": 341, "name": "Логан", "genres": ["movie-foreign"], "year": "2017"}
+	{"id": 341, "name": "Логан", "genres": ["movie-foreign"], "year": "2017"},
+	{"id": 342, "name": "Гремлины", "genres": ["movie-foreign"], "year": "1984"},
+	{"id": 343, "name": "Дорогая, я уменьшил детей", "genres": ["movie-foreign"], "year": "1989"},
+	{"id": 344, "name": "Один день", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 345, "name": "Тик-так... БУМ!", "genres": ["movie-foreign"], "year": "2021"},
+	{"id": 346, "name": "Скрытые фигуры", "genres": ["movie-foreign"], "year": "2016"},
+	{"id": 347, "name": "Машина времени в джакузи", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 348, "name": "На игле", "genres": ["movie-foreign"], "year": "1995"},
+	{"id": 349, "name": "Город героев", "genres": ["cartoon-foreign"], "year": "2014"},
+	{"id": 350, "name": "Ральф", "genres": ["cartoon-foreign"], "year": "2012"},
+	{"id": 351, "name": "2012", "genres": ["movie-foreign"], "year": "2009"}
+
+
 
 
 
