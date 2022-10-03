@@ -353,7 +353,8 @@
 	{"id": 352, "name": "Водная жизнь", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 353, "name": "Животное", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 354, "name": "День сурка", "genres": ["movie-foreign"], "year": "1993"},
-	{"id": 355, "name": "Восьмидесятые", "genres": ["series-russian"], "year": "2011 – 2016"}
+	{"id": 355, "name": "Восьмидесятые", "genres": ["series-russian"], "year": "2011 – 2016"},
+	{"id": 356, "name": "Мы — Миллеры", "genres": ["movie-foreign"], "year": "2013"}
 
 
 
