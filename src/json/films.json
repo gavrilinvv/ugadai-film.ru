@@ -354,7 +354,10 @@
 	{"id": 353, "name": "Животное", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 354, "name": "День сурка", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 355, "name": "Восьмидесятые", "genres": ["series-russian"], "year": "2011 – 2016"},
-	{"id": 356, "name": "Мы — Миллеры", "genres": ["movie-foreign"], "year": "2013"}
+	{"id": 356, "name": "Мы — Миллеры", "genres": ["movie-foreign"], "year": "2013"},
+	{"id": 357, "name": "Лицо со шрамом", "genres": ["movie-foreign"], "year": "1983"},
+	{"id": 358, "name": "Дюплекс", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 359, "name": "Убить Билла", "genres": ["movie-foreign"], "year": "2003"}
 
 
 
