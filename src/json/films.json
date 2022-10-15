@@ -357,7 +357,9 @@
 	{"id": 356, "name": "Мы — Миллеры", "genres": ["movie-foreign"], "year": "2013"},
 	{"id": 357, "name": "Лицо со шрамом", "genres": ["movie-foreign"], "year": "1983"},
 	{"id": 358, "name": "Дюплекс", "genres": ["movie-foreign"], "year": "2003"},
-	{"id": 359, "name": "Убить Билла", "genres": ["movie-foreign"], "year": "2003"}
+	{"id": 359, "name": "Убить Билла", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 360, "name": "Гарри Поттер и философский камень", "genres": ["movie-foreign"], "year": "2001"},
+	{"id": 360, "name": "Гарри Поттер и Кубок огня", "genres": ["movie-foreign"], "year": "2005"}
 
 
 
