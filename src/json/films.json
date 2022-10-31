@@ -362,7 +362,10 @@
 	{"id": 361, "name": "Гарри Поттер и Кубок огня", "genres": ["movie-foreign"], "year": "2005"},
 	{"id": 362, "name": "Побег из Шоушенка", "genres": ["movie-foreign"], "year": "1994"},
 	{"id": 363, "name": "Мертвец", "genres": ["movie-foreign"], "year": "1995"},
-	{"id": 364, "name": "Последний киногерой", "genres": ["movie-foreign"], "year": "1993"}
+	{"id": 364, "name": "Последний киногерой", "genres": ["movie-foreign"], "year": "1993"},
+	{"id": 365, "name": "Звонок", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 366, "name": "Рокки", "genres": ["movie-foreign"], "year": "1976"},
+	{"id": 367, "name": "25-й час", "genres": ["movie-foreign"], "year": "2002"}
 
 
 
