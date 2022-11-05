@@ -365,7 +365,15 @@
 	{"id": 364, "name": "Последний киногерой", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 365, "name": "Звонок", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 366, "name": "Рокки", "genres": ["movie-foreign"], "year": "1976"},
-	{"id": 367, "name": "25-й час", "genres": ["movie-foreign"], "year": "2002"}
+	{"id": 367, "name": "25-й час", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 368, "name": "Бумер", "genres": ["movie-russian"], "year": "2003"},
+	{"id": 369, "name": "Возвращение", "genres": ["movie-russian"], "year": "2003"},
+	{"id": 370, "name": "Притяжение", "genres": ["movie-russian"], "year": "2017"},
+	{"id": 371, "name": "Люблю тебя, чувак", "genres": ["movie-foreign"], "year": "2008"},
+	{"id": 372, "name": "Ничего не вижу, ничего не слышу", "genres": ["movie-foreign"], "year": "1989"},
+	{"id": 373, "name": "Хорошо быть тихоней", "genres": ["movie-foreign"], "year": "2012"},
+	{"id": 374, "name": "Сверхъестественное", "genres": ["series-foreign"], "year": "2005 – 2020"},
+	{"id": 375, "name": "Человек-муравей", "genres": ["series-foreign"], "year": "2015"}
 
 
 
