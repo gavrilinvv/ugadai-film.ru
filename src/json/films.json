@@ -373,7 +373,10 @@
 	{"id": 372, "name": "Ничего не вижу, ничего не слышу", "genres": ["movie-foreign"], "year": "1989"},
 	{"id": 373, "name": "Хорошо быть тихоней", "genres": ["movie-foreign"], "year": "2012"},
 	{"id": 374, "name": "Сверхъестественное", "genres": ["series-foreign"], "year": "2005 – 2020"},
-	{"id": 375, "name": "Человек-муравей", "genres": ["movie-foreign"], "year": "2015"}
+	{"id": 375, "name": "Человек-муравей", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 376, "name": "8 миля", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 377, "name": "Пролетая над гнездом кукушки", "genres": ["movie-foreign"], "year": "1975"},
+	{"id": 378, "name": "Гарри Поттер и Принц-полукровка", "genres": ["movie-foreign"], "year": "2009"}
 
 
 
