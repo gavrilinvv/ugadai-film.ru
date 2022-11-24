@@ -376,7 +376,9 @@
 	{"id": 375, "name": "Человек-муравей", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 376, "name": "8 миля", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 377, "name": "Пролетая над гнездом кукушки", "genres": ["movie-foreign"], "year": "1975"},
-	{"id": 378, "name": "Гарри Поттер и Принц-полукровка", "genres": ["movie-foreign"], "year": "2009"}
+	{"id": 378, "name": "Гарри Поттер и Принц-полукровка", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 379, "name": "Пробуждение", "genres": ["movie-foreign"], "year": "1990"},
+	{"id": 380, "name": "Начало", "genres": ["movie-foreign"], "year": "2010"}
 
 
 
