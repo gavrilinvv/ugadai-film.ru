@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var optionsParamsBlock = document.querySelector('.options-params');
 	var aboutBlock = document.querySelector('.about');
 	var playgroundBlock = document.querySelector('.playground');
+	var otherGamesBlock = document.querySelector('.other-games');
 	var losingBlock = document.querySelector('.losing');
 	var winningBlock = document.querySelector('.winning');
 	var correctAnswersCountBlock = document.querySelector('.winning__answers-correct span');
@@ -27,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var toStartBtns = document.querySelectorAll('.js-to-start');
 	var toAboutBtns = document.querySelectorAll('.js-to-about');
 	var toGameBtns = document.querySelectorAll('.js-to-game');
+	var toOtherGames = document.querySelectorAll('.js-to-other-games');
 
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
 	var countCorrectFilms = document.querySelector('.count-films span');
@@ -116,6 +118,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		[...toStartBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				showBlock(menuBlock);
+			})
+		});
+
+		[...toOtherGames].map(btn => {
+			btn.addEventListener('click', () => {
+				showBlock(otherGamesBlock);
 			})
 		});
 
@@ -231,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function showBlock(targetBlock) {
 		stopFireworks();
-		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock, aboutBlock];
+		var blocks = [menuBlock, optionsCategoryBlock, optionsParamsBlock, playgroundBlock, losingBlock, winningBlock, aboutBlock, otherGamesBlock];
 		blocks.forEach(block => {
 			block.style.display = 'none';
 		})

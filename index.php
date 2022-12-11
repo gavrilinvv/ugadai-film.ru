@@ -53,13 +53,14 @@
 				<div id="yandex_rtb_R-A-1480043-1"></div>
 			</div>
 			<div class="container">
-				<?include('start.php');?>
-				<?include('about.php');?>
-				<?include('options-category.php');?>
-				<?include('options-params.php');?>
-				<?include('playground.php');?>
-				<?include('losing.php');?>
-				<?include('winning.php');?>
+				<?include('screens/start.php');?>
+				<?include('screens/about.php');?>
+				<?include('screens/other-games.php');?>
+				<?include('screens/options-category.php');?>
+				<?include('screens/options-params.php');?>
+				<?include('screens/playground.php');?>
+				<?include('screens/losing.php');?>
+				<?include('screens/winning.php');?>
 			</div>
 			<div class="ad-right">
 				<!-- Yandex.RTB R-A-1480043-2 -->
