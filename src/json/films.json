@@ -379,7 +379,9 @@
 	{"id": 378, "name": "Гарри Поттер и Принц-полукровка", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 379, "name": "Пробуждение", "genres": ["movie-foreign"], "year": "1990"},
 	{"id": 380, "name": "Начало", "genres": ["movie-foreign"], "year": "2010"},
-	{"id": 381, "name": "Парк Юрского периода", "genres": ["movie-foreign"], "year": "1993"}
+	{"id": 381, "name": "Парк Юрского периода", "genres": ["movie-foreign"], "year": "1993"},
+	{"id": 382, "name": "Заплати другому", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 383, "name": "127 часов", "genres": ["movie-foreign"], "year": "2010"}
 
 
 
