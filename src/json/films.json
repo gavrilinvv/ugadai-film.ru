@@ -381,7 +381,15 @@
 	{"id": 380, "name": "Начало", "genres": ["movie-foreign"], "year": "2010"},
 	{"id": 381, "name": "Парк Юрского периода", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 382, "name": "Заплати другому", "genres": ["movie-foreign"], "year": "2000"},
-	{"id": 383, "name": "127 часов", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 383, "name": "127 часов", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 384, "name": "Мамы", "genres": ["movie-russian"], "year": "2012"},
+	{"id": 385, "name": "Белое солнце пустыни", "genres": ["movie-soviet"], "year": "1969"},
+	{"id": 386, "name": "Кин-дза-дза!", "genres": ["movie-soviet"], "year": "1986"},
+	{"id": 387, "name": "Гарри Поттер и Орден Феникса", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 388, "name": "Малыш и Карлсон", "genres": ["cartoon-soviet"], "year": "1968"},
+	{"id": 389, "name": "Кто я?", "genres": ["movie-foreign"], "year": "1998"}
+
+
 
 
 
