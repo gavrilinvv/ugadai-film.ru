@@ -88,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
+		// sortByYears();
+
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				resetTimer();
@@ -182,6 +184,20 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		});
 	})
+
+	function sortByYears() {
+		let res = [];
+		films.forEach(film => {
+			if (!res[film.year]) {
+				res[film.year] = [];
+			}
+			if (res[film.year]) {
+				res[film.year].push(film.name);
+			}
+		})
+
+		console.log(res);
+	}
 
 	function setTimer() {
 		clearInterval(timer);

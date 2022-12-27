@@ -387,7 +387,11 @@
 	{"id": 386, "name": "Кин-дза-дза!", "genres": ["movie-soviet"], "year": "1986"},
 	{"id": 387, "name": "Гарри Поттер и Орден Феникса", "genres": ["movie-foreign"], "year": "2007"},
 	{"id": 388, "name": "Малыш и Карлсон", "genres": ["cartoon-soviet"], "year": "1968"},
-	{"id": 389, "name": "Кто я?", "genres": ["movie-foreign"], "year": "1998"}
+	{"id": 389, "name": "Кто я?", "genres": ["movie-foreign"], "year": "1998"},
+	{"id": 390, "name": "Вечера на хуторе близ Диканьки", "genres": ["movie-soviet"], "year": "1961"},
+	{"id": 391, "name": "Смерть ей к лицу", "genres": ["movie-foreign"], "year": "1992"},
+	{"id": 392, "name": "Изо всех сил", "genres": ["movie-foreign"], "year": "1987"},
+	{"id": 393, "name": "Робокоп", "genres": ["movie-foreign"], "year": "1987"}
 
 
 
