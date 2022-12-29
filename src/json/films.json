@@ -391,7 +391,9 @@
 	{"id": 390, "name": "Вечера на хуторе близ Диканьки", "genres": ["movie-soviet"], "year": "1961"},
 	{"id": 391, "name": "Смерть ей к лицу", "genres": ["movie-foreign"], "year": "1992"},
 	{"id": 392, "name": "Изо всех сил", "genres": ["movie-foreign"], "year": "1987"},
-	{"id": 393, "name": "Робокоп", "genres": ["movie-foreign"], "year": "1987"}
+	{"id": 393, "name": "Робокоп", "genres": ["movie-foreign"], "year": "1987"},
+	{"id": 394, "name": "Кошмар перед Рождеством", "genres": ["cartoon-foreign"], "year": "1993"},
+	{"id": 395, "name": "Крик", "genres": ["movie-foreign"], "year": "1996"}
 
 
 
