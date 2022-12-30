@@ -393,7 +393,8 @@
 	{"id": 392, "name": "Изо всех сил", "genres": ["movie-foreign"], "year": "1987"},
 	{"id": 393, "name": "Робокоп", "genres": ["movie-foreign"], "year": "1987"},
 	{"id": 394, "name": "Кошмар перед Рождеством", "genres": ["cartoon-foreign"], "year": "1993"},
-	{"id": 395, "name": "Крик", "genres": ["movie-foreign"], "year": "1996"}
+	{"id": 395, "name": "Крик", "genres": ["movie-foreign"], "year": "1996"},
+	{"id": 396, "name": "Клаус", "genres": ["cartoon-foreign"], "year": "2019"}
 
 
 
