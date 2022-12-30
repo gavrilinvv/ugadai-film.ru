@@ -1775,3 +1775,39 @@ body {
     display: none;
   }
 }
+
+.ya-share2__badge, .ya-share2__icon {
+  height: 3.3333333333vw  !important;
+  width: 3.3333333333vw  !important;
+  background-size: 3.3333333333vw  !important;
+}
+@media screen and (min-width: 1441px) {
+  .ya-share2__badge, .ya-share2__icon {
+    height: 48px  !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ya-share2__badge, .ya-share2__icon {
+    height: 11.6666666667vw  !important;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .ya-share2__badge, .ya-share2__icon {
+    width: 48px  !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ya-share2__badge, .ya-share2__icon {
+    width: 11.6666666667vw  !important;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .ya-share2__badge, .ya-share2__icon {
+    background-size: 48px  !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ya-share2__badge, .ya-share2__icon {
+    background-size: 11.6666666667vw  !important;
+  }
+}

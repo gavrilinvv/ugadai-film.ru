@@ -398,6 +398,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+	function frameSuffix(value) {
+		const words = ['кадр', 'кадра', 'кадров'];
+		const cases = [2, 0, 1, 1, 1, 2];
+
+		return `${value} ${words[(value % 100 > 4 && value % 100 < 20)
+			? 2
+			: cases[(value % 10 < 5)
+				? value % 10
+				: 5]]}`;
+	}
+
 	async function getQuestion() {
 		let availableFilms = getAvailableFilms(); // фильмы, которые подходят по опциям (жанрам)
 		let conceivedFilm = {};
@@ -411,8 +422,17 @@ document.addEventListener('DOMContentLoaded', () => {
 			incorrectAnswersCountBlock.innerHTML = incorrectAnswersCount;
 			showBlock(winningBlock);
 			startFireworks();
+
+			Ya.share2('achive-share', {
+				content: {
+					url: 'https://ugadai-film.ru',
+					title: 'Я угадал ' + frameSuffix(correctAnswersCount) + '!'
+				}
+			});
+
 			correctAnswersCount = 0;
 			incorrectAnswersCount = 0;
+
 			return
 		}
 

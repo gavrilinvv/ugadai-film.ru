@@ -958,3 +958,9 @@ body {
 		display: none;
 	}
 }
+
+.ya-share2__badge, .ya-share2__icon {
+	@include fluid('height', 48px, 42px, true);
+	@include fluid('width', 48px, 42px, true);
+	@include fluid('background-size', 48px, 42px, true);
+}
