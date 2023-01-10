@@ -51,7 +51,7 @@
 	{"id": 50, "name": "Дурак", "genres": ["movie-russian"], "year": "2014"},
 	{"id": 51, "name": "Кавказская пленница", "genres": ["movie-soviet"], "year": "1966"},
 	{"id": 52, "name": "Девчата", "genres": ["movie-soviet"], "year": "1962"},
-	{"id": 53, "name": "За спичками", "genres": ["movie-soviet"], "year": "1979"},
+	{"id": 53, "name": "За спичками", "genres": ["movie-soviet"], "year": "1980"},
 	{"id": 54, "name": "Старики-разбойники", "genres": ["movie-soviet"], "year": "1971"},
 	{"id": 55, "name": "Геймер", "genres": ["movie-foreign"], "year": "2009"},
 	{"id": 56, "name": "Декстер", "genres": ["series-foreign"], "year": "2006 - 2013"},
