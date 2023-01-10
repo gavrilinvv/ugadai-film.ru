@@ -397,7 +397,11 @@
 	{"id": 396, "name": "Клаус", "genres": ["cartoon-foreign"], "year": "2019"},
 	{"id": 397, "name": "Я худею", "genres": ["movie-russian"], "year": "2018"},
 	{"id": 398, "name": "Форма воды", "genres": ["movie-foreign"], "year": "2017"},
-	{"id": 399, "name": "Достучаться до небес", "genres": ["movie-foreign"], "year": "1997"}
+	{"id": 399, "name": "Достучаться до небес", "genres": ["movie-foreign"], "year": "1997"},
+	{"id": 400, "name": "1+1", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 401, "name": "Крепкий орешек", "genres": ["movie-soviet"], "year": "1968"},
+	{"id": 402, "name": "Выживший", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 403, "name": "Три икса", "genres": ["movie-foreign"], "year": "2002"}
 
 
 
