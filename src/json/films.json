@@ -401,7 +401,9 @@
 	{"id": 400, "name": "1+1", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 401, "name": "Крепкий орешек", "genres": ["movie-soviet"], "year": "1968"},
 	{"id": 402, "name": "Выживший", "genres": ["movie-foreign"], "year": "2015"},
-	{"id": 403, "name": "Три икса", "genres": ["movie-foreign"], "year": "2002"}
+	{"id": 403, "name": "Три икса", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 404, "name": "Чудо", "genres": ["movie-foreign"], "year": "2017"},
+	{"id": 405, "name": "Кабельщик", "genres": ["movie-foreign"], "year": "1996"}
 
 
 
