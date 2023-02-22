@@ -369,6 +369,10 @@ body {
 
 		& .button {
 			width: 47%;
+			@include fluid('height', 26px, 24px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			// @include fluid('width', 370px);
 			@include fluid('margin-bottom', 8px);
 

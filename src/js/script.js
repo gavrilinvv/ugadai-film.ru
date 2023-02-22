@@ -199,6 +199,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.log(res);
 	}
 
+	function initHotKeys() {
+		window.addEventListener('keyup', function keyUpFunc(e) {
+			if (!['1','2','3','4'].includes(e.key)) return;
+
+			let btn = document.querySelector('.button__answer[data-index="' + e.key + '"]');
+			checkAnswer(btn.getAttribute('data-value'), btn);
+			window.removeEventListener('keyup', keyUpFunc);
+		})
+	}
+
 	function setTimer() {
 		clearInterval(timer);
 		clearInterval(countdown);
@@ -350,11 +360,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 				correctAnswer = question.answer; // правильный ответ на вопрос (загаданный фильм)
 
-				question.answers.forEach(answer => {
+				question.answers.forEach((answer, i) => {
 					var btn = document.createElement('div');
 					btn.classList.add('button');
-					btn.innerHTML = answer.name + ' <span>(' + answer.year + ')</span>';
+					btn.innerHTML = answer.name + '&nbsp;<span>(' + answer.year + ')</span>';
 					btn.setAttribute('data-value', answer.id);
+					btn.setAttribute('data-index', i+1);
 					btn.classList.add('button__answer');
 					if (answer.name.length + answer.year.length > 25) btn.classList.add('button__small');
 					if (answer.name.length + answer.year.length > 35) btn.classList.add('button__xsmall');
@@ -367,10 +378,11 @@ document.addEventListener('DOMContentLoaded', () => {
 					btn.addEventListener('mouseout', () => {
 						btn.style.transform = 'scale(1)';
 					})
-					btn.addEventListener('mouseup', () => {
+					btn.addEventListener('mouseup', e => {
 						checkAnswer(btn.getAttribute('data-value'), btn);
 					})
 				})
+				initHotKeys();
 			});
 	}
 

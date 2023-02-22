@@ -569,7 +569,21 @@ body {
 }
 .playground-answers .button {
   width: 47%;
+  height: 1.8055555556vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.5555555556vw;
+}
+@media screen and (min-width: 1441px) {
+  .playground-answers .button {
+    height: 26px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answers .button {
+    height: 6.6666666667vw;
+  }
 }
 @media screen and (min-width: 1441px) {
   .playground-answers .button {
