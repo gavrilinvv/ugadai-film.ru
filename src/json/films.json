@@ -413,7 +413,11 @@
 	{"id": 412, "name": "Пассажиры", "genres": ["movie-foreign"], "year": "2016"},
 	{"id": 413, "name": "Колесо чудес", "genres": ["movie-foreign"], "year": "2017"},
 	{"id": 414, "name": "Дождливый день в Нью-Йорке", "genres": ["movie-foreign"], "year": "2019"},
-	{"id": 415, "name": "Люси", "genres": ["movie-foreign"], "year": "2014"}
+	{"id": 415, "name": "Люси", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 416, "name": "Нехочуха", "genres": ["cartoon-soviet"], "year": "1986"},
+	{"id": 417, "name": "Бременские музыканты", "genres": ["cartoon-soviet"], "year": "1969"},
+	{"id": 418, "name": "Тайна третьей планеты", "genres": ["cartoon-soviet"], "year": "1981"},
+	{"id": 419, "name": "Подарок для слона", "genres": ["cartoon-soviet"], "year": "1984"}
 
 
 
