@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						checkAnswer(btn.getAttribute('data-value'), btn);
 					})
 				})
-				initHotKeys();
+				// initHotKeys();
 			});
 	}
 
