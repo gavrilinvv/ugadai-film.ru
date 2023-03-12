@@ -417,7 +417,9 @@
 	{"id": 416, "name": "Нехочуха", "genres": ["cartoon-soviet"], "year": "1986"},
 	{"id": 417, "name": "Бременские музыканты", "genres": ["cartoon-soviet"], "year": "1969"},
 	{"id": 418, "name": "Тайна третьей планеты", "genres": ["cartoon-soviet"], "year": "1981"},
-	{"id": 419, "name": "Подарок для слона", "genres": ["cartoon-soviet"], "year": "1984"}
+	{"id": 419, "name": "Подарок для слона", "genres": ["cartoon-soviet"], "year": "1984"},
+	{"id": 420, "name": "Малышка на миллион", "genres": ["movie-foreign"], "year": "2004"},
+	{"id": 421, "name": "Сенсация ", "genres": ["movie-foreign"], "year": "2006"}
 
 
 
