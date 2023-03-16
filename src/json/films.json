@@ -419,7 +419,8 @@
 	{"id": 418, "name": "Тайна третьей планеты", "genres": ["cartoon-soviet"], "year": "1981"},
 	{"id": 419, "name": "Подарок для слона", "genres": ["cartoon-soviet"], "year": "1984"},
 	{"id": 420, "name": "Малышка на миллион", "genres": ["movie-foreign"], "year": "2004"},
-	{"id": 421, "name": "Сенсация ", "genres": ["movie-foreign"], "year": "2006"}
+	{"id": 421, "name": "Сенсация ", "genres": ["movie-foreign"], "year": "2006"},
+	{"id": 422, "name": "Добро пожаловать или Посторонним вход воспрещен", "genres": ["movie-soviet"], "year": "1964"}
 
 
 
