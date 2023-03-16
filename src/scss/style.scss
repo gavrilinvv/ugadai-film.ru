@@ -642,7 +642,7 @@ body {
 
 	&__xsmall {
 		@include fluid('font-size', 16px, 12px);
-		@include fluid('line-height', 31px, 24px);
+		@include fluid('line-height', 18px, 18px);
 	}
 
 	// &__xxsmall {

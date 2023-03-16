@@ -1165,7 +1165,7 @@ body {
 }
 .button__xsmall {
   font-size: 1.1111111111vw;
-  line-height: 2.1527777778vw;
+  line-height: 1.25vw;
 }
 @media screen and (min-width: 1441px) {
   .button__xsmall {
@@ -1179,12 +1179,12 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .button__xsmall {
-    line-height: 31px;
+    line-height: 18px;
   }
 }
 @media screen and (max-width: 1000px) {
   .button__xsmall {
-    line-height: 6.6666666667vw;
+    line-height: 5vw;
   }
 }
 .button__answer-success {
