@@ -422,7 +422,8 @@
 	{"id": 421, "name": "Сенсация ", "genres": ["movie-foreign"], "year": "2006"},
 	{"id": 422, "name": "Добро пожаловать или Посторонним вход воспрещен", "genres": ["movie-soviet"], "year": "1964"},
 	{"id": 423, "name": "Разрисованная вуаль", "genres": ["movie-foreign"], "year": "2006"},
-	{"id": 424, "name": "Поймай меня, если сможешь", "genres": ["movie-foreign"], "year": "2002"}
+	{"id": 424, "name": "Поймай меня, если сможешь", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 425, "name": "Джокер", "genres": ["movie-foreign"], "year": "2019"}
 
 
 
