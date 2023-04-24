@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
-		// sortByYears();
+		sortByYears();
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
