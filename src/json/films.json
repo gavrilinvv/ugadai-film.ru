@@ -425,7 +425,9 @@
 	{"id": 424, "name": "Поймай меня, если сможешь", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 425, "name": "Джокер", "genres": ["movie-foreign"], "year": "2019"},
 	{"id": 426, "name": "Танго и Кэш", "genres": ["movie-foreign"], "year": "1989"},
-	{"id": 427, "name": "Красота по-американски", "genres": ["movie-foreign"], "year": "1999"}
+	{"id": 427, "name": "Красота по-американски", "genres": ["movie-foreign"], "year": "1999"},
+	{"id": 428, "name": "Несносные боссы", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 429, "name": "Вам письмо", "genres": ["movie-foreign"], "year": "1998"}
 
 
 
