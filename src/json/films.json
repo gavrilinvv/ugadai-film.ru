@@ -428,7 +428,8 @@
 	{"id": 427, "name": "Красота по-американски", "genres": ["movie-foreign"], "year": "1999"},
 	{"id": 428, "name": "Несносные боссы", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 429, "name": "Вам письмо", "genres": ["movie-foreign"], "year": "1998"},
-	{"id": 430, "name": "Игорь", "genres": ["cartoon-foreign"], "year": "2008"}
+	{"id": 430, "name": "Игорь", "genres": ["cartoon-foreign"], "year": "2008"},
+	{"id": 431, "name": "Фарго", "genres": ["movie-foreign"], "year": "1995"}
 
 
 
