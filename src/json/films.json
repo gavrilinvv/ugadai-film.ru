@@ -433,7 +433,8 @@
 	{"id": 432, "name": "Троя", "genres": ["movie-foreign"], "year": "2004"},
 	{"id": 433, "name": "Васаби", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 434, "name": "Типа крутые легавые", "genres": ["movie-foreign"], "year": "2007"},
-	{"id": 435, "name": "Изображая жертву", "genres": ["movie-russian"], "year": "2006"}
+	{"id": 435, "name": "Изображая жертву", "genres": ["movie-russian"], "year": "2006"},
+	{"id": 436, "name": "Общество мертвых поэтов", "genres": ["movie-foreign"], "year": "1989"}
 
 
 
