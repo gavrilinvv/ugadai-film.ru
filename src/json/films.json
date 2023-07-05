@@ -434,7 +434,9 @@
 	{"id": 433, "name": "Васаби", "genres": ["movie-foreign"], "year": "2001"},
 	{"id": 434, "name": "Типа крутые легавые", "genres": ["movie-foreign"], "year": "2007"},
 	{"id": 435, "name": "Изображая жертву", "genres": ["movie-russian"], "year": "2006"},
-	{"id": 436, "name": "Общество мертвых поэтов", "genres": ["movie-foreign"], "year": "1989"}
+	{"id": 436, "name": "Общество мертвых поэтов", "genres": ["movie-foreign"], "year": "1989"},
+	{"id": 437, "name": "Текст", "genres": ["movie-russian"], "year": "2019"},
+	{"id": 438, "name": "Белые люди не умеют прыгать", "genres": ["movie-foreign"], "year": "1992"}
 
 
 
