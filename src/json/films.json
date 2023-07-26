@@ -436,7 +436,10 @@
 	{"id": 435, "name": "Изображая жертву", "genres": ["movie-russian"], "year": "2006"},
 	{"id": 436, "name": "Общество мертвых поэтов", "genres": ["movie-foreign"], "year": "1989"},
 	{"id": 437, "name": "Текст", "genres": ["movie-russian"], "year": "2019"},
-	{"id": 438, "name": "Белые люди не умеют прыгать", "genres": ["movie-foreign"], "year": "1992"}
+	{"id": 438, "name": "Белые люди не умеют прыгать", "genres": ["movie-foreign"], "year": "1992"},
+	{"id": 439, "name": "Простые сложности", "genres": ["movie-foreign"], "year": "2009"},
+	{"id": 440, "name": "Тренер Картер", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 441, "name": "Круэлла", "genres": ["movie-foreign"], "year": "2021"}
 
 
 
