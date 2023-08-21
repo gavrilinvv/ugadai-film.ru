@@ -25,19 +25,25 @@
 		<meta name="google-site-verification" content="eqxuB-7-CX_pyxgAaAI-gu1vK94yKWGrk_Ye_fcSwn0" />
 
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-		m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		<? if (!$_GET["__cf_chl_tk"] && !$_GET["__cf_chl_rt_tk)"]) : ?>
+			<script type="text/javascript" >
+				console.log('1');
+				if (!window.location.search.includes('__cf_chl_tk') && !window.location.search.includes('__cf_chl_rt_tk')) {
+					console.log('2');
+					(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+					m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+					(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-		ym(87285918, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-		});
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/87285918" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+					ym(87285918, "init", {
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				}
+			</script>
+			<noscript><div><img src="https://mc.yandex.ru/watch/87285918" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<? endif; ?>
 		<!-- /Yandex.Metrika counter -->
 
 		<!-- Yandex.RTB -->
