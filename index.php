@@ -13,7 +13,7 @@
 		<meta property="og:url" content="https://ugadai-film.ru" />
 		<meta property="og:description" content="Угадай фильм по кадру, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты. Большая база фильмов" />
 		<meta name="description" content="Угадай фильм по кадру, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты. Большая база фильмов" />
-		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, играть без регистрации, онлайн, на время, сериалы, российские, советские, зарубежные, мультфильмы" />
+		<meta name="keywords" content="Угадай фильм, кино, бесплатная браузерная игра, тест, викторина, играть без регистрации, онлайн, на время, сериалы, российские, советские, зарубежные, мультфильмы" />
 		<meta name="yandex-verification" content="22df35eea5fe9acf" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" type="image/x-icon">

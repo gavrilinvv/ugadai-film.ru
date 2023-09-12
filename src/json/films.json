@@ -441,7 +441,11 @@
 	{"id": 440, "name": "Тренер Картер", "genres": ["movie-foreign"], "year": "2005"},
 	{"id": 441, "name": "Круэлла", "genres": ["movie-foreign"], "year": "2021"},
 	{"id": 442, "name": "Драйв", "genres": ["movie-foreign"], "year": "2011"},
-	{"id": 443, "name": "Пляж", "genres": ["movie-foreign"], "year": "2000"}
+	{"id": 443, "name": "Пляж", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 444, "name": "Оружейный барон", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 445, "name": "Знаки", "genres": ["movie-foreign"], "year": "2002"}
+
+
 
 
 
