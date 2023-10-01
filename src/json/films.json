@@ -443,7 +443,9 @@
 	{"id": 442, "name": "Драйв", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 443, "name": "Пляж", "genres": ["movie-foreign"], "year": "2000"},
 	{"id": 444, "name": "Оружейный барон", "genres": ["movie-foreign"], "year": "2005"},
-	{"id": 445, "name": "Знаки", "genres": ["movie-foreign"], "year": "2002"}
+	{"id": 445, "name": "Знаки", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 446, "name": "Заложник", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 447, "name": "Пункт назначения", "genres": ["movie-foreign"], "year": "2000"}
 
 
 
