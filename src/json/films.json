@@ -445,7 +445,9 @@
 	{"id": 444, "name": "Оружейный барон", "genres": ["movie-foreign"], "year": "2005"},
 	{"id": 445, "name": "Знаки", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 446, "name": "Заложник", "genres": ["movie-foreign"], "year": "2005"},
-	{"id": 447, "name": "Пункт назначения", "genres": ["movie-foreign"], "year": "2000"}
+	{"id": 447, "name": "Пункт назначения", "genres": ["movie-foreign"], "year": "2000"},
+	{"id": 448, "name": "Кровью и потом: Анаболики", "genres": ["movie-foreign"], "year": "2013"},
+	{"id": 449, "name": "10 причин моей ненависти", "genres": ["movie-foreign"], "year": "1999"}
 
 
 
