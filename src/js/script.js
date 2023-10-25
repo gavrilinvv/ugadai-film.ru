@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		// menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
 
-		sortByYears();
+		// sortByYears();
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				optionRangeInputFilmsCount.value = countTargetFilms;
 				optionRangeOutputFilmsCount.value = countTargetFilms;
 
+				sortByYears(selectedGenres);
 				showBlock(optionsParamsBlock);
 			})
 		});
@@ -185,15 +186,22 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	})
 
-	function sortByYears() {
+	function sortByYears(genres) {
 		let res = [];
 		films.forEach(film => {
 			if (!res[film.year]) {
 				res[film.year] = [];
 			}
-			if (res[film.year]) {
-				res[film.year].push(film.name);
-			}
+
+			// if (genres) {
+				if (res[film.year] && genres[0] === film.genres[0]) {
+					res[film.year].push(film.name);
+				}
+			// } else {
+			// 	if (res[film.year]) {
+			// 		res[film.year].push(film.name);
+			// 	}
+			// }
 		})
 
 		console.log(res);
