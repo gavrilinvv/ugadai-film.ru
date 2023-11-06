@@ -451,7 +451,10 @@
 	{"id": 450, "name": "Идентификация Борна", "genres": ["movie-foreign"], "year": "2002"},
 	{"id": 451, "name": "Шакал", "genres": ["movie-foreign"], "year": "1997"},
 	{"id": 452, "name": "Никто", "genres": ["movie-foreign"], "year": "2021"},
-	{"id": 453, "name": "Жизнь Дэвида Гейла", "genres": ["movie-foreign"], "year": "2002"}
+	{"id": 453, "name": "Жизнь Дэвида Гейла", "genres": ["movie-foreign"], "year": "2002"},
+	{"id": 454, "name": "Бёрдмэн", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 455, "name": "Мышиная охота", "genres": ["movie-foreign"], "year": "1997"},
+	{"id": 456, "name": "Жизнь этого парня", "genres": ["movie-foreign"], "year": "1993"}
 
 
 

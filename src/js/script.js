@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	getFilms().then(res => {
 		films = res;
 
-		// countCorrectFilms.innerHTML = films.length;
+		countCorrectFilms.innerHTML = films.length;
 
 		// setCountOfGenres();
 
