@@ -50,6 +50,12 @@ $gap-size-mobile: 12px;
 	}
 }
 
+@mixin not-mobile {
+	@media screen and (min-width: $mobile-width + 1px) {
+		@content;
+	}
+}
+
 @mixin wide-screen {
 	@media screen and (min-width: $base-viewport-width + 1px) {
 		@content;
@@ -650,11 +656,13 @@ body {
 	// 	@include fluid('line-height', 34px, 24px);
 	// }
 
-	// &:hover {
-	// 	background: #1c685b;
-	// 	transition: .3s;
-	// 	transform: scale(1.1);
-	// }
+	@include not-mobile {
+		&:hover {
+			background: darken(#248a79, 10%);
+			transition: .3s;
+			// transform: scale(1.1);
+		}
+	}
 
 	&__answer {
 		&-success {
@@ -669,7 +677,7 @@ body {
 			// }
 		}
 		&-error {
-			background: brown;
+			background: brown!important;
 			cursor: default;
 			pointer-events: none;
 			animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
@@ -859,8 +867,8 @@ body {
 		&::before {
 			content: '';
 			display: inline-block;
-			@include fluid('width', 30px, 20px);
-			@include fluid('height', 30px, 20px);
+			@include fluid('width', 20px, 20px);
+			@include fluid('height', 20px, 20px);
 			@include fluid('border-radius', 4px);
 			@include fluid('margin-right', 15px);
 			background-color: rgba(0,0,0,0.5);
@@ -887,8 +895,8 @@ body {
 			left: 0;
 			top: 0;
 			@include fluid('border-radius', 4px);
-			@include fluid('width', 35px, 24px);
-			@include fluid('height', 35px, 24px);
+			@include fluid('width', 24px, 24px);
+			@include fluid('height', 24px, 24px);
 		}
 	}
 

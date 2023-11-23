@@ -1187,6 +1187,12 @@ body {
     line-height: 5vw;
   }
 }
+@media screen and (min-width: 1001px) {
+  .button:hover {
+    background: #196256;
+    transition: 0.3s;
+  }
+}
 .button__answer-success {
   background: seagreen;
   box-shadow: 0 0 5px 3px #5cf9a1;
@@ -1196,7 +1202,7 @@ body {
   animation: zoom 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 .button__answer-error {
-  background: brown;
+  background: brown !important;
   cursor: default;
   pointer-events: none;
   -webkit-animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -1533,8 +1539,8 @@ body {
 .checkbox__body::before {
   content: "";
   display: inline-block;
-  width: 2.0833333333vw;
-  height: 2.0833333333vw;
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
   border-radius: 0.2777777778vw;
   margin-right: 1.0416666667vw;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1542,7 +1548,7 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body::before {
-    width: 30px;
+    width: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1552,7 +1558,7 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body::before {
-    height: 30px;
+    height: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1599,8 +1605,8 @@ body {
   left: 0;
   top: 0;
   border-radius: 0.2777777778vw;
-  width: 2.4305555556vw;
-  height: 2.4305555556vw;
+  width: 1.6666666667vw;
+  height: 1.6666666667vw;
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body.checkbox__checked::after {
@@ -1614,7 +1620,7 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body.checkbox__checked::after {
-    width: 35px;
+    width: 24px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1624,7 +1630,7 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .checkbox__body.checkbox__checked::after {
-    height: 35px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 1000px) {
