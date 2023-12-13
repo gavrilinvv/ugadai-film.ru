@@ -456,7 +456,13 @@
 	{"id": 455, "name": "Мышиная охота", "genres": ["movie-foreign"], "year": "1997"},
 	{"id": 456, "name": "Жизнь этого парня", "genres": ["movie-foreign"], "year": "1993"},
 	{"id": 457, "name": "Жестокий ручей", "genres": ["movie-foreign"], "year": "2004"},
-	{"id": 458, "name": "Страшилы", "genres": ["movie-foreign"], "year": "1996"}
+	{"id": 458, "name": "Страшилы", "genres": ["movie-foreign"], "year": "1996"},
+	{"id": 459, "name": "Снежная королева", "genres": ["cartoon-soviet"], "year": "1957"},
+	{"id": 460, "name": "Самый быстрый Indian", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 461, "name": "Ангел-А", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 462, "name": "Сказка о царе Салтане", "genres": ["cartoon-soviet"], "year": "1984"},
+	{"id": 463, "name": "Мойдодыр", "genres": ["cartoon-soviet"], "year": "1954"}
+
 
 
 

@@ -165,7 +165,7 @@ body {
 
 .count-films {
 	color: $white;
-	@include fluid('font-size', 10px, 8px);
+	@include fluid('font-size', 12px, 12px);
 	position: absolute;
 	@include fluid('bottom', 5px, 5px);
 	left: 50%;
