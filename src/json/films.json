@@ -465,8 +465,9 @@
 	{"id": 464, "name": "Берегись автомобиля", "genres": ["movie-soviet"], "year": "1966"},
 	{"id": 465, "name": "P.S. Я люблю тебя", "genres": ["movie-foreign"], "year": "2007"},
 	{"id": 466, "name": "Поездка в Америку", "genres": ["movie-foreign"], "year": "1988"},
-	{"id": 467, "name": "Полночь в Париже", "genres": ["movie-foreign"], "year": "2011"}
-
+	{"id": 467, "name": "Полночь в Париже", "genres": ["movie-foreign"], "year": "2011"},
+	{"id": 468, "name": "Человек-паук 3: Враг в отражении", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 469, "name": "Матрица: Перезагрузка", "genres": ["movie-foreign"], "year": "2003"}
 
 
 
