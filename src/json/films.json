@@ -467,7 +467,10 @@
 	{"id": 466, "name": "Поездка в Америку", "genres": ["movie-foreign"], "year": "1988"},
 	{"id": 467, "name": "Полночь в Париже", "genres": ["movie-foreign"], "year": "2011"},
 	{"id": 468, "name": "Человек-паук 3: Враг в отражении", "genres": ["movie-foreign"], "year": "2007"},
-	{"id": 469, "name": "Матрица: Перезагрузка", "genres": ["movie-foreign"], "year": "2003"}
+	{"id": 469, "name": "Матрица: Перезагрузка", "genres": ["movie-foreign"], "year": "2003"},
+	{"id": 470, "name": "Челюсти", "genres": ["movie-foreign"], "year": "1975"},
+	{"id": 471, "name": "Прибытие", "genres": ["movie-foreign"], "year": "2016"},
+	{"id": 472, "name": "Оппенгеймер ", "genres": ["movie-foreign"], "year": "2023"}
 
 
 
