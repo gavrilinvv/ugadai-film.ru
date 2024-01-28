@@ -470,7 +470,9 @@
 	{"id": 469, "name": "Матрица: Перезагрузка", "genres": ["movie-foreign"], "year": "2003"},
 	{"id": 470, "name": "Челюсти", "genres": ["movie-foreign"], "year": "1975"},
 	{"id": 471, "name": "Прибытие", "genres": ["movie-foreign"], "year": "2016"},
-	{"id": 472, "name": "Оппенгеймер ", "genres": ["movie-foreign"], "year": "2023"}
+	{"id": 472, "name": "Оппенгеймер ", "genres": ["movie-foreign"], "year": "2023"},
+	{"id": 473, "name": "Мастер и Маргарита", "genres": ["movie-russian"], "year": "2024"},
+	{"id": 474, "name": "Поцелуй на вылет", "genres": ["movie-foreign"], "year": "2005"}
 
 
 
