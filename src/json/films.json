@@ -472,7 +472,13 @@
 	{"id": 471, "name": "Прибытие", "genres": ["movie-foreign"], "year": "2016"},
 	{"id": 472, "name": "Оппенгеймер ", "genres": ["movie-foreign"], "year": "2023"},
 	{"id": 473, "name": "Мастер и Маргарита", "genres": ["movie-russian"], "year": "2024"},
-	{"id": 474, "name": "Поцелуй на вылет", "genres": ["movie-foreign"], "year": "2005"}
+	{"id": 474, "name": "Поцелуй на вылет", "genres": ["movie-foreign"], "year": "2005"},
+	{"id": 475, "name": "Люди в черном", "genres": ["movie-foreign"], "year": "1997"},
+	{"id": 476, "name": "Приключения Васи Куролесова", "genres": ["cartoon-soviet"], "year": "1981"},
+	{"id": 477, "name": "Невероятные приключения итальянцев в России", "genres": ["movie-soviet"], "year": "1973"},
+	{"id": 478, "name": "Kingsman: Секретная служба", "genres": ["movie-foreign"], "year": "2015"}
+
+
 
 
 
