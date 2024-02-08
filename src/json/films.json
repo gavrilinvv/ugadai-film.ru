@@ -476,7 +476,9 @@
 	{"id": 475, "name": "Люди в черном", "genres": ["movie-foreign"], "year": "1997"},
 	{"id": 476, "name": "Приключения Васи Куролесова", "genres": ["cartoon-soviet"], "year": "1981"},
 	{"id": 477, "name": "Невероятные приключения итальянцев в России", "genres": ["movie-soviet"], "year": "1973"},
-	{"id": 478, "name": "Kingsman: Секретная служба", "genres": ["movie-foreign"], "year": "2015"}
+	{"id": 478, "name": "Kingsman: Секретная служба", "genres": ["movie-foreign"], "year": "2015"},
+	{"id": 479, "name": "Остров сокровищ", "genres": ["cartoon-soviet"], "year": "1988"},
+	{"id": 480, "name": "Лягушка-путешественница", "genres": ["cartoon-soviet"], "year": "1965"}
 
 
 
