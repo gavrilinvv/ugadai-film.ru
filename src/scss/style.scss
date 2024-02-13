@@ -174,6 +174,72 @@ body {
 	transform: translate(-50%, 0);
 }
 
+.tooltip {
+	border-radius: 50%;
+	border: 1px solid $green;
+	color: $white;
+	background-color: rgba(0,0,0,0.5);
+	@include fluid('height', 20px);
+	@include fluid('width', 20px);
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	@include fluid('font-size', 16px, 14px);
+	@include fluid('margin-left', 12px);
+	position: relative;
+
+	& .tooltip-text {
+		visibility: hidden;
+		position: absolute;
+		display: inline-block;
+		color: $white;
+		background-color: rgba(0,0,0,1);
+		width: max-content;
+		@include fluid('padding-top', 8px, 16px);
+		@include fluid('padding-bottom', 8px, 16px);
+		@include fluid('padding-left', 8px, 16px);
+		@include fluid('padding-right', 8px, 16px);
+		@include fluid('left', 48px);
+		top: 50%;
+
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: solid transparent;
+			@include fluid('border-width', 16px);
+			border-right-color: rgba(0,0,0,1);
+			top: 50%;
+			@include fluid('left', -32px);
+			transform: translateY(-50%);
+		}
+	}
+
+	&:hover {
+		& .tooltip-text {
+			visibility: visible;
+			opacity: 1;
+			transform: translateX(0%) translateY(-50%);
+		}
+	}
+
+	@include mobile {
+		position: unset;
+
+		& .tooltip-text {
+			left: none;
+			max-width: fit-content;
+			left: 2%;
+			right: 2%;
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+
 .text {
 	color: $white;
 	@include fluid('font-size', 18px, 14px);
@@ -856,6 +922,10 @@ body {
 	@include fluid('margin-bottom', 15px, 5px);
 	cursor: pointer;
 	user-select: none;
+
+	&.option {
+		display: flex;
+	}
 
 	&__body {
 		display: flex;

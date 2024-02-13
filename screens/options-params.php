@@ -12,6 +12,9 @@
 			На&nbsp;время
 			<input type="checkbox" value="time">
 		</div>
+		<div class="tooltip">?
+			<div class="tooltip-text">У вас будет 10 секунд на каждый кадр. Чем быстрее вы угадаете кадр, тем больше очков вы получите</div>
+		</div>
 	</div>
 
 	<div class="checkbox option">
@@ -25,6 +28,9 @@
 		<div class="checkbox__body">
 			Интересные факты
 			<input type="checkbox" value="facts">
+		</div>
+		<div class="tooltip">?
+			<div class="tooltip-text">После каждого угаданного кадра вы будете получать интересный факт об этом фильме</div>
 		</div>
 	</div>
 

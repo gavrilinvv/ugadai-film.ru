@@ -479,7 +479,12 @@
 	{"id": 478, "name": "Kingsman: Секретная служба", "genres": ["movie-foreign"], "year": "2015"},
 	{"id": 479, "name": "Остров сокровищ", "genres": ["cartoon-soviet"], "year": "1988"},
 	{"id": 480, "name": "Лягушка-путешественница", "genres": ["cartoon-soviet"], "year": "1965"},
-	{"id": 481, "name": "Впритык", "genres": ["movie-foreign"], "year": "2010"}
+	{"id": 481, "name": "Впритык", "genres": ["movie-foreign"], "year": "2010"},
+	{"id": 482, "name": "Молодой человек", "genres": ["movie-russian"], "year": "2022"},
+	{"id": 483, "name": "Хардкор", "genres": ["movie-russian"], "year": "2016"},
+	{"id": 484, "name": "Дикая", "genres": ["movie-foreign"], "year": "2014"}
+
+
 
 
 
