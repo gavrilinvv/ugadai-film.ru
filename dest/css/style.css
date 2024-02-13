@@ -162,7 +162,7 @@ body {
 
 .tooltip {
   border-radius: 50%;
-  border: 1px solid #48ac5e;
+  border: 1px solid #248a79;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
   height: 1.3888888889vw;
@@ -173,6 +173,7 @@ body {
   font-size: 1.1111111111vw;
   margin-left: 0.8333333333vw;
   position: relative;
+  z-index: 9;
 }
 @media screen and (min-width: 1441px) {
   .tooltip {
@@ -328,6 +329,7 @@ body {
     max-width: fit-content;
     left: 2%;
     right: 2%;
+    border: 1px solid #ffffff;
   }
   .tooltip .tooltip-text:after {
     display: none;
