@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var countCorrectFilms = document.querySelector('.count-films span');
 
 	var answersBlock = document.querySelector('.playground-answers');
+	var answerString = document.querySelector('.playground-answer-string');
 
 	var movieForeignCount = document.querySelector('#movie-foreign-count');
 	var movieRussianCount = document.querySelector('#movie-russian-count');
@@ -61,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	var options = {
 		needTimer: false,
 		onelife: false,
-		facts: false
+		facts: false,
+		directAnswer: false
 	};
 	var startTime = 10;
 	var currentTime = 10;
@@ -137,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				scoreBlock.innerHTML = 0;
 				counterNoError = 0;
 				answersBlock.innerHTML = '';
+				answerString.innerHTML = '';
 				factText.innerHTML = '';
 				questBlock.style.display = 'block';
 				factBlock.style.display = 'none';
@@ -181,6 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 				if (value == 'facts') {
 					options.facts = input.checked;
+				}
+				if (value == 'directanswer') {
+					options.directAnswer = input.checked;
 				}
 			})
 		});
@@ -456,44 +462,59 @@ document.addEventListener('DOMContentLoaded', () => {
 			return
 		}
 
-		// добавляем загаданный фильм в массив ответов
-		while (answers.length < 1) {
+		if (!options.directAnswer) {
+			answersBlock.classList.remove('_hidden');
+
+			// добавляем загаданный фильм в массив ответов
+			while (answers.length < 1) {
+				conceivedFilm = films[getRandomInt(films.length)]; // рандомный выбор фильма из каталога
+				// let filmGenres = conceivedFilm.genres.split(', '); // получаем жанры этого фильма
+				let filmGenres = conceivedFilm.genres; // получаем жанры этого фильма
+
+				// добавляем фильм в массив если
+				if (
+					hasGenre(filmGenres, selectedGenres) && // фильм соответствует жанру
+					passedFilms.includes(conceivedFilm.id) === false
+				) {
+					answers.push(conceivedFilm); // добавляем загаданный фильм в массив ответов
+				}
+			}
+
+			// собираем 3 фильма помимо загаданного
+			while (answers.length < 4) {
+				let film = films[getRandomInt(films.length)]; // рандомный фильм
+				// let filmGenres = film.genres.split(', '); // получаем жанры этого фильма
+				let filmGenres = film.genres; // получаем жанры этого фильма
+
+				// добавляем фильм в массив если
+				if (
+					!answers.includes(film) && // его еще нет в массиве фильмов
+					film !== conceivedFilm && // фильм не является загаданным
+					// hasGenre(filmGenres, selectedGenres) // фильм соответствует жанру
+					hasGenre(filmGenres, conceivedFilm.genres) // фильм соответствует жанру загаданного фильма
+				) {
+					answers.push(film);
+				}
+			}
+
+			answers = answers.map(answer => { // приводим ответы в массиве в нужный вид, удалив все лишнее
+				return {id: answer.id, name: answer.name, year: answer.year}
+			})
+			answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
+		}
+
+		if (options.directAnswer) {
+			answerString.classList.remove('_hidden');
+
 			conceivedFilm = films[getRandomInt(films.length)]; // рандомный выбор фильма из каталога
-			// let filmGenres = conceivedFilm.genres.split(', '); // получаем жанры этого фильма
-			let filmGenres = conceivedFilm.genres; // получаем жанры этого фильма
 
-			// добавляем фильм в массив если
-			if (
-				hasGenre(filmGenres, selectedGenres) && // фильм соответствует жанру
-				passedFilms.includes(conceivedFilm.id) === false
-			) {
-				answers.push(conceivedFilm); // добавляем загаданный фильм в массив ответов
-			}
+			initSearch();
+
+			// answers = answers.map(answer => { // приводим ответы в массиве в нужный вид, удалив все лишнее
+			// 	return {id: answer.id, name: answer.name, year: answer.year}
+			// })
 		}
 
-		// собираем 3 фильма помимо загаданного
-		while (answers.length < 4) {
-			let film = films[getRandomInt(films.length)]; // рандомный фильм
-			// let filmGenres = film.genres.split(', '); // получаем жанры этого фильма
-			let filmGenres = film.genres; // получаем жанры этого фильма
-
-			// добавляем фильм в массив если
-			if (
-				!answers.includes(film) && // его еще нет в массиве фильмов
-				film !== conceivedFilm && // фильм не является загаданным
-				// hasGenre(filmGenres, selectedGenres) // фильм соответствует жанру
-				hasGenre(filmGenres, conceivedFilm.genres) // фильм соответствует жанру загаданного фильма
-			) {
-				answers.push(film);
-			}
-		}
-
-		answers = answers.map(answer => { // приводим ответы в массиве в нужный вид, удалив все лишнее
-			return {id: answer.id, name: answer.name, year: answer.year}
-		})
-		answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
-
-		// img.classList.add('_noopacity');
 		playgroundBlock.classList.add('playground__loading');
 
 		return await axios('/php/getFrame.php?id=' + conceivedFilm.id)
@@ -505,26 +526,23 @@ document.addEventListener('DOMContentLoaded', () => {
 					answer: conceivedFilm.id,
 					answers: answers
 				}
-				// return fetch(url).then(res => res.blob()).then((blob) => {
-				// 	return {
-				// 		photo: URL.createObjectURL(blob),
-				// 		answer: conceivedFilm.id,
-				// 		answers: answers
-				// 	}
-				// });
 			})
 			.catch(err => {
 				console.log(err);
 			})
+	}
 
-		// return fetch(
-		// 	'https://res.cloudinary.com/ddu8qv5kp/image/upload/v1634839395/' + conceivedFilm.id + '.jpg').then(res => res.blob()).then((blob) => {
-		// 	return {
-		// 		photo: URL.createObjectURL(blob),
-		// 		answer: conceivedFilm.id,
-		// 		answers: answers
-		// 	}
-		// });
+	function initSearch() {
+		answerString.addEventListener('input', () => {
+			// console.log(answerString.value);
+
+			if (answerString.value.length > 2) {
+				console.log(
+					films.filter(film => film.name.toLowerCase().includes(answerString.value.toLowerCase()))
+				);
+			}
+
+		})
 	}
 
 	// запуск победного фейерверка

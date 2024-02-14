@@ -34,6 +34,16 @@
 		</div>
 	</div>
 
+	<!-- <div class="checkbox option">
+		<div class="checkbox__body">
+			Без вариантов
+			<input type="checkbox" value="directanswer">
+		</div>
+		<div class="tooltip">?
+			<div class="tooltip-text">Вам не будут предложены варианты ответов. Ответ надо будет вводить в текстовом поле</div>
+		</div>
+	</div> -->
+
 	<div class="range option">
 		Сколько фильмов загадать?<br>
 		<div class="_dflex _justify-content-beetwen _mb20">

@@ -173,7 +173,7 @@ body {
   font-size: 1.1111111111vw;
   margin-left: 0.8333333333vw;
   position: relative;
-  z-index: 99999999999999;
+  z-index: 9;
 }
 @media screen and (min-width: 1441px) {
   .tooltip {
@@ -335,6 +335,7 @@ body {
     left: 2%;
     right: 2%;
     border: 1px solid #ffffff;
+    top: 50%;
   }
   .tooltip .tooltip-text:after {
     display: none;
@@ -779,6 +780,65 @@ body {
 @media screen and (max-width: 1000px) {
   .playground-answers .button {
     width: 100%;
+  }
+}
+.playground-answer-string {
+  width: 100%;
+  margin-top: 0.5555555556vw;
+  padding-top: 0.5555555556vw;
+  padding-bottom: 0.5555555556vw;
+  padding-left: 1.6666666667vw;
+  padding-right: 1.6666666667vw;
+  outline: none;
+}
+@media screen and (min-width: 1441px) {
+  .playground-answer-string {
+    margin-top: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answer-string {
+    margin-top: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-answer-string {
+    padding-top: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answer-string {
+    padding-top: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-answer-string {
+    padding-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answer-string {
+    padding-bottom: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-answer-string {
+    padding-left: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answer-string {
+    padding-left: 4.4444444444vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .playground-answer-string {
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .playground-answer-string {
+    padding-right: 4.4444444444vw;
   }
 }
 .playground-score {

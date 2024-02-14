@@ -15,7 +15,11 @@
 				<img src="" class="playground-img playground-img__loading"> <!-- 3 -->
 				<div class="playground-notice"></div>
 			</div>
-			<div class="playground-answers"></div>
+			<div class="playground-answers _hidden"></div>
+			<input type="text" class="playground-answer-string _hidden"/>
+			<div id="hacker-list">
+				<ul class="list"></ul>
+			</div>
 		</div>
 		<div class="playground-fact">
 			<div class="playground-fact__title">Факт</div>

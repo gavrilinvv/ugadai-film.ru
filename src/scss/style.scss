@@ -187,7 +187,7 @@ body {
 	@include fluid('font-size', 16px, 14px);
 	@include fluid('margin-left', 12px);
 	position: relative;
-	z-index: 99999999999999;
+	z-index: 9;
 
 	& .tooltip-text {
 		visibility: hidden;
@@ -233,6 +233,7 @@ body {
 			left: 2%;
 			right: 2%;
 			border: 1px solid $white;
+			top: 50%;
 
 			&:after {
 				display: none;
@@ -453,6 +454,16 @@ body {
 				width: 100%;
 			}
 		}
+	}
+
+	&-answer-string {
+		width: 100%;
+		@include fluid('margin-top', 8px);
+		@include fluid('padding-top', 8px);
+		@include fluid('padding-bottom', 8px);
+		@include fluid('padding-left', 24px, 16px);
+		@include fluid('padding-right', 24px, 16px);
+		outline: none;
 	}
 
 	&-score {
