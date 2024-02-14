@@ -201,7 +201,7 @@ body {
 		@include fluid('padding-left', 8px, 16px);
 		@include fluid('padding-right', 8px, 16px);
 		@include fluid('left', 48px);
-		top: 50%;
+		top: 0;
 
 		&:after {
 			content: '';
