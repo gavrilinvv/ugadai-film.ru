@@ -187,7 +187,7 @@ body {
 	@include fluid('font-size', 16px, 14px);
 	@include fluid('margin-left', 12px);
 	position: relative;
-	z-index: 9;
+	z-index: 99999999999999;
 
 	& .tooltip-text {
 		visibility: hidden;
@@ -195,7 +195,7 @@ body {
 		display: inline-block;
 		color: $white;
 		background-color: rgba(0,0,0,1);
-		width: max-content;
+		@include fluid('width', 300px);
 		@include fluid('padding-top', 8px, 16px);
 		@include fluid('padding-bottom', 8px, 16px);
 		@include fluid('padding-left', 8px, 16px);
@@ -221,7 +221,7 @@ body {
 		& .tooltip-text {
 			visibility: visible;
 			opacity: 1;
-			transform: translateX(0%) translateY(-50%);
+			transform: translateX(0%) translateY(-30%);
 		}
 	}
 
@@ -229,8 +229,7 @@ body {
 		position: unset;
 
 		& .tooltip-text {
-			left: none;
-			max-width: fit-content;
+			width: 86vw;
 			left: 2%;
 			right: 2%;
 			border: 1px solid $white;

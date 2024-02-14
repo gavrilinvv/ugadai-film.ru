@@ -173,7 +173,7 @@ body {
   font-size: 1.1111111111vw;
   margin-left: 0.8333333333vw;
   position: relative;
-  z-index: 9;
+  z-index: 99999999999999;
 }
 @media screen and (min-width: 1441px) {
   .tooltip {
@@ -221,15 +221,23 @@ body {
   display: inline-block;
   color: #ffffff;
   background-color: black;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 20.8333333333vw;
   padding-top: 0.5555555556vw;
   padding-bottom: 0.5555555556vw;
   padding-left: 0.5555555556vw;
   padding-right: 0.5555555556vw;
   left: 3.3333333333vw;
   top: 50%;
+}
+@media screen and (min-width: 1441px) {
+  .tooltip .tooltip-text {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tooltip .tooltip-text {
+    width: 83.3333333333vw;
+  }
 }
 @media screen and (min-width: 1441px) {
   .tooltip .tooltip-text {
@@ -316,17 +324,14 @@ body {
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
-  transform: translateX(0%) translateY(-50%);
+  transform: translateX(0%) translateY(-30%);
 }
 @media screen and (max-width: 1000px) {
   .tooltip {
     position: unset;
   }
   .tooltip .tooltip-text {
-    left: none;
-    max-width: -webkit-fit-content;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
+    width: 86vw;
     left: 2%;
     right: 2%;
     border: 1px solid #ffffff;
