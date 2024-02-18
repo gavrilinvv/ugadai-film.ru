@@ -109,8 +109,9 @@
 }
 
 body {
-  background: url("/src/img/bg.jpg") no-repeat;
-  background-size: cover;
+  background-image: url("/src/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
   margin: 0;
   overflow: hidden;
 }

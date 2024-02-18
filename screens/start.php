@@ -4,9 +4,9 @@
 		<div class="menu__shot"></div> -->
 	</div>
 	<div class="buttons-group">
-		<div class="button js-to-opt-category">Начать</div>
+		<div class="button _mb20 js-to-opt-category">Начать</div>
 		<br>
-		<div class="button js-to-about">Об игре</div>
+		<div class="button _mb20 js-to-about">Об игре</div>
 		<br>
 		<div class="button js-to-other-games">Другие игры</div>
 	</div>
