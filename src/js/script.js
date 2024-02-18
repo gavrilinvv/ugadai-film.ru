@@ -29,12 +29,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	var toAboutBtns = document.querySelectorAll('.js-to-about');
 	var toGameBtns = document.querySelectorAll('.js-to-game');
 	var toOtherGames = document.querySelectorAll('.js-to-other-games');
+	var toAcceptAnswer = document.querySelectorAll('.js-accept-answer');
 
 	var toNextQuestionBtns = document.querySelectorAll('.js-next-question');
 	var countCorrectFilms = document.querySelector('.count-films span');
 
 	var answersBlock = document.querySelector('.playground-answers');
-	var answerString = document.querySelector('.playground-answer-string');
+	var answerBlock = document.querySelector('.playground-answer');
+	var answerInput = document.querySelector('.playground-answer-input');
+	var answerInputSend = document.querySelector('.playground-answer-button');
+	var answerSuggestions = document.querySelector('.playground-answer-suggestions');
 
 	var movieForeignCount = document.querySelector('#movie-foreign-count');
 	var movieRussianCount = document.querySelector('#movie-russian-count');
@@ -45,13 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cartoonForeignCount = document.querySelector('#cartoon-foreign-count');
 	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
 
-	// var cl = new cloudinary.Cloudinary({
-	// 	cloud_name: "ddu8qv5kp",
-	// 	secure: true,
-	// });
-
 	var selectedGenres = [];
 	var passedFilms = [];
+	var answerInputId = null;
 	var correctAnswer = null; // правильный ответ на вопрос (загаданный фильм)
 	var correctAnswersCount = 0; // количество угаданных фильмов
 	var incorrectAnswersCount = 0; // количество неугаданных фильмов
@@ -132,6 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		});
 
+		[...toAcceptAnswer].map(btn => {
+			btn.addEventListener('click', () => {
+				checkAnswer(answerInputId, btn);
+			})
+		});
+
 		[...toGameBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				correctAnswersCount = 0;
@@ -139,7 +145,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				scoreBlock.innerHTML = 0;
 				counterNoError = 0;
 				answersBlock.innerHTML = '';
-				answerString.innerHTML = '';
+				answerInput.innerHTML = '';
+				answerSuggestions.innerHTML = '';
 				factText.innerHTML = '';
 				questBlock.style.display = 'block';
 				factBlock.style.display = 'none';
@@ -362,6 +369,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		factText.innerHTML = '';
 		questBlock.style.display = 'block';
 		factBlock.style.display = 'none';
+		answerInput.value = '';
+		answerInputSend.classList.remove('button__answer-success');
+		answerInputSend.classList.remove('button__answer-error');
 
 		getQuestion()
 			.then(question => {
@@ -398,6 +408,12 @@ document.addEventListener('DOMContentLoaded', () => {
 				})
 				// initHotKeys();
 			});
+	}
+
+	function getFilmsByGenres(genres) {
+		return films.filter(film => {
+			return genres.includes(film.genres.join(''));
+		})
 	}
 
 	function hasGenre(genres, selectedGenres) {
@@ -439,6 +455,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		let availableFilms = getAvailableFilms(); // фильмы, которые подходят по опциям (жанрам)
 		let conceivedFilm = {};
 		let answers = []; // массив для ответов
+		answersBlock.classList.add('_hidden');
+		answerBlock.classList.add('_hidden');
 
 		// если прошел все фильмы
 		if ( passedFilms.length == optionRangeInputFilmsCount.value || passedFilms.length === availableFilms.length) {
@@ -504,15 +522,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 
 		if (options.directAnswer) {
-			answerString.classList.remove('_hidden');
+			answerBlock.classList.remove('_hidden');
 
-			conceivedFilm = films[getRandomInt(films.length)]; // рандомный выбор фильма из каталога
+			let conceivedFilmByGenre = getFilmsByGenres(selectedGenres);
+			conceivedFilm = conceivedFilmByGenre[getRandomInt(conceivedFilmByGenre.length)]; // рандомный выбор фильма из каталога
 
-			initSearch();
-
-			// answers = answers.map(answer => { // приводим ответы в массиве в нужный вид, удалив все лишнее
-			// 	return {id: answer.id, name: answer.name, year: answer.year}
-			// })
+			initInputAnswer();
 		}
 
 		playgroundBlock.classList.add('playground__loading');
@@ -532,17 +547,46 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 	}
 
-	function initSearch() {
-		answerString.addEventListener('input', () => {
-			// console.log(answerString.value);
+	function initInputAnswer() {
+		let suggestions = [];
+		answerInputSend.classList.add('button-disabled')
 
-			if (answerString.value.length > 2) {
-				console.log(
-					films.filter(film => film.name.toLowerCase().includes(answerString.value.toLowerCase()))
-				);
+		answerInput.addEventListener('keyup', e => {
+			suggestions = [];
+			answerSuggestions.innerHTML = '';
+
+			if (e.key === 'Backspace' || e.key === 'Delete') {
+				answerInputSend.classList.add('button-disabled')
 			}
 
+			if (answerInput.value.length) {
+				// сортируем, фильтруем по названию и показываем первые 3 варианта
+				suggestions = films.sort((a, b) => a.name.localeCompare(b.name)).filter(film => film.name.toLowerCase().includes(answerInput.value.toLowerCase())).slice(0, 3);
+
+				suggestions.forEach(suggestion => {
+					let suggestionLine = createSuggestion(suggestion);
+
+					answerSuggestions.appendChild(suggestionLine);
+				})
+			}
+			answerInput.classList[suggestions.length ? 'add' : 'remove']('playground-answer-input-opened');
 		})
+	}
+
+	function createSuggestion(suggestion) {
+		let suggestionLine = document.createElement('div');
+		suggestionLine.classList.add('playground-answer-suggestion')
+		suggestionLine.setAttribute('data-name', suggestion.name);
+		suggestionLine.innerText = suggestion.name + ' (' + suggestion.year + ')';
+
+		suggestionLine.addEventListener('click', () => {
+			answerInput.value = suggestionLine.getAttribute('data-name');
+			answerInputId = suggestion.id;
+			answerSuggestions.innerHTML = '';
+			answerInputSend.classList.remove('button-disabled');
+			answerInput.classList.remove('playground-answer-input-opened');
+		})
+		return suggestionLine;
 	}
 
 	// запуск победного фейерверка

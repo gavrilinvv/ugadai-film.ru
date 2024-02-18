@@ -16,10 +16,15 @@
 				<div class="playground-notice"></div>
 			</div>
 			<div class="playground-answers _hidden"></div>
-			<input type="text" class="playground-answer-string _hidden"/>
-			<div id="hacker-list">
-				<ul class="list"></ul>
+
+			<div class="playground-answer _hidden">
+				<div class="playground-answer-left">
+					<input type="text" placeholder="Начните вводить название фильма" class="playground-answer-input"/>
+					<div class="playground-answer-suggestions"></div>
+				</div>
+				<div class="button button-disabled playground-answer-button js-accept-answer">Ответить</div>
 			</div>
+
 		</div>
 		<div class="playground-fact">
 			<div class="playground-fact__title">Факт</div>
