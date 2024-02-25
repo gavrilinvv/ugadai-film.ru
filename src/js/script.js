@@ -523,11 +523,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		if (options.directAnswer) {
 			answerBlock.classList.remove('_hidden');
+			let filmIsFinded  = false;
 
-			let conceivedFilmByGenre = getFilmsByGenres(selectedGenres);
-			conceivedFilm = conceivedFilmByGenre[getRandomInt(conceivedFilmByGenre.length)]; // рандомный выбор фильма из каталога
+			let conceivedFilmsByGenre = getFilmsByGenres(selectedGenres); // массив фильмов по жанру
 
-			initInputAnswer();
+			while (!filmIsFinded) {
+
+				conceivedFilm = conceivedFilmsByGenre[getRandomInt(conceivedFilmsByGenre.length)]; // рандомный выбор фильма из каталога
+
+				if (!passedFilms.includes(conceivedFilm.id)) {
+					filmIsFinded = true;
+					initInputAnswer();
+				}
+			}
 		}
 
 		playgroundBlock.classList.add('playground__loading');
