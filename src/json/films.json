@@ -482,7 +482,20 @@
 	{"id": 481, "name": "Впритык", "genres": ["movie-foreign"], "year": "2010"},
 	{"id": 482, "name": "Молодой человек", "genres": ["movie-russian"], "year": "2022"},
 	{"id": 483, "name": "Хардкор", "genres": ["movie-russian"], "year": "2016"},
-	{"id": 484, "name": "Дикая", "genres": ["movie-foreign"], "year": "2014"}
+	{"id": 484, "name": "Дикая", "genres": ["movie-foreign"], "year": "2014"},
+	{"id": 485, "name": "Алеша Попович и Тугарин Змей", "genres": ["cartoon-russian"], "year": "2004"},
+	{"id": 486, "name": "Добрыня Никитич и Змей Горыныч", "genres": ["cartoon-russian"], "year": "2006"},
+	{"id": 487, "name": "Илья Муромец и Соловей Разбойник", "genres": ["cartoon-russian"], "year": "2007"},
+	{"id": 488, "name": "Университет монстров", "genres": ["cartoon-foreign"], "year": "2013"},
+	{"id": 489, "name": "Храбрая сердцем", "genres": ["cartoon-foreign"], "year": "2012"},
+	{"id": 490, "name": "Ранго", "genres": ["cartoon-foreign"], "year": "2011"},
+	{"id": 491, "name": "Три богатыря и Шамаханская царица", "genres": ["cartoon-russian"], "year": "2010"},
+	{"id": 492, "name": "Поезд на Юму", "genres": ["movie-foreign"], "year": "2007"},
+	{"id": 493, "name": "Привидение", "genres": ["movie-foreign"], "year": "1990"},
+	{"id": 494, "name": "Дюна", "genres": ["movie-foreign"], "year": "2021"},
+	{"id": 495, "name": "Ловушка для родителей", "genres": ["movie-foreign"], "year": "1998"}
+
+
 
 
 
