@@ -68,6 +68,12 @@
 			</div>
 			<div class="checkbox genre">
 				<div class="checkbox__body">
+					Российские<sup id="cartoon-russian-count"></sup>
+					<input type="checkbox" value="cartoon-russian">
+				</div>
+			</div>
+			<div class="checkbox genre">
+				<div class="checkbox__body">
 					Советские<sup id="cartoon-soviet-count"></sup>
 					<input type="checkbox" value="cartoon-soviet">
 				</div>
