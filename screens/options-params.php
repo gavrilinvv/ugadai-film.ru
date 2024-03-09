@@ -30,7 +30,7 @@
 			<input type="checkbox" value="facts">
 		</div>
 		<div class="tooltip">?
-			<div class="tooltip-text">После каждого угаданного кадра вы будете получать интересный факт об этом фильме</div>
+			<div class="tooltip-text">После каждого угаданного кадра вы будете получать один случайный факт об этом фильме</div>
 		</div>
 	</div>
 

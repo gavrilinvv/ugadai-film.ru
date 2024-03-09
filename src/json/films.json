@@ -495,7 +495,8 @@
 	{"id": 494, "name": "Дюна", "genres": ["movie-foreign"], "year": "2021"},
 	{"id": 495, "name": "Ловушка для родителей", "genres": ["movie-foreign"], "year": "1998"},
 	{"id": 496, "name": "Пушки Акимбо", "genres": ["movie-foreign"], "year": "2019"},
-	{"id": 497, "name": "Убить пересмешника", "genres": ["movie-foreign"], "year": "1962"}
+	{"id": 497, "name": "Убить пересмешника", "genres": ["movie-foreign"], "year": "1962"},
+	{"id": 498, "name": "Аватар: Путь воды", "genres": ["movie-foreign"], "year": "2022"}
 
 
 
