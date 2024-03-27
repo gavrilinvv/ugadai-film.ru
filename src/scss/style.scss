@@ -164,7 +164,7 @@ body {
 	color: $white;
 	@include fluid('font-size', 12px, 12px);
 	position: absolute;
-	@include fluid('bottom', 5px, 5px);
+	@include fluid('bottom', 12px, 12px);
 	left: 50%;
 	width: 100%;
 	text-align: center;
@@ -754,6 +754,22 @@ body {
 	text-align: center;
 	cursor: pointer;
 
+	&-new {
+		position: relative;
+		&:before {
+			content: 'new';
+			position: absolute;
+			background-color: #d6eb3c;
+			color: #333;
+			@include fluid('top', -14px);
+			@include fluid('right', -18px);
+			@include fluid('font-size', 16px);
+			@include fluid('padding-right', 8px);
+			@include fluid('padding-left', 8px);
+			@include fluid('border-radius', 6px);
+		}
+	}
+
 	&-disabled {
 		cursor: default;
 		pointer-events: none;
@@ -1082,7 +1098,7 @@ body {
 	@include mobile {
 		position: absolute;
 		left: 50%;
-		@include fluid('bottom', 20px);
+		@include fluid('bottom', 32px);
 		transform: translate(-50%, 0);
 	}
 }

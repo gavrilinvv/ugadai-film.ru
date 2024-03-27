@@ -8,5 +8,7 @@
 		<a class="button" href="https://alchemy-game.ru" target="_blank" rel="nofollow">Алхимия</a>
 		<br>
 		<a class="button" href="https://memo-cards.ru" target="_blank" rel="nofollow">Memo-cards</a>
+		<br>
+		<a class="button button-new" href="https://fillwords.ru" target="_blank" rel="nofollow">Филворды</a>
 	</div>
 </div>

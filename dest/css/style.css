@@ -120,7 +120,7 @@ body {
   color: #ffffff;
   font-size: 0.8333333333vw;
   position: absolute;
-  bottom: 0.3472222222vw;
+  bottom: 0.8333333333vw;
   left: 50%;
   width: 100%;
   text-align: center;
@@ -138,12 +138,12 @@ body {
 }
 @media screen and (min-width: 1441px) {
   .count-films {
-    bottom: 5px;
+    bottom: 12px;
   }
 }
 @media screen and (max-width: 1000px) {
   .count-films {
-    bottom: 1.3888888889vw;
+    bottom: 3.3333333333vw;
   }
 }
 
@@ -1529,6 +1529,81 @@ body {
     line-height: 5.5555555556vw;
   }
 }
+.button-new {
+  position: relative;
+}
+.button-new:before {
+  content: "new";
+  position: absolute;
+  background-color: #d6eb3c;
+  color: #333;
+  top: -0.9722222222vw;
+  right: -1.25vw;
+  font-size: 1.1111111111vw;
+  padding-right: 0.5555555556vw;
+  padding-left: 0.5555555556vw;
+  border-radius: 0.4166666667vw;
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    top: -14px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    top: -3.8888888889vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    right: -18px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    right: -5vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    font-size: 4.4444444444vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    padding-right: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    padding-right: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    padding-left: 2.2222222222vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  .button-new:before {
+    border-radius: 6px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .button-new:before {
+    border-radius: 1.6666666667vw;
+  }
+}
 .button-disabled {
   cursor: default;
   pointer-events: none;
@@ -2161,18 +2236,18 @@ body {
   .ad-bottom {
     position: absolute;
     left: 50%;
-    bottom: 1.3888888889vw;
+    bottom: 2.2222222222vw;
     transform: translate(-50%, 0);
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 1441px) {
   .ad-bottom {
-    bottom: 20px;
+    bottom: 32px;
   }
 }
 @media screen and (max-width: 1000px) and (max-width: 1000px) {
   .ad-bottom {
-    bottom: 5.5555555556vw;
+    bottom: 8.8888888889vw;
   }
 }
 
