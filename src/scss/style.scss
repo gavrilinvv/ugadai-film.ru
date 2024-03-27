@@ -761,9 +761,9 @@ body {
 			position: absolute;
 			background-color: #d6eb3c;
 			color: #333;
-			@include fluid('top', -14px);
-			@include fluid('right', -18px);
-			@include fluid('font-size', 16px);
+			@include fluid('top', -14px, -10px);
+			@include fluid('right', -14px);
+			@include fluid('font-size', 16px, 14px);
 			@include fluid('padding-right', 8px);
 			@include fluid('padding-left', 8px);
 			@include fluid('border-radius', 6px);
