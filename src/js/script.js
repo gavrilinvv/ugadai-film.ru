@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		needTimer: false,
 		onelife: false,
 		facts: false,
-		directAnswer: false
+		directAnswer: false,
+		originalName: false
 	};
 	var startTime = 10;
 	var currentTime = 10;
@@ -194,6 +195,9 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 				if (value == 'directanswer') {
 					options.directAnswer = input.checked;
+				}
+				if (value == 'originalname') {
+					options.originalName = input.checked;
 				}
 			})
 		});
@@ -516,7 +520,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 
 			answers = answers.map(answer => { // приводим ответы в массиве в нужный вид, удалив все лишнее
-				return {id: answer.id, name: answer.name, year: answer.year}
+				return {
+					id: answer.id,
+					name: options.originalName ? answer.nameOrig : answer.name,
+					year: answer.year
+				}
 			})
 			answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
 		}
@@ -567,9 +575,17 @@ document.addEventListener('DOMContentLoaded', () => {
 				answerInputSend.classList.add('button-disabled')
 			}
 
+			let preparedFilms = films.map(film => { // приводим каждый фильм в нужный формат. нужно для верного типа названия
+				return {
+					id: film.id,
+					name: options.originalName ? film.nameOrig : film.name,
+					year: film.year
+				}
+			})
+
 			if (answerInput.value.length) {
 				// сортируем, фильтруем по названию и показываем первые 3 варианта
-				suggestions = films.sort((a, b) => a.name.localeCompare(b.name)).filter(film => film.name.toLowerCase().includes(answerInput.value.toLowerCase())).slice(0, 3);
+				suggestions = preparedFilms.sort((a, b) => a.name.localeCompare(b.name)).filter(film => film.name.toLowerCase().includes(answerInput.value.toLowerCase())).slice(0, 3);
 
 				suggestions.forEach(suggestion => {
 					let suggestionLine = createSuggestion(suggestion);

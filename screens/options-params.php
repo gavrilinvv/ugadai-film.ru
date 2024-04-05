@@ -44,6 +44,16 @@
 		</div>
 	</div>
 
+	<div class="checkbox option">
+		<div class="checkbox__body">
+			Оригинальные названия
+			<input type="checkbox" value="originalname">
+		</div>
+		<div class="tooltip">?
+			<div class="tooltip-text">Имейте в виду, что в базе есть итальянские и даже японские фильмы</div>
+		</div>
+	</div>
+
 	<div class="range option">
 		Сколько фильмов загадать?<br>
 		<div class="_dflex _justify-content-beetwen _mb20">
