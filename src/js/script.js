@@ -299,6 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function checkAnswer(id, btn) {
 		var selectedAnswer = id;
+		var correctAnswerBtn = document.querySelector('.button__answer[data-value="' + correctAnswer + '"]')
 		var answerBtns = document.querySelectorAll('.button__answer');
 
 		[...answerBtns].forEach(btn => {
@@ -341,6 +342,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			}, 800)
 		} else {
+			correctAnswerBtn.classList.add('button__answer-success');
 			btn.classList.add('button__answer-error');
 			incorrectAnswersCount += 1; // +1 неугаданный фильм
 			counterNoError = 0;
