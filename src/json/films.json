@@ -3511,7 +3511,23 @@
 		"nameOrig": "Papillon",
 		"genres": ["movie-foreign"],
 		"year": "2017"
+	},
+	{
+		"id": 503,
+		"name": "Лето 84",
+		"nameOrig": "Summer of 84",
+		"genres": ["movie-foreign"],
+		"year": "2017"
+	},
+	{
+		"id": 504,
+		"name": "Развод по-американски",
+		"nameOrig": "The Break-Up",
+		"genres": ["movie-foreign"],
+		"year": "2006"
 	}
+
+
 
 
 
