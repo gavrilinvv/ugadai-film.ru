@@ -3525,6 +3525,20 @@
 		"nameOrig": "The Break-Up",
 		"genres": ["movie-foreign"],
 		"year": "2006"
+	},
+	{
+		"id": 505,
+		"name": "Последний рубеж",
+		"nameOrig": "Homefront",
+		"genres": ["movie-foreign"],
+		"year": "2013"
+	},
+	{
+		"id": 506,
+		"name": "Девушка с татуировкой дракона",
+		"nameOrig": "The Girl with the Dragon Tattoo",
+		"genres": ["movie-foreign"],
+		"year": "2011"
 	}
 
 
