@@ -3539,8 +3539,14 @@
 		"nameOrig": "The Girl with the Dragon Tattoo",
 		"genres": ["movie-foreign"],
 		"year": "2011"
+	},
+	{
+		"id": 507,
+		"name": "Ведьмина служба доставки",
+		"nameOrig": "Majo no Takkyuubin",
+		"genres": ["cartoon-foreign"],
+		"year": "1989"
 	}
-
 
 
 
