@@ -3567,6 +3567,20 @@
 		"nameOrig": "Завод",
 		"genres": ["movie-russian"],
 		"year": "2018"
+	},
+	{
+		"id": 511,
+		"name": "Человек, который изменил всё",
+		"nameOrig": "Moneyball",
+		"genres": ["movie-foreign"],
+		"year": "2011"
+	},
+	{
+		"id": 512,
+		"name": "Одиннадцать друзей Оушена",
+		"nameOrig": "Ocean's Eleven",
+		"genres": ["movie-foreign"],
+		"year": "2001"
 	}
 
 
