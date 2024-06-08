@@ -6,6 +6,7 @@
 	<div class="buttons-group">
 		<div class="button _mb20 js-to-opt-category">Начать</div>
 		<div class="button _mb20 js-to-about">Об игре</div>
-		<div class="button button-new js-to-other-games">Другие игры</div>
+		<!-- button-new -->
+		<div class="button js-to-other-games">Другие игры</div>
 	</div>
 </div>
