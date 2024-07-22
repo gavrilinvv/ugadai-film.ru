@@ -3609,6 +3609,20 @@
 		"nameOrig": "Le Fabuleux destin d'Amélie Poulain",
 		"genres": ["movie-foreign"],
 		"year": "2001"
+	},
+	{
+		"id": 517,
+		"name": "Мимино",
+		"nameOrig": "Мимино",
+		"genres": ["movie-soviet"],
+		"year": "1977"
+	},
+	{
+		"id": 518,
+		"name": "Воздушный маршал",
+		"nameOrig": "Non-Stop",
+		"genres": ["movie-foreign"],
+		"year": "2014"
 	}
 
 
