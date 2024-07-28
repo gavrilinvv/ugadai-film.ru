@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		window.addEventListener('keyup', function keyUpFunc(e) {
 			if (!['1','2','3','4'].includes(e.key)) return;
 
-			let btn = document.querySelector('.button__answer[data-index="' + e.key + '"]');
+			let btn = document.querySelector('.playground-answers .button__answer[data-index="' + e.key + '"]');
 			checkAnswer(btn.getAttribute('data-value'), btn);
 			window.removeEventListener('keyup', keyUpFunc);
 		})

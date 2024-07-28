@@ -2,11 +2,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
 		<link rel="canonical" href="https://ugadai-film.ru"/>
-		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
 		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
 		<meta property="og:type" content="website" />
