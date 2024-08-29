@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	var optionsCheckboxes = document.querySelectorAll('.options .option .checkbox__body');
 	var optionRangeInputFilmsCount = document.querySelector('.options .option #inputTargetCount');
 	var optionRangeOutputFilmsCount = document.querySelector('.options .option #outputTargetCount');
+	var optionsYears = document.querySelector('#years');
+	var modalClose = document.querySelectorAll('.js-close-modal');
+	var modalYears = document.querySelector('.modal#modalYears');
+	var modalYearsSave = document.querySelector('.js-save-years');
+	var yearsGrid = document.querySelector('#modalYears .years-grid');
 
 	var playgroundTimer = document.querySelector('.playground-timer');
 	var notice = document.querySelector('.playground-notice');
@@ -50,6 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
 
 	var selectedGenres = [];
+	var selectedYears = [{value: 'all', label: 'Все'}];
+	var selectedYearsTemp = [{value: 'all', label: 'Все'}];
 	var passedFilms = [];
 	var answerInputId = null;
 	var correctAnswer = null; // правильный ответ на вопрос (загаданный фильм)
@@ -62,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var options = {
 		needTimer: false,
 		onelife: false,
+		blackwhite: false,
 		facts: false,
 		directAnswer: false,
 		originalName: false
@@ -84,14 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	getFilms().then(res => {
 		films = res;
+		initDialogPolyfill();
 
-		countCorrectFilms.innerHTML = films.length;
+		// countCorrectFilms.innerHTML = films.length;
 
 		// setCountOfGenres();
 
 		// menuShot.style.backgroundImage = 'url("/src/img/film' + randomIntFromInterval(1,3) + '.jpg")';
-
-		// sortByYears();
 
 		[...toOptCategoryBtns].map(btn => {
 			btn.addEventListener('click', () => {
@@ -105,13 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (!selectedGenres.length) {alert('Выберите категорию'); return;}
 
 				// устанавливаем значения в ползунок целевое количество фильмов
-				countTargetFilms = getAvailableFilms().length;
-				optionRangeInputFilmsCount.setAttribute('max', countTargetFilms);
-				optionRangeInputFilmsCount.value = countTargetFilms;
-				optionRangeOutputFilmsCount.value = countTargetFilms;
+				setCountFilms();
 
-				sortByYears(selectedGenres);
 				showBlock(optionsParamsBlock);
+				setYearsInGrid(sortByYears(selectedGenres));
 			})
 		});
 
@@ -139,6 +143,23 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		});
 
+		[...modalClose].map(btn => {
+			btn.addEventListener('click', () => {
+				modalYears.close();
+				selectedYears = selectedYears;
+			})
+		});
+
+		modalYearsSave.addEventListener('click', () => {
+			modalYears.close();
+			saveYears();
+		});
+
+		optionsYears.addEventListener('click', () => {
+			modalYears.showModal();
+			setSelectedYearsInModal();
+		});
+
 		[...toGameBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				correctAnswersCount = 0;
@@ -151,6 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				factText.innerHTML = '';
 				questBlock.style.display = 'block';
 				factBlock.style.display = 'none';
+
+				img.classList.remove('playground-img__grayscale')
+				if (options.blackwhite) img.classList.add('playground-img__grayscale');
+
 				nextQuestion();
 			})
 		});
@@ -190,6 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
 				if (value == 'onelife') {
 					options.onelife = input.checked;
 				}
+				if (value == 'blackwhite') {
+					options.blackwhite = input.checked;
+				}
 				if (value == 'facts') {
 					options.facts = input.checked;
 				}
@@ -203,25 +231,179 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	})
 
-	function sortByYears(genres) {
-		let res = [];
-		films.forEach(film => {
-			if (!res[film.year]) {
-				res[film.year] = [];
-			}
+	function setYearsInGrid(years) {
+		yearsGrid.innerHTML = '';
+		optionsYears.innerHTML = 'Все';
+		selectedYears = [{value: 'all', label: 'Все'}];
+		setCountFilms();
 
-			// if (genres) {
-				if (res[film.year] && genres[0] === film.genres[0]) {
-					res[film.year].push(film.name);
-				}
-			// } else {
-			// 	if (res[film.year]) {
-			// 		res[film.year].push(film.name);
-			// 	}
-			// }
+		let segmentAll = createSegmentYear('Все', 'all', true);
+		yearsGrid.appendChild(segmentAll);
+
+		// добавление элементов годов в сетку
+		years.forEach((films, year) => {
+			let {value, label} = setGroupYears(year);
+
+			if (!yearsGrid.querySelector('.segment-year[data-value="'+value+'"]')) {
+				let segmentYear = createSegmentYear(label, value);
+
+				yearsGrid.appendChild(segmentYear);
+			}
 		})
 
-		console.log(res);
+		handleYears();
+	}
+
+	// привязывание событий к выбору и удалению годов
+	function handleYears() {
+		let segmentYears = yearsGrid.querySelectorAll('.segment-year:not([data-value="all"])');
+		let segmentAll = document.querySelector('.segment-year[data-value="all"]');
+
+		[...segmentYears].forEach(segment => {
+			segment.addEventListener('click', () => {
+				let year = {
+					value: segment.getAttribute('data-value'),
+					label: segment.getAttribute('data-label')
+				};
+				removeYear(segmentAll, {value: 'all', label: 'Все'});
+
+				if (!segment.classList.contains('segment-year-selected')) {
+					selectYear(segment, year);
+				} else {
+					removeYear(segment, year);
+
+					if (!selectedYearsTemp.length) {
+						selectYear(segmentAll, {value: 'all', label: 'Все'});
+					}
+				}
+			})
+		})
+
+		segmentAll.addEventListener('click', () => {
+			[...segmentYears].forEach(segment => {
+				let year = {
+					value: segment.getAttribute('data-value'),
+					label: segment.getAttribute('data-label')
+				};
+				removeYear(segment, year);
+			})
+			selectYear(segmentAll, {value: 'all', label: 'Все'});
+		})
+
+	}
+
+	// выбор года
+	function selectYear(segment, year) {
+		segment.classList.add('segment-year-selected');
+		selectedYearsTemp.push(year);
+	}
+	// удаление выбора года
+	function removeYear(segment, year) {
+		segment.classList.remove('segment-year-selected');
+		selectedYearsTemp = selectedYearsTemp.filter(x => x.value !== year.value);
+	}
+	// сохранение выбранного набора годов
+	function saveYears() {
+		selectedYears = selectedYearsTemp;
+		setCountFilms();
+		optionsYears.innerHTML = selectedYears.map(years => years.label).join(', ');
+	}
+
+	// создание сегмента года
+	function createSegmentYear(year, value, checked = false) {
+		let segment = document.createElement('div');
+		segment.classList.add('segment-year');
+		if (checked) segment.classList.add('segment-year-selected');
+		segment.setAttribute('data-value', value);
+		segment.setAttribute('data-label', year);
+		segment.innerHTML = year;
+
+		return segment;
+	}
+
+	// установка выбранных годов в модалке
+	function setSelectedYearsInModal() {
+		selectedYearsTemp = selectedYears;
+		// сбрасываем со всех
+		[...document.querySelectorAll('.segment-year')].forEach(segment => {
+			segment.classList.remove('segment-year-selected');
+		})
+
+		// отмечаем только выбранные
+		selectedYears.forEach(years => {
+			let segment = document.querySelector('.segment-year[data-value="' + years.value + '"]');
+			segment.classList.add('segment-year-selected');
+		})
+	}
+
+	function setGroupYears(year) {
+		if (year < 1990) {
+			return {
+				value: 'before1990',
+				label: 'до 1990'
+			}
+		}
+		if (year >= 1990 && year < 2000) {
+			return {
+				value: '1990-2000',
+				label: 'с 1990 до 2000'
+			}
+		}
+		if (year >= 2000 && year < 2010) {
+			return {
+				value: '2000-2010',
+				label: 'с 2000 до 2010'
+			}
+		}
+		if (year >= 2010 && year < 2020) {
+			return {
+				value: '2010-2020',
+				label: 'с 2010 до 2020'
+			}
+		}
+		if (year >= 2020) {
+			return {
+				value: 'after2020',
+				label: 'с 2020'
+			}
+		}
+	}
+
+	function setCountFilms() {
+		countTargetFilms = getAvailableFilms().length;
+		optionRangeInputFilmsCount.setAttribute('max', countTargetFilms);
+		optionRangeInputFilmsCount.value = countTargetFilms;
+		optionRangeOutputFilmsCount.value = countTargetFilms;
+	}
+
+	function sortByYears(genres) {
+		let res = [];
+		genres = genres.join('|');
+		films.forEach(film => {
+
+			let filmYear = film.year;
+
+			// если это несколько лет (сериал), берем только первый год
+			if (filmYear.includes(' - ')) {
+				filmYear = filmYear.split(' - ')[0]
+			}
+
+			// если нет года, добавляем год
+			if (!res[filmYear]) {
+				res[filmYear] = [];
+			}
+
+			// если год есть и жанр совпадает с выбранным, добавляем фильм
+			if (res[filmYear] && genres.includes(film.genres[0]) ) {
+				res[filmYear].push(film.name);
+			}
+			// если год остался пустым, удаляем его из массива
+			else if (!res[filmYear].length) {
+				delete res[filmYear]
+			}
+		})
+
+		return res;
 	}
 
 	function initHotKeys() {
@@ -428,13 +610,50 @@ document.addEventListener('DOMContentLoaded', () => {
 		}).includes(true);
 	}
 
-	// получение фильмов, которые соответствуют опциям (жанрам)
+	// получение фильмов, которые соответствуют опциям (жанрам и годам)
 	function getAvailableFilms() {
-		return films.filter(film => {
+		let x = films.filter(film => {
 			return film.genres.filter(genre => {
 				return (selectedGenres).includes(genre);
 			}).length !== 0
-		})
+		}).filter(filterFilmsByYear)
+
+		return x;
+	}
+
+	function filterFilmsByYear(film) {
+		if (!selectedYears[0].value.includes('all')) {
+			for (let i = 0; i < selectedYears.length; i++) {
+				let years = selectedYears[i];
+
+				let filmYear = film.year;
+				// если это несколько лет (сериал), берем только первый год
+				if (filmYear.includes(' - ')) {
+					filmYear = filmYear.split(' - ')[0]
+				}
+
+				if (years.value.includes('-')) {
+					let [from, to] = years.value.split('-');
+					if (+filmYear >= +from && +filmYear < +to) {
+						return true;
+					}
+				}
+				if (years.value.includes('before')) {
+					let year = years.value.replace('before', '');
+					if (+filmYear < +year) {
+						return true;
+					}
+				}
+				if (years.value.includes('after')) {
+					let year = years.value.replace('after', '');
+					if (+film.year >= +year) {
+						return true;
+					}
+				}
+			}
+		} else {
+			return true;
+		}
 	}
 
 	// получение фильма по id в списке фактов
@@ -458,7 +677,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	async function getQuestion() {
-		let availableFilms = getAvailableFilms(); // фильмы, которые подходят по опциям (жанрам)
+		let availableFilms = getAvailableFilms(); // фильмы, которые подходят по опциям (жанрам и годам)
 		let conceivedFilm = {};
 		let answers = []; // массив для ответов
 		answersBlock.classList.add('_hidden');
@@ -491,8 +710,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// добавляем загаданный фильм в массив ответов
 			while (answers.length < 1) {
-				conceivedFilm = films[getRandomInt(films.length)]; // рандомный выбор фильма из каталога
-				// let filmGenres = conceivedFilm.genres.split(', '); // получаем жанры этого фильма
+				conceivedFilm = availableFilms[getRandomInt(availableFilms.length)]; // рандомный выбор фильма из каталога
+
 				let filmGenres = conceivedFilm.genres; // получаем жанры этого фильма
 
 				// добавляем фильм в массив если
@@ -506,8 +725,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// собираем 3 фильма помимо загаданного
 			while (answers.length < 4) {
-				let film = films[getRandomInt(films.length)]; // рандомный фильм
-				// let filmGenres = film.genres.split(', '); // получаем жанры этого фильма
+				let film = availableFilms[getRandomInt(availableFilms.length)]; // рандомный фильм
 				let filmGenres = film.genres; // получаем жанры этого фильма
 
 				// добавляем фильм в массив если
@@ -535,11 +753,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			answerBlock.classList.remove('_hidden');
 			let filmIsFinded  = false;
 
-			let conceivedFilmsByGenre = getFilmsByGenres(selectedGenres); // массив фильмов по жанру
-
 			while (!filmIsFinded) {
-
-				conceivedFilm = conceivedFilmsByGenre[getRandomInt(conceivedFilmsByGenre.length)]; // рандомный выбор фильма из каталога
+				conceivedFilm = availableFilms[getRandomInt(availableFilms.length)]; // рандомный выбор фильма из каталога
 
 				if (!passedFilms.includes(conceivedFilm.id)) {
 					filmIsFinded = true;
@@ -567,6 +782,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function initInputAnswer() {
 		let suggestions = [];
+		let availableFilms = getAvailableFilms(); // массив фильмов по жанру и годам
 		answerInputSend.classList.add('button-disabled')
 
 		answerInput.addEventListener('keyup', e => {
@@ -577,7 +793,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				answerInputSend.classList.add('button-disabled')
 			}
 
-			let preparedFilms = films.map(film => { // приводим каждый фильм в нужный формат. нужно для верного типа названия
+			let preparedFilms = availableFilms.map(film => { // приводим каждый фильм в нужный формат. нужно для верного типа названия
 				return {
 					id: film.id,
 					name: options.originalName ? film.nameOrig : film.name,
@@ -693,6 +909,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	function isMobile() {
 		return window.innerWidth <= 1000;
+	}
+
+	function initDialogPolyfill() {
+		const dialogPolyfillURL = "https://esm.run/dialog-polyfill"
+
+		const isBrowserNotSupportDialog = window.HTMLDialogElement === undefined
+
+		/**
+		 * Подключаем полифил к каждому dialog на странице,
+		 * если в браузере нет поддержки
+		**/
+		if (isBrowserNotSupportDialog) {
+			const dialogs = document.querySelectorAll("dialog")
+
+			dialogs.forEach(async (dialog) => {
+				const { default: polyfill } = await import(dialogPolyfillURL)
+				polyfill.registerDialog(dialog)
+			})
+		}
 	}
 
 })

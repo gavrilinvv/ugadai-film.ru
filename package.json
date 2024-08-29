@@ -20,8 +20,7 @@
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
     "babel-polyfill": "^6.26.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-cloudinary-upload": "^3.0.0"
+    "gulp-babel": "^8.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -8,22 +8,8 @@ const gulp = require('gulp'),
 	cleanCss = require('gulp-clean-css'),
 	autoprefixer = require('gulp-autoprefixer'),
 	responsive = require('gulp-responsive'),
-	cloudinaryUpload = require('gulp-cloudinary-upload'),
-	// cloudinary = require('cloudinary'),
 	axios = require('axios'),
 	watch = require('gulp-watch');
-
-// cloudinary.config({
-// 	cloud_name: "ddu8qv5kp",
-// 	api_key: '221715221119194',
-// 	api_secret: 'v_gqRwHZClp_6GOPfKiU-pgdj5g',
-// 	secure: true,
-// })
-
-// cloudinary.v2.search.expression('folder:samples')
-// 	.max_results(30)
-// 	.execute()
-// 	.then(result=>console.log(result.total_count));
 
 gulp.task('js', () => {
 	return gulp.src('./src/js/script.js')
@@ -38,9 +24,7 @@ gulp.task('js-vendors', () => {
 	return gulp.src([
 		'./src/js/polyfill.min.js',
 		'./src/js/jquery-3.4.1.min.js',
-		'./src/js/cloudinary-core-shrinkwrap.min.js',
 		'./src/js/fireworks.js',
-		// './src/js/cloudinary-core.min.js',
 		'./src/js/axios.min.js'
 	])
 	.pipe(concat('vendors.js'))
@@ -79,26 +63,8 @@ gulp.task('films', () => {
 				},
 			})
 		)
-		// .pipe(
-		// 	cloudinaryUpload({
-		// 		config: {
-		// 			cloud_name: 'ddu8qv5kp',
-		// 			api_key: '221715221119194',
-		// 			api_secret: 'v_gqRwHZClp_6GOPfKiU-pgdj5g',
-		// 			overwrite: true,
-		// 		},
-		// 	})
-		//  )
 		.pipe(gulp.dest(path.join(__dirname, 'dest/img/screens/')));
-		// .pipe(gulp.dest('/dest/img/screens/'))
 })
-
-// gulp.task('uploadFilms', async () => {
-// 	await new Promise((resolve, reject) => {
-//         gulp.src("**/*.scss")
-//             .pipe(print((filePath) => `File: ${filePath}`))
-//             .on("end", resolve);
-//     });
 
 
 // })

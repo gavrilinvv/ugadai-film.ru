@@ -7,6 +7,21 @@
 
 	<div class="options__title _mb20">Опции:</div>
 
+	<div class="_mb20">
+		<div class="options__subtitle">Годы:</div>
+		<span id="years" class="inner-link">Все</span>
+	</div>
+
+	<dialog class="modal" id="modalYears">
+		<div class="options__title _mb20">Выберите годы выхода:</div>
+		<div class="modal__close js-close-modal">✖</div>
+		<div class="years-grid"></div>
+		<div class="modal__btns">
+			<div class="button js-save-years">Сохранить</div>
+			<div class="button js-close-modal">Отмена</div>
+		</div>
+	</dialog>
+
 	<div class="checkbox option">
 		<div class="checkbox__body">
 			На&nbsp;время
@@ -21,6 +36,13 @@
 		<div class="checkbox__body">
 			Без права на&nbsp;ошибку
 			<input type="checkbox" value="onelife">
+		</div>
+	</div>
+
+	<div class="checkbox option">
+		<div class="checkbox__body">
+			Черно-белые кадры
+			<input type="checkbox" value="blackwhite">
 		</div>
 	</div>
 

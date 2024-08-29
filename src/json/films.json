@@ -913,7 +913,7 @@
 		"name": "Сопрано",
 		"nameOrig": "The Sopranos",
 		"genres": ["series-foreign"],
-		"year": "1999 – 2007"
+		"year": "1999 - 2007"
 	},
 	{
 		"id": 132,
@@ -2019,14 +2019,14 @@
 		"name": "Остаться в живых",
 		"nameOrig": "Lost",
 		"genres": ["series-foreign"],
-		"year": "2004 – 2010"
+		"year": "2004 - 2010"
 	},
 	{
 		"id": 290,
 		"name": "Побег",
 		"nameOrig": "Prison Break",
 		"genres": ["series-foreign"],
-		"year": "2005 – 2017"
+		"year": "2005 - 2017"
 	},
 	{
 		"id": 291,
@@ -2110,35 +2110,35 @@
 		"name": "Сваты",
 		"nameOrig": "Сваты",
 		"genres": ["series-russian"],
-		"year": "2008 – 2021"
+		"year": "2008 - 2021"
 	},
 	{
 		"id": 303,
 		"name": "Папины дочки",
 		"nameOrig": "Папины дочки",
 		"genres": ["series-russian"],
-		"year": "2007 – 2013"
+		"year": "2007 - 2013"
 	},
 	{
 		"id": 304,
 		"name": "Кухня",
 		"nameOrig": "Кухня",
 		"genres": ["series-russian"],
-		"year": "2012 – 2016"
+		"year": "2012 - 2016"
 	},
 	{
 		"id": 305,
 		"name": "Универ",
 		"nameOrig": "Универ",
 		"genres": ["series-russian"],
-		"year": "2008 – 2011"
+		"year": "2008 - 2011"
 	},
 	{
 		"id": 306,
 		"name": "Воронины",
 		"nameOrig": "Воронины",
 		"genres": ["series-russian"],
-		"year": "2009 – 2019"
+		"year": "2009 - 2019"
 	},
 	{
 		"id": 307,
@@ -2222,7 +2222,7 @@
 		"name": "Мистер Робот",
 		"nameOrig": "Mr. Robot",
 		"genres": ["series-foreign"],
-		"year": "2015 – 2019"
+		"year": "2015 - 2019"
 	},
 	{
 		"id": 319,
@@ -2481,7 +2481,7 @@
 		"name": "Восьмидесятые",
 		"nameOrig": "Восьмидесятые",
 		"genres": ["series-russian"],
-		"year": "2011 – 2016"
+		"year": "2011 - 2016"
 	},
 	{
 		"id": 356,
@@ -2614,7 +2614,7 @@
 		"name": "Сверхъестественное",
 		"nameOrig": "Supernatural",
 		"genres": ["series-foreign"],
-		"year": "2005 – 2020"
+		"year": "2005 - 2020"
 	},
 	{
 		"id": 375,
@@ -3375,7 +3375,7 @@
 	{
 		"id": 483,
 		"name": "Хардкор",
-		"nameOrig": "Молодой человек",
+		"nameOrig": "Хардкор",
 		"genres": ["movie-russian"],
 		"year": "2016"
 	},
@@ -3630,6 +3630,153 @@
 		"nameOrig": "The Wedding Planner",
 		"genres": ["movie-foreign"],
 		"year": "2001"
+	},
+	{
+		"id": 520,
+		"name": "Земля до начала времен",
+		"nameOrig": "The Land Before Time",
+		"genres": ["cartoon-foreign"],
+		"year": "1988"
+	},
+	{
+		"id": 521,
+		"name": "Бриллиантовый полицейский",
+		"nameOrig": "Blue Streak",
+		"genres": ["movie-foreign"],
+		"year": "1999"
+	},
+	{
+		"id": 522,
+		"name": "Дэдпул и Росомаха",
+		"nameOrig": "Deadpool and Wolverine",
+		"genres": ["movie-foreign"],
+		"year": "2024"
+	},
+	{
+		"id": 523,
+		"name": "Вызов",
+		"nameOrig": "Вызов",
+		"genres": ["movie-russian"],
+		"year": "2023"
+	},
+	{
+		"id": 524,
+		"name": "Три богатыря на дальних берегах",
+		"nameOrig": "Три богатыря на дальних берегах",
+		"genres": ["cartoon-russian"],
+		"year": "2012"
+	},
+	{
+		"id": 525,
+		"name": "Три богатыря: Ход конем",
+		"nameOrig": "Три богатыря: Ход конем",
+		"genres": ["cartoon-russian"],
+		"year": "2014"
+	},
+	{
+		"id": 526,
+		"name": "Три богатыря и Морской царь",
+		"nameOrig": "Три богатыря и Морской царь",
+		"genres": ["cartoon-russian"],
+		"year": "2016"
+	},
+	{
+		"id": 527,
+		"name": "Фоллаут",
+		"nameOrig": "Fallout",
+		"genres": ["series-foreign"],
+		"year": "2024"
+	},
+	{
+		"id": 528,
+		"name": "Уэнсдэй",
+		"nameOrig": "Wednesday",
+		"genres": ["series-foreign"],
+		"year": "2022"
+	},
+	{
+		"id": 529,
+		"name": "Одни из нас",
+		"nameOrig": "The Last of Us",
+		"genres": ["series-foreign"],
+		"year": "2023"
+	},
+	{
+		"id": 530,
+		"name": "Князь Владимир",
+		"nameOrig": "Князь Владимир",
+		"genres": ["cartoon-russian"],
+		"year": "2006"
+	},
+	{
+		"id": 531,
+		"name": "Секретные материалы",
+		"nameOrig": "The X Files",
+		"genres": ["series-foreign"],
+		"year": "1993 - 2018"
+	},
+	{
+		"id": 532,
+		"name": "Зачарованные",
+		"nameOrig": "Charmed",
+		"genres": ["series-foreign"],
+		"year": "1998 - 2006"
+	},
+	{
+		"id": 533,
+		"name": "Обратная сторона Луны",
+		"nameOrig": "Обратная сторона Луны",
+		"genres": ["series-russian"],
+		"year": "2012 - 2016"
+	},
+	{
+		"id": 534,
+		"name": "Метод",
+		"nameOrig": "Метод",
+		"genres": ["series-russian"],
+		"year": "2015 - 2020"
+	},
+	{
+		"id": 535,
+		"name": "Ворошиловский стрелок",
+		"nameOrig": "Ворошиловский стрелок",
+		"genres": ["movie-russian"],
+		"year": "1999"
+	},
+	{
+		"id": 536,
+		"name": "Особенности национальной охоты",
+		"nameOrig": "Особенности национальной охоты",
+		"genres": ["movie-russian"],
+		"year": "1995"
+	},
+	{
+		"id": 537,
+		"name": "Ширли-мырли",
+		"nameOrig": "Ширли-мырли",
+		"genres": ["movie-russian"],
+		"year": "1995"
+	},
+	{
+		"id": 538,
+		"name": "Лука",
+		"nameOrig": "Luca",
+		"genres": ["cartoon-foreign"],
+		"year": "2021"
+	},
+	{
+		"id": 539,
+		"name": "Человек-паук: Паутина вселенных",
+		"nameOrig": "Spider-Man: Across the Spider-Verse",
+		"genres": ["cartoon-foreign"],
+		"year": "2023"
+	},
+	{
+		"id": 540,
+		"name": "Головоломка 2",
+		"nameOrig": "Inside Out 2",
+		"genres": ["cartoon-foreign"],
+		"year": "2024"
 	}
 
 
