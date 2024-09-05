@@ -49,7 +49,7 @@
 		<script src="https://yandex.ru/ads/system/context.js" async></script>
 	</head>
 	<body>
-		<!-- <div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div> -->
+		<div class="count-films">Фильмов в базе: <span></span>. База регулярно дополняется</div>
 		<div class="fireworks-container"></div>
 		<div style="display: flex; justify-content: space-between; align-items: center; max-width: 1350px; margin: 0 auto; height: 92%; overflow: hidden; padding: 0 20px;">
 			<div class="ad-left">

@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		films = res;
 		initDialogPolyfill();
 
-		// countCorrectFilms.innerHTML = films.length;
+		countCorrectFilms.innerHTML = films.length;
 
 		// setCountOfGenres();
 
