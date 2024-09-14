@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				showBlock(playgroundBlock);
 				scoreBlock.innerHTML = 0;
 				counterNoError = 0;
+				passedFilms = [];
 				answersBlock.innerHTML = '';
 				answerInput.innerHTML = '';
 				answerSuggestions.innerHTML = '';
@@ -705,6 +706,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			return
 		}
 
+		// если 4 варианта ответа
 		if (!options.directAnswer) {
 			answersBlock.classList.remove('_hidden');
 
@@ -749,6 +751,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			answers = randomArrayShuffle(answers); // перемешиваем массив чтобы загаданный фильм не был всегда первым вариантом
 		}
 
+		// если без вариантов ответа
 		if (options.directAnswer) {
 			answerBlock.classList.remove('_hidden');
 			let filmIsFinded  = false;

@@ -7,8 +7,8 @@
 		<link rel="icon" href="/favicon.ico">
 		<link rel="stylesheet" href="/dest/css/style.css?<?=date('Hdmy')?>">
 		<link rel="canonical" href="https://ugadai-film.ru"/>
-		<title>Угадай фильм по кадру | Бесплатная браузерная игра, тест</title>
-		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра"/>
+		<title>Угадай фильм по кадру | Бесплатная браузерная игра, викторина</title>
+		<meta property="og:title" content="Угадай фильм по кадру | Бесплатная браузерная игра, викторина"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://ugadai-film.ru" />
 		<meta property="og:description" content="Угадай фильм по кадру, мультфильмы и сериалы. Зарубежные, российские или советские. На время или без, узнавайте интересные факты. Большая база фильмов" />
