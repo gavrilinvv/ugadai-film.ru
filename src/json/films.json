@@ -3819,6 +3819,13 @@
 		"nameOrig": "Primal Fear",
 		"genres": ["movie-foreign"],
 		"year": "1996"
+	},
+	{
+		"id": 547,
+		"name": "Дневник Бриджит Джонс",
+		"nameOrig": "Bridget Jones's Diary",
+		"genres": ["movie-foreign"],
+		"year": "2001"
 	}
 
 
