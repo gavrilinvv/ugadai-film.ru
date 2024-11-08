@@ -45,7 +45,7 @@
 		<!-- /Yandex.Metrika counter -->
 
 		<!--LiveInternet counter--><a href="https://www.liveinternet.ru/click"
-		target="_blank"><img id="licnt0D84" width="1" height="1" style="border:0; opacity: 0;"
+		target="_blank"><img id="licnt0D84" width="1" height="1" style="border:0; display: none;"
 		title="LiveInternet: показано число посетителей за сегодня"
 		src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
 		alt=""/></a><script>(function(d,s){d.getElementById("licnt0D84").src=
