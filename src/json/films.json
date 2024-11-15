@@ -3840,6 +3840,20 @@
 		"nameOrig": "Mr. Mercedes",
 		"genres": ["series-foreign"],
 		"year": "2017 - 2019"
+	},
+	{
+		"id": 550,
+		"name": "Приключения желтого чемоданчика",
+		"nameOrig": "Приключения желтого чемоданчика",
+		"genres": ["movie-soviet"],
+		"year": "1970"
+	},
+	{
+		"id": 551,
+		"name": "Усатый нянь",
+		"nameOrig": "Усатый нянь",
+		"genres": ["movie-soviet"],
+		"year": "1977"
 	}
 
 
