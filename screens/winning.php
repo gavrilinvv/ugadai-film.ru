@@ -1,8 +1,7 @@
 <div class="winning">
 	<div class="text text-large text-center">Вы прошли все&nbsp;кадры</div>
-	<div class="winning__answers-container">
-		<div class="winning__answers winning__answers-correct">&#9989; <span></span></div>
-		<div class="winning__answers winning__answers-incorrect">&#10060; <span></span></div>
+	<div class="statistics-container">
+		<div class="statistics"></div>
 	</div>
 	<div class="_dflex _flex-column text-center">
 		<div class="text text-center">Поделитесь с друзьями победой</div>

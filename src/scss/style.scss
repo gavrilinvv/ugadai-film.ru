@@ -720,32 +720,59 @@ body {
 
 	&__answers {
 		@include fluid('font-size', 22px, 18px);
-		@include fluid('margin-right', 10px);
-		@include fluid('margin-left', 10px);
+		// @include fluid('margin-right', 10px);
+		// @include fluid('margin-left', 10px);
 		display: flex;
 		align-items: center;
 
 		&-container {
-			display: flex;
-			justify-content: space-between;
+			// display: flex;
+			// justify-content: space-between;
 			margin-left: auto;
 			margin-right: auto;
 			@include fluid('margin-top', 20px);
 			@include fluid('margin-bottom', 20px);
-			width: max-content;
+			width: 90%;
 		}
+	}
+}
 
-		&-correct {
-			color: chartreuse;
-		}
-		&-incorrect {
-			color: red;
-		}
+.statistics {
+	display: block;
+	@include fluid('width', 520px);
 
-		& span {
-			@include fluid('font-size', 28px, 24px);
-			@include fluid('margin-left', 6px, 4px);
+	@include mobile {
+		width: 100%;
+	}
+
+	&-container {
+		margin-left: auto;
+		margin-right: auto;
+		@include fluid('margin-top', 20px);
+		@include fluid('margin-bottom', 20px);
+		width: 90%;
+	}
+
+	&-correct {
+		color: chartreuse;
+		@include fluid('width', 90px);
+
+		@include mobile {
+			width: 100%;
 		}
+	}
+	&-incorrect {
+		color: red;
+		@include fluid('width', 90px);
+
+		@include mobile {
+			width: 100%;
+		}
+	}
+
+	& span {
+		@include fluid('font-size', 28px, 18px);
+		@include fluid('margin-left', 6px, 4px);
 	}
 }
 
@@ -1105,6 +1132,20 @@ body {
 		&:not(:last-child) {
 			border-right: 1px solid #fff;
 		}
+	}
+}
+
+.stat {
+	display: flex;
+	justify-content: space-between;
+	color: $white;
+
+	&_name {
+
+	}
+
+	&_value {
+		display: flex;
 	}
 }
 

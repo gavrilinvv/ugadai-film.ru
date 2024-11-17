@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	var winningBlock = document.querySelector('.winning');
 	var correctAnswersCountBlock = document.querySelector('.winning__answers-correct span');
 	var incorrectAnswersCountBlock = document.querySelector('.winning__answers-incorrect span');
+	var statisticsBlock = document.querySelectorAll('.statistics');
 	var genreCheckboxes = document.querySelectorAll('.options .genre .checkbox__body');
 	var optionsCheckboxes = document.querySelectorAll('.options .option .checkbox__body');
 	var optionRangeInputFilmsCount = document.querySelector('.options .option #inputTargetCount');
@@ -53,6 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	var seriesRussianCount = document.querySelector('#series-russian-count');
 	var cartoonForeignCount = document.querySelector('#cartoon-foreign-count');
 	var cartoonSovietCount = document.querySelector('#cartoon-soviet-count');
+
+	var statistics = []; // статистика
+	var bonusScore = 0;
 
 	var selectedGenres = [];
 	var selectedYears = [{value: 'all', label: 'Все'}];
@@ -163,10 +167,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		[...toGameBtns].map(btn => {
 			btn.addEventListener('click', () => {
 				correctAnswersCount = 0;
+				incorrectAnswersCount = 0;
 				showBlock(playgroundBlock);
 				scoreBlock.innerHTML = 0;
 				counterNoError = 0;
+				bonusScore = 0;
 				passedFilms = [];
+				statistics = {};
 				answersBlock.innerHTML = '';
 				answerInput.innerHTML = '';
 				answerSuggestions.innerHTML = '';
@@ -435,6 +442,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			answersBlock.innerHTML = '';
 			passedFilms = [];
 			showBlock(losingBlock);
+			setStatistics();
+			setYaShare();
 		}, startTime * 1000);
 	}
 
@@ -480,6 +489,77 @@ document.addEventListener('DOMContentLoaded', () => {
 		targetBlock.style.display = 'block';
 	}
 
+	// обновления объекта со статистикой
+	function updateStatistics(title, type) {
+		if (!statistics[title]) statistics[title] = {
+			correct: 0,
+			incorrect: 0
+		};
+
+		if (!statistics[title][type]) {
+			statistics[title][type] = 1;
+		} else {
+			statistics[title][type]++
+		}
+	}
+
+	// вывод статистики на страницу
+	function setStatistics() {
+		Object.keys(statistics).forEach(item => {
+			createStatRow(item, statistics[item].correct, statistics[item].incorrect)
+		})
+
+		if (bonusScore) {
+			createStatRow('Бонус за скорость', bonusScore, 0, true)
+		}
+		createStatRow('Итого очков', correctAnswersCount + bonusScore, incorrectAnswersCount)
+	}
+
+	function createStatRow(item, correctCount, incorrectCount, additional = false) {
+		let row = document.createElement('div');
+		row.classList.add('stat');
+
+		let name = document.createElement('span');
+		name.innerHTML = getRussianCategory(item);
+		name.classList.add('stat_name');
+
+		let value = document.createElement('span');
+
+		let correct = document.createElement('div');
+		correct.classList.add('winning__answers-correct');
+		correct.innerHTML = '&#9989;' + correctCount;
+
+		let incorrect = document.createElement('div');
+		incorrect.classList.add('winning__answers-incorrect');
+		incorrect.innerHTML = !additional ? '&#10060;' + incorrectCount : '';
+
+		value.appendChild(correct);
+		value.appendChild(incorrect);
+		value.classList.add('stat_value');
+
+		row.appendChild(name);
+		row.appendChild(value);
+		statisticsBlock.forEach(item => {
+			item.appendChild(row);
+		})
+	}
+
+	function getRussianCategory(category) {
+		let res;
+		switch(category) {
+			case 'movie-foreign':    res = 'Зарубежные фильмы'; break;
+			case 'movie-russian':    res = 'Российские фильмы'; break;
+			case 'movie-soviet':     res = 'Советские фильмы'; break;
+			case 'series-foreign':   res = 'Зарубежные сериалы'; break;
+			case 'series-russian':   res = 'Российские сериалы'; break;
+			case 'cartoon-foreign':  res = 'Зарубежные мультфильмы'; break;
+			case 'cartoon-russian':  res = 'Российские мультфильмы'; break;
+			case 'cartoon-soviet':   res = 'Советские мультфильмы'; break;
+			default: res = category
+		}
+		return res;
+	}
+
 	function checkAnswer(id, btn) {
 		var selectedAnswer = id;
 		var correctAnswerBtn = document.querySelector('.button__answer[data-value="' + correctAnswer + '"]')
@@ -498,10 +578,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			correctAnswersCount += 1; // +1 угаданный фильм
 			counterNoError += 1; // +1 угаданный фильм без ошибок
+			updateStatistics(getFilmById(correctAnswer).genres[0], 'correct');
 			if (options.needTimer) {
 				if (currentTime > 5) {
 					showNotice('Бонус за скорость +<b>' + currentTime + '</b>!');
-					correctAnswersCount += currentTime; // + бонус за скорость
+					bonusScore += parseInt(currentTime / 2);
 				}
 				resetTimer();
 			}
@@ -529,6 +610,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			btn.classList.add('button__answer-error');
 			incorrectAnswersCount += 1; // +1 неугаданный фильм
 			counterNoError = 0;
+			updateStatistics(getFilmById(correctAnswer).genres[0], 'incorrect');
 			resetTimer();
 
 			setTimeout(() => {
@@ -537,6 +619,8 @@ document.addEventListener('DOMContentLoaded', () => {
 					scoreBlock.innerHTML = 0;
 					passedFilms = [];
 					showBlock(losingBlock);
+					setStatistics();
+					setYaShare();
 				} else {
 					nextQuestion();
 				}
@@ -666,6 +750,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	}
 
+	// получение фильма по id
+	function getFilmById(id) {
+		return films.find(film => {
+			if (+id === film.id) {
+				return film
+			}
+		})
+	}
+
 	function frameSuffix(value) {
 		const words = ['кадр', 'кадра', 'кадров'];
 		const cases = [2, 0, 1, 1, 1, 2];
@@ -675,6 +768,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			: cases[(value % 10 < 5)
 				? value % 10
 				: 5]]}`;
+	}
+
+	function setYaShare() {
+		Ya.share2('achive-share', {
+			content: {
+				url: 'https://ugadai-film.ru',
+				title: 'Я угадал ' + frameSuffix(correctAnswersCount) + '!'
+			}
+		});
 	}
 
 	async function getQuestion() {
@@ -688,20 +790,15 @@ document.addEventListener('DOMContentLoaded', () => {
 		if ( passedFilms.length == optionRangeInputFilmsCount.value || passedFilms.length === availableFilms.length) {
 			answersBlock.innerHTML = '';
 			passedFilms = [];
-			correctAnswersCountBlock.innerHTML = correctAnswersCount;
-			incorrectAnswersCountBlock.innerHTML = incorrectAnswersCount;
+			// correctAnswersCountBlock.innerHTML = correctAnswersCount;
+			// incorrectAnswersCountBlock.innerHTML = incorrectAnswersCount;
 			showBlock(winningBlock);
 			startFireworks();
+			setStatistics();
+			setYaShare();
 
-			Ya.share2('achive-share', {
-				content: {
-					url: 'https://ugadai-film.ru',
-					title: 'Я угадал ' + frameSuffix(correctAnswersCount) + '!'
-				}
-			});
-
-			correctAnswersCount = 0;
-			incorrectAnswersCount = 0;
+			// correctAnswersCount = 0;
+			// incorrectAnswersCount = 0;
 
 			return
 		}
