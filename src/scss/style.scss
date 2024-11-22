@@ -295,7 +295,7 @@ body {
 	}
 
 	&__logo {
-		background-image: url('/src/img/logo.png');
+		background-image: url('/src/img/logo.webp');
 		@include fluid('height', 370px, 212px);
 		width: auto;
 		background-repeat: no-repeat;

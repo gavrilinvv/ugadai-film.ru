@@ -451,7 +451,7 @@ body:after {
   }
 }
 .menu__logo {
-  background-image: url("/src/img/logo.png");
+  background-image: url("/src/img/logo.webp");
   height: 25.6944444444vw;
   width: auto;
   background-repeat: no-repeat;
