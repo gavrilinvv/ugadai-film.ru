@@ -3868,6 +3868,13 @@
 		"nameOrig": "Blue Jasmine",
 		"genres": ["movie-foreign"],
 		"year": "2013"
+	},
+	{
+		"id": 554,
+		"name": "Она",
+		"nameOrig": "Her",
+		"genres": ["movie-foreign"],
+		"year": "2013"
 	}
 
 
