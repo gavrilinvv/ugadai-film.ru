@@ -3875,6 +3875,20 @@
 		"nameOrig": "Her",
 		"genres": ["movie-foreign"],
 		"year": "2013"
+	},
+	{
+		"id": 555,
+		"name": "Иррациональный человек",
+		"nameOrig": "Irrational Man",
+		"genres": ["movie-foreign"],
+		"year": "2015"
+	},
+	{
+		"id": 556,
+		"name": "Русалка",
+		"nameOrig": "Русалка",
+		"genres": ["movie-russian"],
+		"year": "2007"
 	}
 
 
