@@ -613,15 +613,9 @@ body {
 	&-fact {
 		color: $white;
 		text-align: center;
-		// width: 90%;
 		@include fluid('font-size', 22px, 16px);
 
 		display: inline-block;
-		// position: absolute;
-		// top: 50%;
-		// left: 50%;
-		// transform: translate(-50%, -50%);
-		// width: max-content;
 
 		&__title {
 			@include fluid('font-size', 32px, 24px);
@@ -631,7 +625,6 @@ body {
 
 	&__loading {
 		.loader {
-			// z-index: 1;
 			display: block;
 		}
 
@@ -643,10 +636,7 @@ body {
 	}
 
 	&-img {
-		// position: absolute;
 		display: block;
-		// @include fluid('max-height', 600px);
-		// @include fluid('border-radius', 12px, 8px);
 		margin: 0 auto;
 		@include fluid('border-radius', 6px, 6px);
 		width: 100%;

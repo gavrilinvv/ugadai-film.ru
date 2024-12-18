@@ -606,7 +606,9 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			}, 800)
 		} else {
-			correctAnswerBtn.classList.add('button__answer-success');
+			if (!options.directAnswer) {
+				correctAnswerBtn.classList.add('button__answer-success');
+			}
 			btn.classList.add('button__answer-error');
 			incorrectAnswersCount += 1; // +1 неугаданный фильм
 			counterNoError = 0;
