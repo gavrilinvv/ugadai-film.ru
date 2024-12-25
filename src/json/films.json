@@ -3889,6 +3889,20 @@
 		"nameOrig": "Русалка",
 		"genres": ["movie-russian"],
 		"year": "2007"
+	},
+	{
+		"id": 557,
+		"name": "Адаптация",
+		"nameOrig": "Adaptation.",
+		"genres": ["movie-foreign"],
+		"year": "2002"
+	},
+	{
+		"id": 558,
+		"name": "Мальчик и птица",
+		"nameOrig": "Kimitachi wa Dou Ikiru ka",
+		"genres": ["cartoon-foreign"],
+		"year": "2023"
 	}
 
 
